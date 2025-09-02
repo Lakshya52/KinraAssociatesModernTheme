@@ -20,7 +20,7 @@ const AccountingPage = () => {
           <img src="" className="h-full w-full object-cover" />
         </div>
         {/* right text */}
-        <div className='w-full md:w-3/7 md:pl-[5vw]'>
+        <div className='w-full md:w-3/7 md:pl-[2.5vw]'>
           <Breadcrumb items={breadcrumbItems} />
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Accounting & Financial Reporting</h1>
           <ul className='mt-5'>
@@ -47,23 +47,23 @@ const AccountingPage = () => {
             <h1 className='text-xl sm:text-2xl font-poppins-bold'>Our Other Services</h1>
             <ul className='mt-5 w-full flex flex-col text-left'>
               <li className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <Link to='/businessAdvisory'>Business Advisory</Link>
+                <Link to='/business_advisory'>Business Advisory</Link>
                 <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
               </li>
               <li className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <Link to='/auditAndAssurance'>Audit and Assurance</Link>
+                <Link to='/audit_and_assurance'>Audit and Assurance</Link>
                 <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
               </li>
               <li className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <Link to='/directIndirectTaxAdvisory'>Direct & Indirect Tax Advisory</Link>
+                <Link to='/direct_indirect_tax'>Direct & Indirect Tax Advisory</Link>
                 <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
               </li>
               <li className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <Link to='/regulatoryComplanceSupport'>Regulatory & Compliance Support</Link>
+                <Link to='/compliance_support'>Regulatory & Compliance Support</Link>
                 <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
               </li>
               <li className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full border-b'>
-                <Link to='/specializedServices'>Specialized Advisory Services</Link>
+                <Link to='/specialized_services'>Specialized Advisory Services</Link>
                 <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
               </li>
             </ul>
