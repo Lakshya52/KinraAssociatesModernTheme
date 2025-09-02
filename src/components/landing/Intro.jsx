@@ -7,7 +7,7 @@ const Intro = () => {
         <>
             {/* wrapper */}
 
-            <div className='w-full flex items-center justify-center  px-15 mt-[120vh] mb-20 font-gwynerCondensedFont h-[500px]'>
+            <div className='w-full flex items-center justify-center  px-15 mt-[90vh] mb-20 font-gwynerCondensedFont h-[500px]'>
 
                 {/* left */}
                 <div className=' w-1/2  h-full pr-10  flex items-start justify-center flex-col ' >
