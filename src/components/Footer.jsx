@@ -79,29 +79,21 @@ const Footer = () => {
           </div>
 
           {/* connect */}
-          <div className='flex items-center justify-center gap-5' >
+          {/* <div className='flex items-center justify-center gap-5' >
             <span>Connect ---</span>
             <div className="p-2 bg-amber-800 flex items-center justify-center rounded-full hover:bg-amber-600">
               <Instagram className="text-white h-4 w-4 cursor-pointer " />
-
-
             </div>
             <div className="p-2 bg-amber-800 flex items-center justify-center rounded-full hover:bg-amber-600">
               <Linkedin className="text-white h-4 w-4 cursor-pointer " />
-
-
             </div>
             <div className="p-2 bg-amber-800 flex items-center justify-center rounded-full hover:bg-amber-600">
               <Facebook className="text-white h-4 w-4 cursor-pointer " />
-
-
             </div>
             <div className="p-2 bg-amber-800 flex items-center justify-center rounded-full hover:bg-amber-600">
               <Twitter className="text-white h-4 w-4 cursor-pointer " />
-
-
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -1,17 +1,16 @@
-import React ,{ useState } from 'react'
-import { assets } from '../assets/assets';
+import React, { useState } from 'react'
+import { assets } from '../assets/assets'
 import Breadcrumb from '../components/Breadcrumb'
 
 const breadcrumbItems = [
   { label: 'Home', to: '/' },
-  { label: 'Our Leaderships',  },
+  { label: 'Our Leaderships' },
 ]
-
 
 const partners = [
   {
     name: "Gagan Kinra",
-    image: "https://via.placeholder.com/150", // 👈 replace with actual image
+    image: "https://via.placeholder.com/150", // Replace with actual image
     phone: "+91 12345 67891",
     description:
       "Gagan Kinra is a member of the Institute of Chartered Accountants of India (ICAI) since 2014. Gagan has vast knowledge and a thorough understanding of Indian laws and regulations, as well as the complex corporate taxation system. He has helped many organisations to set up business in India and operating it smoothly. He and his team have assisted many entities in completing paperwork, getting necessary approvals, paying taxes, necessary filings and much more."
@@ -58,101 +57,97 @@ const partners = [
     description:
       "Ayush Saxena provides expert advisory on international taxation and cross-border transactions for global clients. He has assisted multinational corporations in structuring their operations to optimize tax efficiency and comply with international tax regulations. Ayush’s expertise includes transfer pricing, double taxation avoidance agreements, and expatriate taxation. His global perspective and thorough understanding of international tax laws enable him to deliver tailored solutions that address the unique challenges faced by clients operating in multiple jurisdictions."
   }
-];
-
+]
 
 const Leaderships = () => {
-
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(0)
 
   const handleToggle = (idx) => {
-    setOpenIndex(idx);
-  };
+    setOpenIndex(openIndex === idx ? null : idx) // allow toggle open/close
+  }
+
   return (
     <>
-
-    <div className='text-center w-full font-gwynerCondensedFont py-10 mt-10 font-bold' >
-        <h1 className='text-5xl font-light w-full'><span className='italic font-extralight ' > </span>Meet Our Partners</h1>
-
-         <p className='flex items-center justify-center w-full font-light' >
+      {/* Page Title */}
+      <div className="text-center w-full font-gwynerCondensedFont py-10 mt-10 font-bold px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light leading-snug">
+          Meet Our Partners
+        </h1>
+        <div className="flex items-center justify-center w-full font-light mt-3">
           <Breadcrumb items={breadcrumbItems} />
-        </p>
+        </div>
       </div>
 
-
-
-      <div className="w-screen flex justify-center items-center font-playfair-display" >
-
-        {/* content-box */}
-        <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit  sm:bg-gray-100 rounded-xl sm:shadow-xl  shadow-[#5a6bdd]/10 border-[1px] border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 sm:my-10 mb-10 text-base sm:text-lg">
+      {/* Content Box */}
+      <div className="w-full flex justify-center items-center font-playfair-display px-4">
+        <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-6 sm:py-10 my-6 sm:my-10 text-base sm:text-lg">
           {/* Accordion */}
-          <section>
-            <div className="accordion-group">
-              {partners.map((partner, idx) => (
-                <div
-                  key={partner.name}
-                  className={`accordion py-6 w-full px-4 sm:px-10 cursor-pointer border-b border-gray-400 transition-all duration-500 ${openIndex === idx ? "bg-amber-800/90" : ""
-                    }`}
-                  id={`partner-heading-${idx}`}
+          <section className="w-full">
+            {partners.map((partner, idx) => (
+              <div
+                key={partner.name}
+                className={`accordion py-4 sm:py-6 w-full px-2 sm:px-6 md:px-10 cursor-pointer border-b border-gray-300 transition-all duration-500 ${
+                  openIndex === idx ? "bg-amber-800/90 text-white rounded-lg" : ""
+                }`}
+                id={`partner-heading-${idx}`}
+              >
+                {/* Accordion Toggle */}
+                <button
+                  className="accordion-toggle flex items-center justify-between w-full text-left"
+                  aria-controls={`partner-collapse-${idx}`}
+                  aria-expanded={openIndex === idx}
+                  onClick={() => handleToggle(idx)}
                 >
-                  <button
-                    className={`accordion-toggle flex items-center justify-between w-full text-left ${openIndex === idx ? "font-medium text-white mb-5" : ""
-                      }`}
-                    aria-controls={`partner-collapse-${idx}`}
-                    aria-expanded={openIndex === idx}
-                    onClick={() => handleToggle(idx)}
+                  <h5 className="text-lg sm:text-xl md:text-2xl font-medium">
+                    {partner.name}
+                  </h5>
+                  <svg
+                    className={`transition-transform duration-500 ${
+                      openIndex === idx ? "rotate-180" : ""
+                    }`}
+                    width={22}
+                    height={22}
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <h5 className="text-xl sm:text-2xl">{partner.name}</h5>
-                    <svg
-                      className={`transition duration-500 ${openIndex === idx
-                        ? "text-white rotate-180"
-                        : "text-gray-700"
-                        }`}
-                      width={22}
-                      height={22}
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
-                        stroke="currentColor"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
+                    <path
+                      d="M16.5 8.25L12.4142 12.3358C11.7475 13.0025 11.4142 13.3358 11 13.3358C10.5858 13.3358 10.2525 13.0025 9.58579 12.3358L5.5 8.25"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
 
-                  {/* Accordion content */}
-                  <div
-                    id={`partner-collapse-${idx}`}
-                    className="accordion-content w-full px-0 overflow-hidden transition-all duration-500"
-                    aria-labelledby={`partner-heading-${idx}`}
-                    style={{ maxHeight: openIndex === idx ? 500 : 0 }}
-                  >
-                    <div className="flex flex-col sm:flex-row gap-6 items-center border-t pt-5">
-                      {/* Partner image */}
-                      <img
-                        src={partner.image}
-                        alt={`${partner.name} profile`}
-                        className="w-35 h-42 sm:w-45 sm:h-40 rounded-xl object-cover border-2 border-white shadow-md"
-                      />
-                      {/* Partner description */}
-                      <p
-                        className={`text-base sm:text-lg leading-6 text-justify ${openIndex === idx ? "text-gray-100" : "text-gray-700"
-                          }`}
-                      >
-                        {partner.description}
-                      </p>
-                    </div>
+                {/* Accordion Content */}
+                <div
+                  id={`partner-collapse-${idx}`}
+                  className={`accordion-content w-full overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out ${
+                    openIndex === idx
+                      ? "max-h-screen opacity-100 mt-4"
+                      : "max-h-0 opacity-0"
+                  }`}
+                  aria-labelledby={`partner-heading-${idx}`}
+                >
+                  <div className="flex flex-col sm:flex-row gap-6 items-center border-t pt-5">
+                    {/* Partner Image */}
+                    <img
+                      src={partner.image}
+                      alt={`${partner.name} profile`}
+                      className="w-28 h-32 sm:w-36 sm:h-40 md:w-44 md:h-48 rounded-xl object-cover border-2 border-white shadow-md"
+                    />
+                    {/* Partner Description */}
+                    <p className="text-sm sm:text-base md:text-lg leading-6 text-justify">
+                      {partner.description}
+                    </p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </section>
         </div>
-
       </div>
     </>
   )
