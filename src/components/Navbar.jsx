@@ -74,34 +74,34 @@ const Navbar = () => {
         <div className="lg:hidden bg-[#2c2c2c]/95 px-4 sm:px-6 md:px-15 py-4 space-y-4 text-lg flex flex-col">
           <Link
             to="/about"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {setIsOpen(false),handleScrollTop()}}
             className="hover:underline"
           >
             About Us
           </Link>
           <Link
             to="/industries"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {setIsOpen(false),handleScrollTop()}}
             className="hover:underline"
           >
             Industries
           </Link>
           <Link
             to="/leaderships"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {setIsOpen(false),handleScrollTop()}}
             className="hover:underline"
           >
             Our Leadership
           </Link>
           <Link
             to="/services"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {setIsOpen(false),handleScrollTop()}}
             className="hover:underline"
           >
             Services
           </Link>
           {/* Contact Button only for mobile */}
-          <div className="sm:hidden" onClick={() => setIsOpen(false)}>
+          <div className="sm:hidden" onClick={() => {setIsOpen(false),handleScrollTop()}}>
             <Button label="Contact" href="/contact" b_radius="8px" />
           </div>
         </div>

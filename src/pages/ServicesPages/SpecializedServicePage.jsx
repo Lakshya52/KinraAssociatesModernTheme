@@ -36,7 +36,7 @@ const SpecializedServicePage = () => {
             </li>
             <li className="flex gap-3 sm:gap-5">
               <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
-              <span>Certification Services (Net Worth, Turnover, CA Certificates) </span>
+              <span>Certification Services </span>
             </li>
           </ul>
         </div>

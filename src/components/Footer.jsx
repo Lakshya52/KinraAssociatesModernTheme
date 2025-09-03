@@ -33,16 +33,16 @@ const Footer = () => {
 
             <div className="flex flex-col items-center md:items-start">
               <p className="text-lg sm:text-2xl font-dm-serif pb-2">Useful Links</p>
-              <div className="flex flex-col sm:flex-row sm:gap-6">
+              <div className="flex flex-col sm:flex-row sm:gap-6 gap-2">
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
-                  <li><Link onClick={handleScrollTop} to="/">Home</Link></li>
-                  <li><Link onClick={handleScrollTop} to="/about">About Us</Link></li>
-                  <li><Link onClick={handleScrollTop} to="/industries">Industries</Link></li>
+                  <Link onClick={handleScrollTop} to="/">Home</Link>
+                  <Link onClick={handleScrollTop} to="/about">About Us</Link>
+                  <Link onClick={handleScrollTop} to="/industries">Industries</Link>
                 </ul>
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
-                  <li><Link onClick={handleScrollTop} to="/partners">Our Leadership</Link></li>
-                  <li><Link onClick={handleScrollTop} to="/services">Services</Link></li>
-                  <li><Link onClick={handleScrollTop} to="/contact">Contact Us</Link></li   >
+                  <Link onClick={handleScrollTop} to="/leaderships">Our Leadership</Link>
+                  <Link onClick={handleScrollTop} to="/services">Services</Link>
+                  <Link onClick={handleScrollTop} to="/contact">Contact Us</Link>
                 </ul>
               </div>
             </div>
@@ -51,21 +51,17 @@ const Footer = () => {
           {/* Important Links */}
 
           <div className="flex items-start md:justify-start   justify-center lg:justify-center ">
-
-
-
-
             <div className="flex flex-col items-center md:items-start">
               <p className="text-lg sm:text-2xl font-dm-serif pb-2">Important Links</p>
-              <div className="flex flex-col sm:flex-row sm:gap-6">
+              <div className="flex flex-col sm:flex-row sm:gap-6 gap-2">
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
+                  <li><a href="https://www.incometax.gov.in/iec/foportal/">Income Tax</a></li>
+                  <li><a href="https://www.gst.gov.in/">GST</a></li>
                   <li><a href="https://www.mca.gov.in/">MCA</a></li>
-                  <li><a href="https://www.sebi.gov.in/">SEBI</a></li>
-                  <li><a href="https://www.rbi.org.in/">RBI</a></li>
                 </ul>
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
-                  <li><a href="https://www.gst.gov.in/">GST</a></li>
-                  <li><a href="https://www.incometax.gov.in/iec/foportal/">Income Tax</a></li>
+                  <li><a href="https://www.sebi.gov.in/">SEBI</a></li>
+                  <li><a href="https://www.rbi.org.in/">RBI</a></li>
                 </ul>
               </div>
             </div>

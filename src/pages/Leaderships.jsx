@@ -4,58 +4,53 @@ import Breadcrumb from '../components/Breadcrumb'
 
 const breadcrumbItems = [
   { label: 'Home', to: '/' },
-  { label: 'Our Leaderships' },
+  { label: 'Our Leadership' },
 ]
 
 const partners = [
-  {
-    name: "Gagan Kinra",
+
+
+  {name: "Gagan Kinra",
     image: "https://via.placeholder.com/150", // Replace with actual image
     phone: "+91 12345 67891",
     description:
       "Gagan Kinra is a member of the Institute of Chartered Accountants of India (ICAI) since 2014. Gagan has vast knowledge and a thorough understanding of Indian laws and regulations, as well as the complex corporate taxation system. He has helped many organisations to set up business in India and operating it smoothly. He and his team have assisted many entities in completing paperwork, getting necessary approvals, paying taxes, necessary filings and much more."
   },
-  {
-    name: "Bhavik Haribhai Rupapara",
+  {name: "Bhavik Haribhai Rupapara",
     image: "https://via.placeholder.com/150",
     phone: "+91 12345 67891",
     description:
       "Bhavik Haribhai Rupapara specializes in financial consulting and compliance, ensuring that clients consistently meet all regulatory requirements. With a strong background in accounting and finance, Bhavik has helped organizations streamline their financial processes and improve operational efficiency. He is adept at handling complex compliance matters, including GST, income tax, and company law. Bhavik’s proactive approach and deep understanding of the regulatory landscape make him a valuable asset to clients seeking reliable financial guidance and support."
   },
-  {
-    name: "Abhinav Kumar",
+  {name: "Abhinav Kumar",
     image: "https://via.placeholder.com/150",
     phone: "+91 12345 67891",
     description:
       "Abhinav Kumar brings a wealth of expertise in corporate law, mergers, and acquisitions, helping businesses grow strategically and navigate complex legal frameworks. He has advised clients on a wide range of corporate transactions, including joint ventures, restructuring, and due diligence. Abhinav’s analytical skills and thorough understanding of legal intricacies enable him to provide practical solutions tailored to each client’s unique needs. His dedication to excellence and ethical practice has earned him the trust of clients across various sectors."
   },
-  {
-    name: "Aditya A K",
+  {name: "Ayush Saxena",
+    image: "https://via.placeholder.com/150",
+    phone: "+91 12345 67891",
+    description:
+      "Ayush Saxena provides expert advisory on international taxation and cross-border transactions for global clients. He has assisted multinational corporations in structuring their operations to optimize tax efficiency and comply with international tax regulations. Ayush’s expertise includes transfer pricing, double taxation avoidance agreements, and expatriate taxation. His global perspective and thorough understanding of international tax laws enable him to deliver tailored solutions that address the unique challenges faced by clients operating in multiple jurisdictions."
+  },
+  {name: "Aditya A K",
     image: "https://via.placeholder.com/150",
     phone: "+91 12345 67891",
     description:
       "Aditya A K focuses on risk management and internal controls, playing a crucial role in safeguarding client interests at every step of their business journey. He has designed and implemented robust internal control systems for organizations of all sizes, helping them mitigate risks and achieve compliance with industry standards. Aditya’s expertise extends to forensic audits, fraud detection, and process optimization. His commitment to integrity and transparency ensures that clients receive reliable advice and effective risk management solutions."
   },
-  {
-    name: "Chetan Khurana",
+  {name: "Chetan Khurana",
     image: "https://via.placeholder.com/150",
     phone: "+91 12345 67891",
     description:
       "Chetan Khurana is renowned for his proficiency in GST, direct taxes, and representing clients before tax authorities. He has successfully handled numerous tax assessments, appeals, and litigation matters, providing clients with comprehensive tax solutions. Chetan’s in-depth knowledge of tax laws and his ability to interpret complex regulations enable him to deliver effective tax planning strategies. He is dedicated to helping clients minimize tax liabilities while ensuring full compliance with statutory requirements."
   },
-  {
-    name: "Devansh Ji Vaishya",
+  {name: "Devansh Ji Vaishya",
     image: "https://via.placeholder.com/150",
     phone: "+91 12345 67891",
     description:
       "Devansh Ji Vaishya leads the assurance practice at the firm, delivering quality audits and financial reporting solutions to clients across industries. He has extensive experience in statutory audits, internal audits, and special purpose audits. Devansh is committed to upholding the highest standards of audit quality and integrity, ensuring that clients’ financial statements are accurate and reliable. His analytical mindset and attention to detail make him a trusted advisor for clients seeking assurance on their financial reporting."
-  },
-  {
-    name: "Ayush Saxena",
-    image: "https://via.placeholder.com/150",
-    phone: "+91 12345 67891",
-    description:
-      "Ayush Saxena provides expert advisory on international taxation and cross-border transactions for global clients. He has assisted multinational corporations in structuring their operations to optimize tax efficiency and comply with international tax regulations. Ayush’s expertise includes transfer pricing, double taxation avoidance agreements, and expatriate taxation. His global perspective and thorough understanding of international tax laws enable him to deliver tailored solutions that address the unique challenges faced by clients operating in multiple jurisdictions."
   }
 ]
 

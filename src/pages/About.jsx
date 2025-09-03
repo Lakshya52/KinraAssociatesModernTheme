@@ -31,7 +31,7 @@ const About = () => {
             <p className="text-justify">
               We are committed towards creating and sustaining long-term relationships drawn on our
               experience and expertise to help clients achieve real success. Having presence across
-              Uttar Pradesh, Delhi, Madhya Pradesh, Karnataka, Maharashtra, Gujarat & Bihar, we
+              more than 10+ states. We
               provide a variety of services encompassing Finance, Accounting & Compliance Solutions
               and are committed to add value and optimize the benefits accruing to business.
             </p>
@@ -39,7 +39,7 @@ const About = () => {
 
           {/* Mission & Vision */}
           <div className="w-full flex flex-col md:flex-row gap-10 mb-6">
-            <div className="w-full p-7 rounded-xl bg-amber-900 text-white">
+            <div className="w-full p-7 rounded-xl bg-amber-800/90 text-white">
               <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Mission</h1>
               <p className="text-justify">
                 To provide quality professional services in accounting, assurance, taxation, and
@@ -50,7 +50,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="w-full p-7 rounded-xl bg-amber-900 text-white">
+            <div className="w-full p-7 rounded-xl bg-amber-800/90 text-white">
               <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Vision</h1>
               <p className="text-justify">
                 To be recognized as a trusted professional services firm, consistently exceeding

@@ -24,7 +24,9 @@ const Industries = () => {
       {/* Content Section */}
       <div className="w-full flex justify-center items-center font-playfair-display px-4">
         <div className="w-full sm:w-[90%] flex flex-col h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15 text-base sm:text-lg">
-          <div className="flex flex-col md:flex-row w-full md:w-[90%] justify-between items-start gap-8 md:gap-12">
+
+
+          <div className="flex flex-col md:flex-row w-full md:w-[90%] justify-between items-start gap-6 md:gap-12">
             {/* Left Column */}
             <div className="w-full md:w-1/2 flex flex-col items-start justify-start gap-6">
               <ul className="flex flex-col gap-4 sm:gap-5 w-full items-start">
@@ -131,6 +133,8 @@ const Industries = () => {
               </ul>
             </div>
           </div>
+
+
         </div>
       </div>
     </>
