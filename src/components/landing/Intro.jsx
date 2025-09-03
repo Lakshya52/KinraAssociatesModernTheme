@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <>
       {/* wrapper */}
-      <div className="w-full flex flex-col lg:flex-row items-center justify-center px-6 md:px-10 lg:px-15 mt-[20vh] mb-20 font-gwynerCondensedFont h-auto lg:h-[500px] gap-10">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center px-6 md:px-10 lg:px-15  my-20 font-gwynerCondensedFont h-auto lg:h-[500px] gap-10">
         
         {/* left */}
         <div className="w-full lg:w-1/2 h-auto lg:h-full pr-0 lg:pr-10 flex items-center lg:items-start justify-center flex-col text-center lg:text-left">
