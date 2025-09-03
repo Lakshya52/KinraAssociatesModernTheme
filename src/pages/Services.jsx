@@ -56,17 +56,17 @@ const Services = () => {
   return (
     <>
       {/* Page Heading */}
-      <div className="text-center w-full font-gwynerCondensedFont py-10 mt-10 font-bold">
-        <h1 className="text-4xl sm:text-5xl font-light w-full">
+      <div className="text-center w-full font-gwynerCondensedFont  mt-10 font-bold px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
           Our Services
         </h1>
-        <p className="flex items-center justify-center w-full font-light">
+        <p className="flex items-center justify-center w-full font-light mt-3">
           <Breadcrumb items={breadcrumbItems} />
         </p>
       </div>
 
       {/* Services Grid */}
-      <div className="w-screen flex items-center justify-center mb-16 px-4">
+      <div className="w-screen flex items-center justify-center my-6 mb-15 px-4">
         <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, idx) => (
             <Link

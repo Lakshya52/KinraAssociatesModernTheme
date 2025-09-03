@@ -24,15 +24,15 @@ const ComplianceSupportPage = () => {
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Regulatory & Compliance Support</h1>
           <ul className='mt-5'>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Exclusively on Secretarial Compliances, including company incorporation, statutory maintenance of registers, board/AGM documentation, and corporate governance support. </span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Advisory and filings related to foreign investments as FEMA, cross-border transactions, & RBI regulations.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Support for obtaining License & renewing FSSAI, MSME, BIS, ISO, and other sectoral registrations and approvals</span>
             </li>
           </ul>

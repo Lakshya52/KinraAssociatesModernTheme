@@ -32,13 +32,13 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <ul className="hidden lg:flex gap-10 text-lg items-center">
           <Link onClick={handleScrollTop} className="li-custom" to="/about">
-            About
+            About Us
           </Link>
           <Link onClick={handleScrollTop} className="li-custom" to="/industries">
             Industries
           </Link>
           <Link onClick={handleScrollTop} className="li-custom" to="/leaderships">
-            Our Leaderships
+            Our Leadership
           </Link>
           <Link onClick={handleScrollTop} className="li-custom" to="/services">
             Services
@@ -77,7 +77,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className="hover:underline"
           >
-            About
+            About Us
           </Link>
           <Link
             to="/industries"
@@ -91,7 +91,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className="hover:underline"
           >
-            Our Leaderships
+            Our Leadership
           </Link>
           <Link
             to="/services"

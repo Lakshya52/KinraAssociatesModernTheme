@@ -11,7 +11,7 @@ const Industries = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="text-center w-full font-gwynerCondensedFont py-10 mt-10 font-bold px-4">
+      <div className="text-center w-full font-gwynerCondensedFont  mt-10 font-bold px-4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
           Industries We Serve
         </h1>
@@ -23,7 +23,7 @@ const Industries = () => {
 
       {/* Content Section */}
       <div className="w-full flex justify-center items-center font-playfair-display px-4">
-        <div className="w-full sm:w-[90%] flex flex-col h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 sm:my-10 mb-10 text-base sm:text-lg">
+        <div className="w-full sm:w-[90%] flex flex-col h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15 text-base sm:text-lg">
           <div className="flex flex-col md:flex-row w-full md:w-[90%] justify-between items-start gap-8 md:gap-12">
             {/* Left Column */}
             <div className="w-full md:w-1/2 flex flex-col items-start justify-start gap-6">

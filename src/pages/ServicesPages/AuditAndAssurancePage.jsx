@@ -26,19 +26,19 @@ const AuditAndAssurancePage = () => {
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Audit and Assurance</h1>
           <ul className='mt-5'>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Conduct statutory, internal, and compliance audits ensuring regulatory adherence.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Perform due diligence, forensic audits and Investigation to assess financial integrity and detect fraud.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Evaluate internal controls and governance frameworks and mitigate business risks.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Deliver actionable insights to strengthen transparency and operational efficiency.</span>
             </li>
           </ul>

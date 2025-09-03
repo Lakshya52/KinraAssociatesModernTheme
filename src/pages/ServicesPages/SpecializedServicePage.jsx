@@ -23,19 +23,19 @@ const SpecializedServicePage = () => {
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Specialized Advisory Services</h1>
           <ul className='mt-5'>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Project Reporting & CMA Data Preparation</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Government Subsidy & Incentive Advisory</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>NGO/Society/Trust Registration/ HUF creation and Compliance</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Certification Services (Net Worth, Turnover, CA Certificates) </span>
             </li>
           </ul>

@@ -27,19 +27,19 @@ const BusinessAdvisoryPage = () => {
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Business Advisory</h1>
           <ul className='mt-5'>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Empowering businesses and individuals with robust financial strategies </span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Expert advisory, supporting business setup, financial planning, and strategic consulting</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Risk management to foster sustainable growth, </span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Compliance and informed decision-making in an ever-evolving economic landscape.</span>
             </li>
           </ul>

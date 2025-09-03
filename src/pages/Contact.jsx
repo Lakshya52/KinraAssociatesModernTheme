@@ -16,9 +16,9 @@ const Contact = () => {
   const branchOffices = [
     {
       name: "Uttar Pradesh",
-      contacePerson: "",
-      email: "",
-      phone: "",
+      contacePerson: "GAGAN KINRA",
+      email: "email@gmil.com",
+      phone: "+91 98972 95511",
       address: "H. No 32, Phase-III-B, Pant Vihar, ITC Road, Saharanpur, U.P.- 247001",
       mapEmbed: <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.119964024052!2d77.5452343151156!3d29.96411098191116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb3e0e0e0e0e0%3A0x0!2sH.%20No%2032%2C%20Phase-III-B%2C%20Pant%20Vihar%2C%20ITC%20Road%2C%20Saharanpur%2C%20U.P.-%20247001!5e0!3m2!1sen!2sin!4v1710000000004!5m2!1sen!2sin"
@@ -33,45 +33,46 @@ const Contact = () => {
 
     }, {
       name: "Delhi",
-      contacePerson: "CA. CHETAN KHURANA",
+      contacePerson: "CA CHETAN KHURANA",
       email: "email@gmail.com",
-      phone: "+91 12345 67890",
-      address: "843, Gautam, GALI Jwala Nagar, Shahdara, Delhi-110032",
+      phone: "+91 78273 01577",
+      address: "843, Gautam, Gali Jwala Nagar, Shahdara, Delhi-110032",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6347927110155!2d77.29724577457438!3d28.670651882350278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb70cf59db6d%3A0x1fe19019ab89202f!2s843%2C%20Gautam%20Gali%2C%20Jawala%20Nagar%2C%20Shahdara%2C%20Delhi%2C%20110032!5e0!3m2!1sen!2sin!4v1754998898331!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Delhi Office"></iframe>
     },
 
     {
       name: "Karnataka",
-      contacePerson: "CA. ADITYA A K",
+      contacePerson: "CA ADITYA A K",
       email: "email@gmail.com",
-      phone: "+91 12345 67890",
-      address: "76, 2ND Floor, Hanumanthanagara, 50 ft Road, Bengaluru, Karnataka-560019",
+      phone: "+91 82173 93670",
+      address: "76, 2nd Floor, Hanumanthanagara, 50 ft Road, Bengaluru, Karnataka-560019",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62216.81902117869!2d77.51484087877355!3d12.936542272877045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f4b7246165%3A0x262e856aea3cb36d!2sSilicon%20Honda%20Hanumanthnagar!5e0!3m2!1sen!2sin!4v1754998967850!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mumbai Office"></iframe>
     },
 
     {
       name: "Maharashtra",
-      contacePerson: "CA. DEVANSH JI VAISHYA",
+      contacePerson: "CA DEVANSH JI VAISHYA",
       email: "email@gmail.com",
-      phone: "+91 12345 67890",
+      phone: "+91 89758 16000",
       address: "101-102/B7 Gangadham Phase 1, Marketyard Jagdish Niwas, Pune, Maharashtra-411037",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1648580777523!2d73.87197977423627!3d18.476190270530314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea9afbd3def9%3A0x1c8ce8f1fece189f!2sGangaDham%20Phase%201!5e0!3m2!1sen!2sin!4v1754999034638!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bangalore Office"></iframe>
     },
 
     {
       name: "Madhya Pradesh",
-      contacePerson: "CA. AYUSH SAXENA",
+      contacePerson: "CA AYUSH SAXENA",
       email: "email@gmail.com",
-      phone: "+91 12345 67890",
+      phone: "+91 99588 34607",
       address: "H no. 40, Shiv Shakti Nagar, Ahmadpur, Hoshangabad Road, Bhopal, Madhya Pradesh-462026",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.4036720938057!2d77.45417582437311!3d23.19195500998776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43c365761c17%3A0x6ec6fe6c44c74d47!2sShivshakti%20Nagar%2C%20Ahmedpur%20Kalan%2C%20Bagmugaliya%2C%20Bhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1754999073277!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4048515703466!2d77.455826!3d23.191912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzMwLjkiTiA3N8KwMjcnMjEuMCJF!5e0!3m2!1sen!2sin!4v1756895289549!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
 
     {
       name: "Gujarat",
-      contacePerson: "CA. BHAVIK HIRABHAI RUPAPARA",
+      contacePerson: "CA BHAVIK HIRABHAI RUPAPARA",
       email: "email@gmail.com",
-      phone: "+91 12345 67890", address: "310, Star Chamber, Rajkot, Gujarat-360001",
+      phone: "+91 98791 53657", 
+      address: "310, Star Chamber, Rajkot, Gujarat-360001",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.4531732158825!2d70.79621797434463!3d22.298694742955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb00269c00e3%3A0x7f86ba477321e7ce!2sStarChember!5e0!3m2!1sen!2sin!4v1754999102400!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
 
@@ -79,7 +80,7 @@ const Contact = () => {
       name: "Bihar",
       contacePerson: "CA ABHINAV KUMAR",
       email: "email@gmail.com",
-      phone: "+91 12345 67890",
+      phone: "+91 79034 10638",
       address: "435, Adison Arcade, Fraser Road, Patna, Bihar-800001",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.749208696946!2d85.13840612445657!3d25.61324861472521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b92f5e263%3A0x264c261d6914a9b9!2sAdision%20Arcade!5e0!3m2!1sen!2sin!4v1754999150678!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     }];
@@ -90,24 +91,24 @@ const Contact = () => {
   return (
     <>
       {/* Page heading */}
-      <div className="text-center w-full font-gwynerCondensedFont py-10 mt-10 font-bold">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light">
+      <div className="text-center w-full font-gwynerCondensedFont  mt-10 font-bold px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
           <span className="italic font-extralight"></span> Let&apos;s Connect
         </h1>
-        <div className="flex items-center justify-center font-light mt-2">
+        <div className="flex items-center justify-center w-full font-light mt-3">
           <Breadcrumb items={breadcrumbItems} />
         </div>
       </div>
 
       {/* Main wrapper */}
-      <div className="w-full flex justify-center items-center font-playfair-display px-4">
-        <div className="w-full sm:w-[90%] flex flex-col md:flex-row gap-8 md:gap-10 justify-between items-start h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-16 py-8 sm:py-12 my-6 sm:my-10 text-sm sm:text-base md:text-lg">
+      <div className="w-full flex justify-center items-center  px-4">
+        <div className="w-full sm:w-[90%] flex flex-col md:flex-row gap-8 md:gap-10 justify-between items-start h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-16 py-8 sm:py-12 my-6 mb-15 text-sm sm:text-base md:text-lg">
 
           {/* Contact Form Section */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 ">
             <form onSubmit={handleContactSubmit} className="w-full space-y-4">
-              <div>
-                <label htmlFor="name">Name :</label>
+              <div className="flex flex-col gap-4" >
+                <span htmlFor="name" className='font-semibold'>Name :</span>
                 <input
                   type="text"
                   id="name"
@@ -116,8 +117,8 @@ const Contact = () => {
                 />
               </div>
 
-              <div>
-                <label htmlFor="email">Email :</label>
+              <div className="flex flex-col gap-4" >
+                <span htmlFor="email" className='font-semibold'>Email :</span>
                 <input
                   type="email"
                   id="email"
@@ -126,8 +127,8 @@ const Contact = () => {
                 />
               </div>
 
-              <div>
-                <label htmlFor="subject">Subject :</label>
+              <div className="flex flex-col gap-4" >
+                <span htmlFor="subject" className='font-semibold'>Subject :</span>
                 <input
                   type="text"
                   id="subject"
@@ -136,8 +137,8 @@ const Contact = () => {
                 />
               </div>
 
-              <div>
-                <label htmlFor="message">Message :</label>
+              <div className="flex flex-col gap-4" >
+                <span htmlFor="message" className='font-semibold'>Message :</span>
                 <textarea
                   id="message"
                   placeholder="Enter your message"
@@ -174,7 +175,12 @@ const Contact = () => {
             </div>
 
             {/* Selected Branch Info */}
-            <div className="w-full flex flex-col gap-5">
+            <div className="w-full flex flex-col gap-5 ">
+              <div>
+                <span className="font-semibold">Contact : </span>
+                
+                {selectedBranch.phone}
+              </div>
               <div>
                 <span className="font-semibold">Address: </span>
                 <br />

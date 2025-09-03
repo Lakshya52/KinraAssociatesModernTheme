@@ -25,19 +25,19 @@ const AccountingPage = () => {
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Accounting & Financial Reporting</h1>
           <ul className='mt-5'>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Maintain statutory-compliant financial records and prepare clear financial statements.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Manage payables, receivables, reconciliations, and general ledger efficiently.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Support tax compliance, budgeting, and financial analysis for informed decision-making.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Leverage cloud-based solutions and automation for real-time insights and process optimization.</span>
             </li>
           </ul>

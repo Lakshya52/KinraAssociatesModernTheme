@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="text-center w-full font-gwynerCondensedFont py-10 mt-10 font-bold px-4">
+      <div className="text-center w-full font-gwynerCondensedFont  mt-10 font-bold px-4">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
           About Kinra & Associates
         </h1>
@@ -24,7 +24,7 @@ const About = () => {
 
       {/* Content Section */}
       <div className="w-full flex justify-center items-center font-playfair-display px-4">
-        <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border-[1px] border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 sm:my-10 mb-10 text-base sm:text-lg">
+        <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border-[1px] border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15  text-base sm:text-lg">
           {/* Objective */}
           <div className="w-full pb-5 mb-3">
             <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Objective</h1>

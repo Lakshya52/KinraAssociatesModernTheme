@@ -25,19 +25,19 @@ const DirectIndirectTaxAdvisoryPage = () => {
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Direct & Indirect Tax Advisory</h1>
           <ul className='mt-5'>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Direct and indirect tax planning, filing, and compliance, including international taxation.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Corporate tax structuring, transfer pricing, and cross-border advisory.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>GST, TDS, income tax compliance, and representation before tax authorities.</span>
             </li>
             <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='h-5 w-5' />
+              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
               <span>Tax litigation support and strategic tax optimization for businesses.</span>
             </li>
           </ul>

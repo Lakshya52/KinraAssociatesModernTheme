@@ -37,12 +37,12 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
                   <li><Link onClick={handleScrollTop} to="/">Home</Link></li>
                   <li><Link onClick={handleScrollTop} to="/about">About Us</Link></li>
-                  <li><Link onClick={handleScrollTop} to="/services">Services</Link></li>
+                  <li><Link onClick={handleScrollTop} to="/industries">Industries</Link></li>
                 </ul>
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
-                  <li><Link onClick={handleScrollTop} to="/industries">Industries</Link></li>
-                  <li><Link onClick={handleScrollTop} to="/contact">Contact Us</Link></li>
-                  <li><Link onClick={handleScrollTop} to="/partners">Our Leaderships</Link></li>
+                  <li><Link onClick={handleScrollTop} to="/partners">Our Leadership</Link></li>
+                  <li><Link onClick={handleScrollTop} to="/services">Services</Link></li>
+                  <li><Link onClick={handleScrollTop} to="/contact">Contact Us</Link></li   >
                 </ul>
               </div>
             </div>
@@ -61,11 +61,11 @@ const Footer = () => {
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
                   <li><a href="https://www.mca.gov.in/">MCA</a></li>
                   <li><a href="https://www.sebi.gov.in/">SEBI</a></li>
-                  <li><a href="https://www.gst.gov.in/">GST</a></li>
+                  <li><a href="https://www.rbi.org.in/">RBI</a></li>
                 </ul>
                 <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start">
-                  <li><a href="https://www.rbi.org.in/">RBI</a></li>
-                  <li><a href="https://www.incometax.gov.in/iec/foportal/">IT</a></li>
+                  <li><a href="https://www.gst.gov.in/">GST</a></li>
+                  <li><a href="https://www.incometax.gov.in/iec/foportal/">Income Tax</a></li>
                 </ul>
               </div>
             </div>

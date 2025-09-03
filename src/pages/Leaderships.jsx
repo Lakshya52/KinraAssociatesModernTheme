@@ -69,8 +69,8 @@ const Leaderships = () => {
   return (
     <>
       {/* Page Title */}
-      <div className="text-center w-full font-gwynerCondensedFont py-10 mt-10 font-bold px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light leading-snug">
+      <div className="text-center w-full font-gwynerCondensedFont  mt-10 font-bold px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
           Meet Our Partners
         </h1>
         <div className="flex items-center justify-center w-full font-light mt-3">
@@ -80,7 +80,7 @@ const Leaderships = () => {
 
       {/* Content Box */}
       <div className="w-full flex justify-center items-center font-playfair-display px-4">
-        <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-6 sm:py-10 my-6 sm:my-10 text-base sm:text-lg">
+        <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-6 sm:py-10 my-6 mb-15 text-base sm:text-lg">
           {/* Accordion */}
           <section className="w-full">
             {partners.map((partner, idx) => (
