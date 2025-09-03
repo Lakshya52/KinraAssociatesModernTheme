@@ -39,7 +39,7 @@ const About = () => {
 
           {/* Mission & Vision */}
           <div className="w-full flex flex-col md:flex-row gap-10 mb-6">
-            <div className="w-full">
+            <div className="w-full p-7 rounded-xl bg-amber-900 text-white">
               <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Mission</h1>
               <p className="text-justify">
                 To provide quality professional services in accounting, assurance, taxation, and
@@ -50,7 +50,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="w-full">
+            <div className="w-full p-7 rounded-xl bg-amber-900 text-white">
               <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Vision</h1>
               <p className="text-justify">
                 To be recognized as a trusted professional services firm, consistently exceeding
@@ -61,18 +61,19 @@ const About = () => {
           </div>
 
           {/* CTA + Image */}
-          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8 mt-6">
-            {/* Left - CTA */}
+          {/* <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8 mt-6">
+
+            
             <div className="flex items-center justify-center gap-5">
               <h1 className="text-lg sm:text-2xl italic">Go Ahead</h1>
               <Button label="Services" href="/services" />
             </div>
-
-            {/* Right - Image */}
+            
             <div className="w-full md:w-auto flex justify-center">
               <img src="AboutImage.svg" className="w-48 sm:w-64 md:w-72 lg:w-80" alt="About" />
             </div>
-          </div>
+
+          </div> */}
         </div>
       </div>
     </>

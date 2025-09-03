@@ -9,6 +9,10 @@ import { Link } from "react-router-dom";
 
 const Button = ({ label = "Get GSAP", href = "#", b_radius = "full" }) => {
 
+    const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
     const buttonRef = useRef(null);
     const flairRef = useRef(null);
 
@@ -126,6 +130,7 @@ const Button = ({ label = "Get GSAP", href = "#", b_radius = "full" }) => {
 
     return (
         <Link
+        onClick={handleScrollTop}
             to={href}
             ref={buttonRef}
             className={`relative group inline-flex items-center justify-center gap-2 px-4 py-2  text-white rounded-[${b_radius}] border  overflow-hidden transition-colors duration-150 hover:text-black bg-amber-800`}

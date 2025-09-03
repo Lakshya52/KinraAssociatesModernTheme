@@ -4,6 +4,14 @@ import { Menu, X } from 'lucide-react'
 import Button from './ui/Button'
 
 const Navbar = () => {
+
+
+
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  };
+
+
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -11,7 +19,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-4 sm:px-6 md:px-15 py-5">
         {/* Logo */}
         <div>
-          <Link to="/" className="outline-none focus:outline-none">
+          <Link onClick={handleScrollTop} to="/" className="outline-none focus:outline-none">
             <p className="text-2xl md:text-3xl font-playfair-display font-extrabold">
               Kinra & Associates
             </p>
@@ -23,16 +31,16 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <ul className="hidden lg:flex gap-10 text-lg items-center">
-          <Link className="li-custom" to="/about">
+          <Link onClick={handleScrollTop} className="li-custom" to="/about">
             About
           </Link>
-          <Link className="li-custom" to="/industries">
+          <Link onClick={handleScrollTop} className="li-custom" to="/industries">
             Industries
           </Link>
-          <Link className="li-custom" to="/leaderships">
+          <Link onClick={handleScrollTop} className="li-custom" to="/leaderships">
             Our Leaderships
           </Link>
-          <Link className="li-custom" to="/services">
+          <Link onClick={handleScrollTop} className="li-custom" to="/services">
             Services
           </Link>
           <Button label="Contact" href="/contact" b_radius="10px" />

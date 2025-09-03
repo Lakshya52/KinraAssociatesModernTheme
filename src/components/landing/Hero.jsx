@@ -31,6 +31,7 @@ const Hero = () => {
 
           {/* CTA Button */}
           <Link
+          onClick={handleScrollTop}
             to="/contact"
             className="absolute left-1/6 top-0 -translate-x-1/2 -translate-y-1/2"
           >

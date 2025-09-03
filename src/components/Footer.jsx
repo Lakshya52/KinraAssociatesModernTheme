@@ -18,7 +18,7 @@ const Footer = () => {
           <div className='w-full max-w-[95%] px-4 sm:px-8 py-8 flex flex-col md:flex-row md:justify-between md:items-start items-center gap-0 md:gap-10 '>
             {/* content */}
             <div className='w-full md:w-1/3 mb-6 md:mb-0 flex flex-col items-center md:items-start text-center md:text-left'>
-              <Link to="/" className='mb-5 block'>
+              <Link to="/" onClick={handleScrollTop} className='mb-5 block'>
                 <p className='font-light font-playfair-display text-2xl sm:text-3xl'>Kinra & Associates </p>
                 <p className='font-light font-playfair-display text-base sm:text-lg '>Chartered Accountants </p>
               </Link>
