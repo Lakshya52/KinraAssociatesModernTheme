@@ -67,7 +67,6 @@ const Footer = () => {
             </div>
           </div>
 
-
           {/* Contact Info */}
           <div className="flex flex-col items-center md:items-start">
             <p className="text-lg sm:text-2xl font-dm-serif pb-2">Contact Information</p>

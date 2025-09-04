@@ -78,7 +78,7 @@ const Services = () => {
                 <img
                   src={service.img}
                   alt={service.title}
-                  className="h-15 w-15"
+                  className="h-15 w-15 mt-7"
                 />
                 <h2 className="font-poppins-bold text-lg text-center w sm:text-xl mt-5">
                   {service.title}

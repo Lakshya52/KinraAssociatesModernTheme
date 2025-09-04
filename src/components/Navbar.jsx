@@ -43,7 +43,7 @@ const Navbar = () => {
           <Link onClick={handleScrollTop} className="li-custom" to="/services">
             Services
           </Link>
-          <Button label="Contact" href="/contact" b_radius="10px" />
+          <Button label="Contact Us" href="/contact" b_radius="10px" />
         </ul>
 
         {/* Tablet Only (sm–lg) */}
@@ -55,7 +55,7 @@ const Navbar = () => {
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
           {/* Contact inline for tablets */}
-          <Button label="Contact" href="/contact" b_radius="8px" />
+          <Button label="Contact Us" href="/contact" b_radius="8px" />
         </div>
 
         {/* Mobile Only (<sm) */}
@@ -102,7 +102,7 @@ const Navbar = () => {
           </Link>
           {/* Contact Button only for mobile */}
           <div className="sm:hidden" onClick={() => {setIsOpen(false),handleScrollTop()}}>
-            <Button label="Contact" href="/contact" b_radius="8px" />
+            <Button label="Contact Us" href="/contact" b_radius="8px" />
           </div>
         </div>
       )}

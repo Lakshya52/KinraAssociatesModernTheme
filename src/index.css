@@ -58,9 +58,9 @@ body::-webkit-scrollbar {
 /* custom fonts */
 
 @font-face {
-  font-family: 'gwynerCondensedFont';
+  font-family: 'gwynerFont';
   /* Choose a unique name for your font */
-  src: local('gwynerCondensedFont'), url('./fonts/gwyner-condensed-condensed.ttf') format('truetype');
+  src: local('gwynerFont'), url('./fonts/gwyner-regular.ttf') format('truetype');
   /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
   font-weight: normal;
   /* Adjust as needed */
@@ -69,7 +69,7 @@ body::-webkit-scrollbar {
 }
 
 .font-gwynerCondensedFont {
-  font-family: 'gwynerCondensedFont', sans-serif;
+  font-family: 'gwynerFont', sans-serif;
   /* Fallback font is recommended */
 }
 

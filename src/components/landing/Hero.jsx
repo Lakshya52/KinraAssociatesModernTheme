@@ -43,7 +43,7 @@ const Hero = () => {
           </Link>
 
           {/* Scrolling Links */}
-          <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-[#2c2c2c]/90 text-white py-3">
+          {/* <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-[#2c2c2c]/90 text-white py-3">
             <div className="flex whitespace-nowrap animate-marquee">
               {[
                 { to: "/accounting", label: "Accounting & Financials" },
@@ -63,7 +63,7 @@ const Hero = () => {
                 </Link>
               ))}
 
-              {/* Duplicate list for seamless loop */}
+               Duplicate list for seamless loop 
               {[
                 { to: "/accounting", label: "Accounting & Financials" },
                 { to: "/audit_and_assurance", label: "Audit And Assurance" },
@@ -82,7 +82,7 @@ const Hero = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

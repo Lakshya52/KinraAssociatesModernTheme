@@ -63,7 +63,7 @@ const Contact = () => {
       contacePerson: "CA AYUSH SAXENA",
       email: "email@gmail.com",
       phone: "+91 99588 34607",
-      address: "H no. 40, Shiv Shakti Nagar, Ahmadpur, Hoshangabad Road, Bhopal, Madhya Pradesh-462026",
+      address: "H. No. 40, Shiv Shakti Nagar, Ahmadpur, Hoshangabad Road, Bhopal, Madhya Pradesh-462026",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4048515703466!2d77.455826!3d23.191912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzMwLjkiTiA3N8KwMjcnMjEuMCJF!5e0!3m2!1sen!2sin!4v1756895289549!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
 
@@ -107,48 +107,48 @@ const Contact = () => {
           {/* Contact Form Section */}
           <div className="w-full md:w-1/2 ">
             <form onSubmit={handleContactSubmit} className="w-full space-y-4">
-              <div className="flex flex-col gap-4" >
+              <div className="flex flex-col gap-3" >
                 <span htmlFor="name" className='font-semibold'>Name :</span>
                 <input
                   type="text"
                   id="name"
-                  placeholder="Enter your name"
+                  
                   className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
                 />
               </div>
 
-              <div className="flex flex-col gap-4" >
+              <div className="flex flex-col gap-3" >
                 <span htmlFor="email" className='font-semibold'>Email :</span>
                 <input
                   type="email"
                   id="email"
-                  placeholder="Enter your mail id"
+                 
                   className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
                 />
               </div>
 
-              <div className="flex flex-col gap-4" >
+              <div className="flex flex-col gap-3" >
                 <span htmlFor="subject" className='font-semibold'>Subject :</span>
                 <input
                   type="text"
                   id="subject"
-                  placeholder="Enter subject"
+                 
                   className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
                 />
               </div>
 
-              <div className="flex flex-col gap-4" >
+              <div className="flex flex-col gap-3" >
                 <span htmlFor="message" className='font-semibold'>Message :</span>
                 <textarea
                   id="message"
-                  placeholder="Enter your message"
+                 
                   className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 h-40 resize-none outline-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="cursor-pointer w-full p-2 rounded bg-amber-800 text-white hover:bg-amber-900 hover:rounded-full transition duration-300"
+                className="cursor-pointer w-full p-2 rounded bg-amber-800 text-white hover:bg-amber-900 hover:rounded-full transition-all ease-in-out"
               >
                 Submit
               </button>

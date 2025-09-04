@@ -9,7 +9,7 @@ const Intro = () => {
         
         {/* left */}
         <div className="w-full lg:w-1/2 h-auto lg:h-full pr-0 lg:pr-10 flex items-center lg:items-start justify-center flex-col text-center lg:text-left">
-          <p className="text-sm md:text-base text-gray-600">--- About Us</p>
+          {/* <p className="text-sm md:text-base text-gray-600">--- About Us</p> */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-light w-full mt-3 md:mt-5 leading-snug">
             <span className="italic font-extralight">Empowering</span> Business And Individuals
           </h1>
