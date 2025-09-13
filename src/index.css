@@ -87,6 +87,9 @@ body::-webkit-scrollbar {
 .animate-spin-slow {
   animation: spin-slow 6s linear infinite;
 }
+/* .animate-spin-slow:hover {
+  animation: stop 6s linear infinite;
+} */
 
 
 @keyframes marquee {
