@@ -71,7 +71,7 @@ const Contact = () => {
       name: "Gujarat",
       contacePerson: "CA BHAVIK HIRABHAI RUPAPARA",
       email: "email@gmail.com",
-      phone: "+91 98791 53657", 
+      phone: "+91 98791 53657",
       address: "310, Star Chamber, Rajkot, Gujarat-360001",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.4531732158825!2d70.79621797434463!3d22.298694742955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb00269c00e3%3A0x7f86ba477321e7ce!2sStarChember!5e0!3m2!1sen!2sin!4v1754999102400!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
@@ -90,109 +90,128 @@ const Contact = () => {
 
   return (
     <>
-      {/* Page heading */}
-      <div className="text-center w-full font-gwynerCondensedFont  mt-10 font-bold px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
-          <span className="italic font-extralight"></span> Let&apos;s Connect
-        </h1>
-        <div className="flex items-center justify-center w-full font-light mt-3">
-          <Breadcrumb items={breadcrumbItems} />
-        </div>
-      </div>
 
-      {/* Main wrapper */}
-      <div className="w-full flex justify-center items-center  px-4">
-        <div className="w-full sm:w-[90%] flex flex-col md:flex-row gap-8 md:gap-10 justify-between items-start h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-16 py-8 sm:py-12 my-6 mb-15 text-sm sm:text-base md:text-lg">
 
-          {/* Contact Form Section */}
-          <div className="w-full md:w-1/2 ">
-            <form onSubmit={handleContactSubmit} className="w-full space-y-4">
-              <div className="flex flex-col gap-3" >
-                <span htmlFor="name" className='font-semibold'>Name :</span>
-                <input
-                  type="text"
-                  id="name"
-                  
-                  className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
-                />
-              </div>
 
-              <div className="flex flex-col gap-3" >
-                <span htmlFor="email" className='font-semibold'>Email :</span>
-                <input
-                  type="email"
-                  id="email"
-                 
-                  className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
-                />
-              </div>
 
-              <div className="flex flex-col gap-3" >
-                <span htmlFor="subject" className='font-semibold'>Subject :</span>
-                <input
-                  type="text"
-                  id="subject"
-                 
-                  className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
-                />
-              </div>
 
-              <div className="flex flex-col gap-3" >
-                <span htmlFor="message" className='font-semibold'>Message :</span>
-                <textarea
-                  id="message"
-                 
-                  className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 h-40 resize-none outline-none"
-                />
-              </div>
+      <div className="min-h-screen w-full relative">
+        {/* Diagonal Stripes Background */}
+        <div
+          className="absolute inset-0 z-[-1]"
+          style={{
+            backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #f3f4f6 2px, #f3f4f6 4px)",
+          }}
+        />
+        {/* Your Content/Components */}
 
-              <button
-                type="submit"
-                className="cursor-pointer w-full p-2 rounded bg-amber-800 text-white hover:bg-amber-900 hover:rounded-full transition-all ease-in-out"
-              >
-                Submit
-              </button>
-            </form>
+        {/* Page heading */}
+        <div className="text-center w-full font-gwynerCondensedFont  pt-10 font-bold px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
+            <span className="italic font-extralight"></span> Let&apos;s Connect
+          </h1>
+          <div className="flex items-center justify-center w-full font-light mt-3">
+            <Breadcrumb items={breadcrumbItems} />
           </div>
+        </div>
 
-          {/* Branch Office Selector */}
-          <div className="w-full md:w-1/2 flex flex-col gap-4">
-            <label className="font-semibold">Our Offices :</label>
-            <div className="flex flex-wrap gap-2 sm:gap-3 mb-4">
-              {branchOffices.map((branch) => (
+        {/* Main wrapper */}
+        <div className="w-full flex justify-center items-center  px-4">
+          <div className="w-full sm:w-[90%] flex flex-col md:flex-row gap-8 md:gap-10 justify-between items-start h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-16 py-8 sm:py-12 my-6 mb-15 text-sm sm:text-base md:text-lg">
+
+            {/* Contact Form Section */}
+            <div className="w-full md:w-1/2 ">
+              <form onSubmit={handleContactSubmit} className="w-full space-y-4">
+                <div className="flex flex-col gap-3" >
+                  <span htmlFor="name" className='font-semibold'>Name :</span>
+                  <input
+                    type="text"
+                    id="name"
+
+                    className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-3" >
+                  <span htmlFor="email" className='font-semibold'>Email :</span>
+                  <input
+                    type="email"
+                    id="email"
+
+                    className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-3" >
+                  <span htmlFor="subject" className='font-semibold'>Subject :</span>
+                  <input
+                    type="text"
+                    id="subject"
+
+                    className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-3" >
+                  <span htmlFor="message" className='font-semibold'>Message :</span>
+                  <textarea
+                    id="message"
+
+                    className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 h-40 resize-none outline-none"
+                  />
+                </div>
+
                 <button
-                  key={branch.name}
-                  className={`px-3 sm:px-4 py-2 rounded border text-xs sm:text-sm md:text-base cursor-pointer ${selectedBranch.name === branch.name
-                    ? "bg-amber-800 text-white"
-                    : "bg-white text-[#2c2c2c] border-[#2c2c2c]/50"
-                    }`}
-                  onClick={() => setSelectedBranch(branch)}
-                  type="button"
+                  type="submit"
+                  className="cursor-pointer w-full p-2 rounded bg-amber-800 text-white hover:bg-amber-900 hover:rounded-full transition-all ease-in-out"
                 >
-                  {branch.name}
+                  Submit
                 </button>
-              ))}
+              </form>
             </div>
 
-            {/* Selected Branch Info */}
-            <div className="w-full flex flex-col gap-5 ">
-              <div>
-                <span className="font-semibold">Contact : </span>
-                
-                {selectedBranch.phone}
+            {/* Branch Office Selector */}
+            <div className="w-full md:w-1/2 flex flex-col gap-4">
+              <label className="font-semibold">Our Offices :</label>
+              <div className="flex flex-wrap gap-2 sm:gap-3 mb-4">
+                {branchOffices.map((branch) => (
+                  <button
+                    key={branch.name}
+                    className={`px-3 sm:px-4 py-2 rounded border text-xs sm:text-sm md:text-base cursor-pointer ${selectedBranch.name === branch.name
+                      ? "bg-amber-800 text-white"
+                      : "bg-white text-[#2c2c2c] border-[#2c2c2c]/50"
+                      }`}
+                    onClick={() => setSelectedBranch(branch)}
+                    type="button"
+                  >
+                    {branch.name}
+                  </button>
+                ))}
               </div>
-              <div>
-                <span className="font-semibold">Address: </span>
-                <br />
-                {selectedBranch.address}
-              </div>
-              <div className="w-full h-[200px] sm:h-[250px] md:h-[280px] rounded overflow-hidden shadow-lg">
-                {selectedBranch.mapEmbed}
+
+              {/* Selected Branch Info */}
+              <div className="w-full flex flex-col gap-5 ">
+                <div>
+                  <span className="font-semibold">Contact : </span>
+
+                  {selectedBranch.phone}
+                </div>
+                <div>
+                  <span className="font-semibold">Address: </span>
+                  <br />
+                  {selectedBranch.address}
+                </div>
+                <div className="w-full h-[200px] sm:h-[250px] md:h-[280px] rounded overflow-hidden shadow-lg">
+                  {selectedBranch.mapEmbed}
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+
+
     </>
   )
 }

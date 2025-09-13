@@ -22,25 +22,27 @@ import CorporateCompliance from './servicesPageIcons/CorporateCompliance.png'
 // import EducationIcon from './servicesPageIcons/EducationIcon.png'
 
 
+
+// values icons 
+import IntegrityIcon from "./icons/values/IntegrityIcon.png"
+import ResponsibilityIcon from "./icons/values/ResponsibilityIcon.png"
+import TechnicalExcellenceIcon from "./icons/values/TechnicalExcellenceIcon.png"
+import IndependenceIcon from "./icons/values/IndependenceIcon.png"
+import StatewardshipIcon from "./icons/values/StewardshipIcon.png"
+
+
+
 export const assets = {
 
   // industries we serve icons
   ManufacturingIcon: ManufacturingIcon,
-
   TradingIcon: TradingIcon,
-
   RealestateIcon: RealestateIcon,
-
   ItIcon: ItIcon,
-
   ConsultancyIcon: ConsultancyIcon,
-
   HealthcareIcon: HealthcareIcon,
-
   LogisticsIcon: LogisticsIcon,
-
   AgricultureIcon: AgricultureIcon,
-
   FinancialIcon: FinancialIcon,
 
 
@@ -51,6 +53,16 @@ export const assets = {
   CorporateCompliance: CorporateCompliance,
 
   EducationIcon: EducationIcon,
+
+
+
+
+  // core values icons
+  IntegrityIcon: IntegrityIcon,
+  ResponsibilityIcon: ResponsibilityIcon,
+  TechnicalExcellenceIcon: TechnicalExcellenceIcon,
+  IndependenceIcon: IndependenceIcon,
+  StatewardshipIcon: StatewardshipIcon,
 
 
 

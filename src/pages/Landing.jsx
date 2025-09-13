@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../components/landing/Hero'
 import Intro from '../components/landing/Intro'
+import CoreValues from '../components/landing/CoreValues'
 
 
 const Landing = () => {
@@ -8,6 +9,7 @@ const Landing = () => {
     <>
     
       <Hero />
+      <CoreValues />
       <Intro />
 
     </>

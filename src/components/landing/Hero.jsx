@@ -9,29 +9,54 @@ const Hero = () => {
 
   return (
     <>
-      {/* Heading + Subtitle */}
-      <div className="text-center w-full font-gwynerCondensedFont py-10 mt-0 md:mt-10 font-bold">
-        <h1 className="text-3xl md:text-5xl font-light w-full leading-tight">
-          <span className="italic font-extralight">Your</span> Partner in Finance, Tax and <br /> Business Solution
-        </h1>
-        <p className="mt-2 font-light text-gray-700 w-full text-sm md:text-base">
-          Integrated Professional Services For Businesses and Individuals
-        </p>
+
+
+
+      <div className="min-h-fit w-full  relative">
+        {/* Bottom Fade Grid Background */}
+        <div
+          className="absolute inset-0 opacity-60 z-[-1]"
+          style={{
+            backgroundImage: ` linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px) `,
+            backgroundSize: "20px 30px",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+            maskImage:
+              "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+          }}
+        />
+        {/* Your Content/Components */}
+        {/* Heading + Subtitle */}
+        <div className="text-center w-full font-gwynerCondensedFont py-10 mt-0 md:mt-10 font-bold">
+          <h1 className="text-3xl md:text-5xl font-light w-full leading-tight">
+            <span className="italic font-extralight">Your</span> Partner in Finance, Tax and <br /> Business Solution
+          </h1>
+          <p className="mt-2 font-light text-gray-700 w-full text-sm md:text-base">
+            Integrated Professional Services For Businesses and Individuals
+          </p>
+        </div>
       </div>
+
+
+
+
+
 
       {/* Hero Image Section */}
       <div className="relative w-full">
         {/* Background Image */}
         <div className="h-[250px] md:h-[400px] w-full relative">
           <img
+          loading="lazy"
             src="HeorImage2.webp"
             className="object-cover w-full h-full"
             alt="hero section image for kinra & associates"
           />
 
+
           {/* CTA Button */}
           <Link
-          onClick={handleScrollTop}
+            onClick={handleScrollTop}
             to="/contact"
             className="absolute left-1/6 top-0 -translate-x-1/2 -translate-y-1/2"
           >
