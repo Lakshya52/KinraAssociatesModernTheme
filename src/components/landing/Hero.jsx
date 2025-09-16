@@ -55,7 +55,7 @@ const Hero = () => {
 
 
           {/* CTA Button */}
-          {/* <Link
+          <Link
             onClick={handleScrollTop}
             to="/contact"
             className="absolute left-1/6 top-0 -translate-x-1/2 -translate-y-1/2"
@@ -67,7 +67,7 @@ const Hero = () => {
               alt="CTA Button"
               
             />
-          </Link> */}
+          </Link>
 
           {/* Scrolling Links */}
           {/* <div className="absolute bottom-0 left-0 w-full overflow-hidden bg-[#2c2c2c]/90 text-white py-3">
