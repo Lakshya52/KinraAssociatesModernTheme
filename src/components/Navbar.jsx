@@ -40,7 +40,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-[#404040] text-white shadow-xl shadow-[#5a6bdd]/10">
+    <nav className="sticky top-0 z-50 w-full bg-[#142172]/90 text-white shadow-xl shadow-[#5a6bdd]/10">
       <div className="flex justify-between items-center px-4 sm:px-6 md:px-15 py-5">
         {/* Logo */}
         <div>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <li key={link.to} className="flex flex-col justify-center items-start text-left">
                   <Link
                     to={link.to}
-                    className="text-slate-800 hover:text-white rounded hover:bg-amber-800 flex items-center text-lg p-2 px-4 w-full"
+                    className="text-slate-800 hover:text-white rounded hover:bg-[#2a8890] flex items-center text-lg p-2 px-4 w-full"
                     onClick={() => {
                       setShowServices(false);
                       window.scrollTo({ top: 0, behavior: 'instant' });

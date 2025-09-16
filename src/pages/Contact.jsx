@@ -163,7 +163,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="cursor-pointer w-full p-2 rounded bg-amber-800 text-white hover:bg-amber-900 hover:rounded-full transition-all ease-in-out"
+                  className="cursor-pointer w-full p-2 rounded bg-[#2a8890] text-white hover:bg-[#1e5e64] hover:rounded-full transition-all ease-in-out"
                 >
                   Submit
                 </button>
@@ -178,8 +178,8 @@ const Contact = () => {
                   <button
                     key={branch.name}
                     className={`px-3 sm:px-4 py-2 rounded border text-xs sm:text-sm md:text-base cursor-pointer ${selectedBranch.name === branch.name
-                      ? "bg-amber-800 text-white"
-                      : "bg-white text-[#2c2c2c] border-[#2c2c2c]/50 hover:bg-amber-100"
+                      ? "bg-[#2a8890] text-white"
+                      : "bg-white text-[#2c2c2c] border-[#2c2c2c]/50 hover:bg-[#2a8890]/50"
                       }`}
                     onClick={() => setSelectedBranch(branch)}
                     type="button"

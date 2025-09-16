@@ -51,7 +51,7 @@ const About = () => {
 
             {/* Mission & Vision */}
             <div className="w-full flex flex-col md:flex-row gap-10 mb-6">
-              <div className="w-full p-7 rounded-xl bg-amber-800/95 hover:bg-amber-800 text-white" data-aos="fade-right" data-aos-delay="100">
+              <div className="w-full p-7 rounded-xl bg-[#2a8890]/95 hover:bg-[#2a8890] text-white" data-aos="fade-right" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Mission</h1>
                 <p className="text-justify">
                   To provide quality professional services in accounting, assurance, taxation, and
@@ -62,7 +62,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="w-full p-7 rounded-xl bg-amber-800/95 hover:bg-amber-800 text-white" data-aos="fade-left" data-aos-delay="100">
+              <div className="w-full p-7 rounded-xl bg-[#2a8890]/95 hover:bg-[#2a8890] text-white" data-aos="fade-left" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Vision</h1>
                 <p className="text-justify">
                   To be recognized as a trusted professional services firm, consistently exceeding

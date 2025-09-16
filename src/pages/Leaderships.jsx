@@ -99,7 +99,7 @@ const Leaderships = () => {
               {partners.map((partner, idx) => (
                 <div
                   key={partner.name}
-                  className={`accordion py-4 sm:py-6 w-full px-2 sm:px-6 md:px-10 cursor-pointer border-b border-gray-300 transition-all duration-500 ${openIndex === idx ? "bg-amber-800/90 text-white rounded-lg" : ""
+                  className={`accordion py-4 sm:py-6 w-full px-2 sm:px-6 md:px-10 cursor-pointer border-b border-gray-300 transition-all duration-500 ${openIndex === idx ? "bg-[#2a8890]/90 text-white rounded-lg" : ""
                     }`}
                   id={`partner-heading-${idx}`}
                 >

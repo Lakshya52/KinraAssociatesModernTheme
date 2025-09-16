@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center text-sm bg-[#2c2c2c]/90 text-white">
+    <div className="w-full flex flex-col items-center justify-center text-sm bg-[#142172]/90 text-white">
 
           {/* About */}
           <div className="flex flex-col items-center  text-center md:text-left w-full justify-center mt-10 ">
