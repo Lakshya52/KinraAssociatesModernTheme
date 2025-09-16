@@ -119,7 +119,7 @@ const Navbar = () => {
 
       {/* Mobile/Tablet Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-[#2c2c2c]/95 px-4 sm:px-6 md:px-15 py-4 space-y-4 text-lg flex flex-col">
+        <div className="lg:hidden bg-[#142172]/90 px-4 sm:px-6 md:px-15 py-4 space-y-4 text-lg flex flex-col">
           <Link
             to="/about"
             onClick={() => { setIsOpen(false), handleScrollTop() }}
