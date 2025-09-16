@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="h-[250px] md:h-[400px] w-full relative" >
           <img
             loading="lazy"
-            src="/public/webp/HeorImage2.webp"
+            src="HeorImage2.webp"
             className="object-cover w-full h-full"
             alt="hero section image for kinra & associates"
           />
@@ -61,7 +61,7 @@ const Hero = () => {
             className="absolute left-1/6 top-0 -translate-x-1/2 -translate-y-1/2"
           >
             <img
-              src="/public/webp/CTAButton.webp"
+              src="CTAButton.webp"
               // className="animate-spin-slow w-16 md:w-24"
               className="w-16 md:w-24"
               alt="CTA Button"
