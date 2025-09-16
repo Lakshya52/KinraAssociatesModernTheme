@@ -21,6 +21,7 @@ const DirectIndirectTaxAdvisoryPage = () => {
             src="/servicesPagesImages/DirectAndIndirectTax.webp"
             alt="Accounting Service"
             className="w-full h-full object-cover"
+            loading='lazy'
           />
         </div>
 

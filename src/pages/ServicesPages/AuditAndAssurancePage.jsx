@@ -22,6 +22,7 @@ const AuditAndAssurancePage = () => {
             src="/servicesPagesImages/AuditAndAssurances.webp"
             alt="Accounting Service"
             className="w-full h-full object-cover"
+            loading='lazy'
           />
         </div>
 

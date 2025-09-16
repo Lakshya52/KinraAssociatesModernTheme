@@ -20,6 +20,7 @@ const ComplianceSupportPage = () => {
             src="/servicesPagesImages/ComplianceSupport.webp"
             alt="Accounting Service"
             className="w-full h-full object-cover"
+            loading='lazy'
           />
         </div>
 

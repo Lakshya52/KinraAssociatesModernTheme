@@ -19,6 +19,7 @@ const SpecializedServicePage = () => {
             src="/servicesPagesImages/SpecializedServices.webp"
             alt="Accounting Service"
             className="w-full h-full object-cover"
+            loading='lazy'
           />
         </div>
 
