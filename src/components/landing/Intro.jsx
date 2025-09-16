@@ -37,7 +37,7 @@ const Intro = () => {
           </div>
 
           {/* right images */}
-          <div className="w-full lg:w-1/2 h-auto lg:h-full flex flex-row lg:flex-row items-center justify-center gap-4 lg:gap-7"  data-aos="fade-left">
+          <div className="w-full lg:w-1/2 h-auto lg:h-full flex flex-row lg:flex-row items-center justify-center gap-4 lg:gap-7" >
             <img
               src="Intro1.webp"
               className="w-1/2 object-cover overflow-hidden bg-gray-300 h-[200px] md:h-[300px] lg:h-[90%] mb-5 lg:mb-20 rounded-xl"
