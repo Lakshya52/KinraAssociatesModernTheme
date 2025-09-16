@@ -12,7 +12,7 @@ const Hero = () => {
 
 
 
-      <div className="min-h-fit w-full  relative">
+      <div className="min-h-fit w-full  relative" data-aos="fade-up">
         {/* Bottom Fade Grid Background */}
         <div
           className="absolute inset-0 opacity-60 z-[-1]"
@@ -27,11 +27,11 @@ const Hero = () => {
         />
         {/* Your Content/Components */}
         {/* Heading + Subtitle */}
-        <div className="text-center w-full font-gwynerCondensedFont py-10 mt-0 md:mt-10 font-bold">
-          <h1 className="text-3xl md:text-5xl font-light w-full leading-tight">
-            <span className="italic font-extralight">Your</span> Partner in Finance, Tax and <br /> Business Solution
+        <div className="text-center w-full  py-10 mt-0 md:mt-10 font-bold">
+          <h1 className="text-3xl md:text-5xl font-light w-full leading-tight font-gwen-semibold" >
+            <span className="italic font-extralight"  >Your</span> Partner in Finance, Tax and <br /> Business Solution
           </h1>
-          <p className="mt-2 font-light text-gray-700 w-full text-sm md:text-base">
+          <p className="mt-2 font-light text-gray-700 w-full text-sm md:text-base ">
             Integrated Professional Services For Businesses and Individuals
           </p>
         </div>
@@ -45,10 +45,10 @@ const Hero = () => {
       {/* Hero Image Section */}
       <div className="relative w-full">
         {/* Background Image */}
-        <div className="h-[250px] md:h-[400px] w-full relative">
+        <div className="h-[250px] md:h-[400px] w-full relative" >
           <img
-          loading="lazy"
-            src="HeorImage2.webp"
+            loading="lazy"
+            src="/public/webp/HeorImage2.webp"
             className="object-cover w-full h-full"
             alt="hero section image for kinra & associates"
           />
@@ -61,9 +61,11 @@ const Hero = () => {
             className="absolute left-1/6 top-0 -translate-x-1/2 -translate-y-1/2"
           >
             <img
-              src="CTAButton.png"
-              className="animate-spin-slow w-16 md:w-24"
+              src="/public/webp/CTAButton.webp"
+              // className="animate-spin-slow w-16 md:w-24"
+              className="w-16 md:w-24"
               alt="CTA Button"
+              
             />
           </Link>
 

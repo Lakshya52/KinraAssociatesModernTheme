@@ -1,5 +1,11 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+// AOS import
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// import Lenis from 'lenis'
 
 // common components
 import Navbar from './components/Navbar.jsx'
@@ -22,6 +28,40 @@ import DirectIndirectTax from './pages/ServicesPages/DirectIndirectTaxAdvisoryPa
 import SpecializedServices from './pages/ServicesPages/SpecializedServicePage.jsx'
 
 const App = () => {
+
+  // lenis implementation
+  // const lenis = useRef(null);
+  // useEffect(() => {
+    // Initialize Lenis
+  //   lenis.current = new Lenis({
+  //     duration: 0.6, // Control the duration of the scroll
+  //     easing: (t) => 1 - Math.pow(1 - t, 3), // Cubic easing for smooth stop
+  //     smooth: true,
+  //     smoothTouch: true, // Enable smooth scrolling on touch devices
+  //   });
+
+  //   const animate = (time) => {
+  //     lenis.current.raf(time);
+  //     requestAnimationFrame(animate);
+  //   };
+
+  //   requestAnimationFrame(animate);
+
+  //   // Cleanup on unmount
+  //   return () => {
+  //     lenis.current.destroy();
+  //   };
+  // }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,  // Animation duration (ms)
+      once: false,     // Animate only once
+      offset: 120,    // Trigger animation before reaching element
+    });
+  }, []);
+
+
   return (
     <>
       <BrowserRouter>

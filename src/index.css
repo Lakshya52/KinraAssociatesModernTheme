@@ -8,6 +8,7 @@
 
 body::-webkit-scrollbar {
   width: 0px;
+  height: 0px;
 }
 
 /* for underline hovering effect */
@@ -70,6 +71,37 @@ body::-webkit-scrollbar {
 
 .font-gwynerCondensedFont {
   font-family: 'gwynerFont', sans-serif;
+  /* Fallback font is recommended */
+}
+
+
+/* gwen regular font */
+@font-face {
+  font-family: 'gwenFontRegular';
+  src: local('gwenFontRegular'), url('./fonts/Gwen-Trial-Regular.otf') format('truetype');
+  /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-gwen-regular {
+  font-family: 'gwenFontRegular', sans-serif;
+  /* Fallback font is recommended */
+}
+
+/* gwen semibold font */
+@font-face {
+  font-family: 'gwenFontSemibold';
+  src: local('gwenFontSemibold'), url('./fonts/Gwen-Trial-SemiBold.ttf') format('truetype');
+  /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+.font-gwen-semibold {
+  font-family: 'gwenFontSemibold', sans-serif;
+  font-display: auto;
   /* Fallback font is recommended */
 }
 

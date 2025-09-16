@@ -67,8 +67,8 @@ const Services = () => {
         />
         {/* Your Content/Components */}
         {/* Page Heading */}
-        <div className="text-center w-full font-gwynerCondensedFont pt-10 font-bold px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
+        <div className="text-center w-full  pt-10 font-bold px-4" data-aos="fade-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold">
             Our Services
           </h1>
           <p className="flex items-center justify-center w-full font-light mt-3">
@@ -77,7 +77,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="w-screen flex items-center justify-center mt-6 pb-15  px-4">
+        <div className="w-screen flex items-center justify-center mt-6 pb-15  px-4" data-aos="fade-up" data-aos-delay="500">
           <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, idx) => (
               <Link
@@ -91,11 +91,11 @@ const Services = () => {
                   alt={service.title}
                   className="h-15 w-15 mt-7"
                 />
-                <h2 className="font-poppins-bold text-lg text-center w sm:text-xl mt-5">
+                <h2 className="text-lg text-center w sm:text-xl mt-5">
                   {service.title}
                 </h2>
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center mt-2">
-                  {/* View More */} <ArrowRight className="" />  
+                  {/* View More <ArrowRight className="" />   */}
                 </div>
               </Link>
             ))}

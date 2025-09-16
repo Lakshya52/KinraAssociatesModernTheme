@@ -15,13 +15,21 @@ const ComplianceSupportPage = () => {
 
       <div className="w-full p-4 sm:p-[5vw] pb-0 h-fit flex flex-col md:flex-row gap-8 mb-10">
         {/* left image */}
-        <div className='w-full md:w-2/7 bg-gray-500 rounded mb-6 md:mb-0'>
-          <img src="" className="h-full w-full object-cover" />
+        <div className="w-full md:w-[28.57%] h-[400px]  bg-gray-500 rounded overflow-hidden mb-6 md:mb-0">
+          <img
+            src="/servicesPagesImages/ComplianceSupport.webp"
+            alt="Accounting Service"
+            className="w-full h-full object-cover"
+          />
         </div>
+
+
+
+
         {/* right text */}
         <div className='w-full md:w-3/7 md:pl-[2.5vw]'>
           <Breadcrumb items={breadcrumbItems} />
-          <h1 className='text-2xl sm:text-3xl md:text-4xl font-poppins-bold'>Regulatory & Compliance Support</h1>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl font-gwen-semibold'>Regulatory And Compliance Support</h1>
           <ul className='mt-5'>
             <li className="flex gap-3 sm:gap-5">
               <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
@@ -39,7 +47,7 @@ const ComplianceSupportPage = () => {
         </div>
         <div className='w-full md:w-2/7 flex items-start justify-center my-8 md:my-0'>
           <div className='w-full md:w-[90%] h-fit'>
-            <h1 className='text-xl sm:text-2xl font-poppins-bold'>Our Other Services</h1>
+            <h1 className='text-xl sm:text-2xl font-gwen-semibold'>Our Other Services</h1>
             <ul className='mt-5 w-full flex flex-col text-left'>
               <li className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
                 <Link to='/accounting'>Accounting & Financial Reporting</Link>

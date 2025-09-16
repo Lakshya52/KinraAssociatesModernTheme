@@ -82,8 +82,8 @@ const Leaderships = () => {
         />
         {/* Your Content/Components */}
         {/* Page Title */}
-        <div className="text-center w-full font-gwynerCondensedFont  pt-10 font-bold px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
+        <div className="text-center w-full   pt-10 font-bold px-4" data-aos="fade-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold">
             Meet Our Partners
           </h1>
           <div className="flex items-center justify-center w-full font-light mt-3">
@@ -92,7 +92,7 @@ const Leaderships = () => {
         </div>
 
         {/* Content Box */}
-        <div className="w-full flex justify-center items-center font-playfair-display px-4">
+        <div className="w-full flex justify-center items-center  px-4" data-aos="fade-up" data-aos-delay="500">
           <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-6 sm:py-10 my-6 mb-15 text-base sm:text-lg">
             {/* Accordion */}
             <section className="w-full">
@@ -110,7 +110,7 @@ const Leaderships = () => {
                     aria-expanded={openIndex === idx}
                     onClick={() => handleToggle(idx)}
                   >
-                    <h5 className="text-lg sm:text-xl md:text-2xl font-medium">
+                    <h5 className="text-lg sm:text-xl md:text-2xl font-medium font-gwen-semibold">
                       {partner.name}
                     </h5>
                     <svg

@@ -1,9 +1,34 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import Button from './ui/Button'
 
+
+const flyoutLinks = [
+  { to: "/accounting", label: "Accounting & Financial Reporting" },
+  { to: "/business_advisory", label: "Business Advisory" },
+  { to: "/audit_and_assurance", label: "Audit and Assurance" },
+  { to: "/direct_indirect_tax", label: "Direct & Indirect Tax Advisory" },
+  { to: "/compliance_support", label: "Regulatory & Compliance Support" },
+  { to: "/specialized_services", label: "Specialized Advisory Services" },
+];
+
 const Navbar = () => {
+
+
+  const [showServices, setShowServices] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpenMobile, setServicesOpenMobile] = useState(false);
+  const timeoutRef = useRef(null);
+
+  const handleFlyoutEnter = useCallback(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setShowServices(true);
+  }, []);
+
+  const handleFlyoutLeave = useCallback(() => {
+    timeoutRef.current = setTimeout(() => setShowServices(false), 200);
+  }, []);
 
 
 
@@ -40,9 +65,32 @@ const Navbar = () => {
           <Link onClick={handleScrollTop} className="li-custom" to="/leaderships">
             Our Leadership
           </Link>
-          <Link onClick={handleScrollTop} className="li-custom" to="/services">
+          <Link onClick={handleScrollTop} className="li-custom hover:" to="/services" onMouseEnter={handleFlyoutEnter}
+            onMouseLeave={handleFlyoutLeave}>
             Services
           </Link>
+          {showServices && (
+            <ul
+              className="fixed top-[80px] mt-5 left-4/5 -translate-x-1/2 min-w-[350px] z-[3000] p-2 shadow-xl bg-green-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
+              onMouseEnter={handleFlyoutEnter}
+              onMouseLeave={handleFlyoutLeave}
+            >
+              {flyoutLinks.map(link => (
+                <li key={link.to} className="flex flex-col justify-center items-start text-left">
+                  <Link
+                    to={link.to}
+                    className="text-slate-800 hover:text-white rounded hover:bg-amber-800 flex items-center text-lg p-2 px-4 w-full"
+                    onClick={() => {
+                      setShowServices(false);
+                      window.scrollTo({ top: 0, behavior: 'instant' });
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
           <Button label="Contact Us" href="/contact" b_radius="10px" />
         </ul>
 
@@ -74,34 +122,35 @@ const Navbar = () => {
         <div className="lg:hidden bg-[#2c2c2c]/95 px-4 sm:px-6 md:px-15 py-4 space-y-4 text-lg flex flex-col">
           <Link
             to="/about"
-            onClick={() => {setIsOpen(false),handleScrollTop()}}
+            onClick={() => { setIsOpen(false), handleScrollTop() }}
             className="hover:underline"
           >
             About Us
           </Link>
           <Link
             to="/industries"
-            onClick={() => {setIsOpen(false),handleScrollTop()}}
+            onClick={() => { setIsOpen(false), handleScrollTop() }}
             className="hover:underline"
           >
             Industries
           </Link>
           <Link
             to="/leaderships"
-            onClick={() => {setIsOpen(false),handleScrollTop()}}
+            onClick={() => { setIsOpen(false), handleScrollTop() }}
             className="hover:underline"
           >
             Our Leadership
           </Link>
           <Link
             to="/services"
-            onClick={() => {setIsOpen(false),handleScrollTop()}}
+            onClick={() => { setIsOpen(false), handleScrollTop() }}
             className="hover:underline"
           >
             Services
           </Link>
+
           {/* Contact Button only for mobile */}
-          <div className="sm:hidden" onClick={() => {setIsOpen(false),handleScrollTop()}}>
+          <div className="sm:hidden" onClick={() => { setIsOpen(false), handleScrollTop() }}>
             <Button label="Contact Us" href="/contact" b_radius="8px" />
           </div>
         </div>

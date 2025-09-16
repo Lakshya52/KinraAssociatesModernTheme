@@ -25,17 +25,17 @@ const About = () => {
         />
         {/* Your Content/Components */}
         {/* Hero Section */}
-        <div className="text-center w-full font-gwynerCondensedFont  pt-10 font-bold px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
-            About Kinra & Associates
+        <div className="text-center w-full   pt-10 font-bold px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold"  data-aos="fade-up">
+            About Kinra <span className='font-gwynerCondensedFont' >&</span> Associates
           </h1>
 
-          <div className="flex items-center justify-center w-full font-light mt-3">
+          <div className="flex items-center justify-center w-full font-light mt-3"  data-aos="fade-up" >
             <Breadcrumb items={breadcrumbItems} />
           </div>
         </div>
         {/* Content Section */}
-        <div className="w-full flex justify-center items-center font-playfair-display px-4">
+        <div className="w-full flex justify-center items-center  px-4" data-aos="fade-up" data-aos-delay="500">
           <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border-[1px] border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15  text-base sm:text-lg">
             {/* Objective */}
             <div className="w-full pb-5 mb-3">
@@ -51,7 +51,7 @@ const About = () => {
 
             {/* Mission & Vision */}
             <div className="w-full flex flex-col md:flex-row gap-10 mb-6">
-              <div className="w-full p-7 rounded-xl bg-amber-800/90 text-white">
+              <div className="w-full p-7 rounded-xl bg-amber-800/95 hover:bg-amber-800 text-white" data-aos="fade-right" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Mission</h1>
                 <p className="text-justify">
                   To provide quality professional services in accounting, assurance, taxation, and
@@ -62,7 +62,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="w-full p-7 rounded-xl bg-amber-800/90 text-white">
+              <div className="w-full p-7 rounded-xl bg-amber-800/95 hover:bg-amber-800 text-white" data-aos="fade-left" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Vision</h1>
                 <p className="text-justify">
                   To be recognized as a trusted professional services firm, consistently exceeding

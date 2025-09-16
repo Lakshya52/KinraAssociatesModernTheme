@@ -9,8 +9,8 @@ const Landing = () => {
     <>
     
       <Hero />
-      <CoreValues />
       <Intro />
+      <CoreValues />
 
     </>
   )

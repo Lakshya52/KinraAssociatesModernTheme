@@ -22,8 +22,8 @@ const Industries = () => {
         />
         {/* Your Content/Components */}
         {/* Hero Section */}
-        <div className="text-center w-full font-gwynerCondensedFont  pt-10 font-bold px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
+        <div className="text-center w-full  pt-10 font-bold px-4" data-aos="fade-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold">
             Industries We Serve
           </h1>
 
@@ -33,7 +33,7 @@ const Industries = () => {
         </div>
 
         {/* Content Section */}
-        <div className="w-full flex justify-center items-center font-playfair-display px-4">
+        <div className="w-full flex justify-center items-center  px-4" data-aos="fade-up" data-aos-delay="500">
 
           <div className="w-full sm:w-[90%] flex items-center justicen flex-col h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15 text-base sm:text-lg">
 

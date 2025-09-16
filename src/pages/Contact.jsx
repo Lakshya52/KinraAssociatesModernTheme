@@ -106,9 +106,9 @@ const Contact = () => {
         {/* Your Content/Components */}
 
         {/* Page heading */}
-        <div className="text-center w-full font-gwynerCondensedFont  pt-10 font-bold px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug">
-            <span className="italic font-extralight"></span> Let&apos;s Connect
+        <div className="text-center w-full  pt-10 font-bold px-4" data-aos="fade-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold "  >
+            <span className="italic font-extralight"></span> Let<span className=' font-gwynerCondensedFont'>'</span>s Connect
           </h1>
           <div className="flex items-center justify-center w-full font-light mt-3">
             <Breadcrumb items={breadcrumbItems} />
@@ -116,7 +116,7 @@ const Contact = () => {
         </div>
 
         {/* Main wrapper */}
-        <div className="w-full flex justify-center items-center  px-4">
+        <div className="w-full flex justify-center items-center  px-4" data-aos="fade-up" data-aos-delay="500">
           <div className="w-full sm:w-[90%] flex flex-col md:flex-row gap-8 md:gap-10 justify-between items-start h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-16 py-8 sm:py-12 my-6 mb-15 text-sm sm:text-base md:text-lg">
 
             {/* Contact Form Section */}
@@ -179,7 +179,7 @@ const Contact = () => {
                     key={branch.name}
                     className={`px-3 sm:px-4 py-2 rounded border text-xs sm:text-sm md:text-base cursor-pointer ${selectedBranch.name === branch.name
                       ? "bg-amber-800 text-white"
-                      : "bg-white text-[#2c2c2c] border-[#2c2c2c]/50"
+                      : "bg-white text-[#2c2c2c] border-[#2c2c2c]/50 hover:bg-amber-100"
                       }`}
                     onClick={() => setSelectedBranch(branch)}
                     type="button"
