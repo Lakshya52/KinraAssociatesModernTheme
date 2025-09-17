@@ -26,6 +26,7 @@ import CorporateCompliance from './servicesPageIcons/CorporateCompliance.png'
 // values icons 
 import IntegrityIcon from "./icons/values/IntegrityIcon.svg"
 import ResponsibilityIcon from "./icons/values/ResponsibilityIcon.png"
+import ConfidentialityIcon from "./icons/values/Confidentiality.png"
 import TechnicalExcellenceIcon from "./icons/values/TechnicalExcellenceIcon.png"
 import IndependenceIcon from "./icons/values/IndependenceIcon.png"
 import StatewardshipIcon from "./icons/values/StewardshipIcon.png"
@@ -60,6 +61,7 @@ export const assets = {
   // core values icons
   IntegrityIcon: IntegrityIcon,
   ResponsibilityIcon: ResponsibilityIcon,
+  ConfidentialityIcon: ConfidentialityIcon,
   TechnicalExcellenceIcon: TechnicalExcellenceIcon,
   IndependenceIcon: IndependenceIcon,
   StatewardshipIcon: StatewardshipIcon,

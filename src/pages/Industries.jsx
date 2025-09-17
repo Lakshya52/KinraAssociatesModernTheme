@@ -49,7 +49,7 @@ const Industries = () => {
                       alt="Manufacturing"
                     />
                     <span className="text-base sm:text-lg md:text-xl">
-                      Manufacturing, FMCG & Industrial
+                      Manufacturing & Consumer Industries
                     </span>
                   </li>
                   <li className="flex items-center gap-4 sm:gap-5">
@@ -58,7 +58,7 @@ const Industries = () => {
                       className="h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 object-contain"
                       alt="Trading"
                     />
-                    <span className="text-base sm:text-lg md:text-xl">Trading & Retail</span>
+                    <span className="text-base sm:text-lg md:text-xl">Retail & Trading Sectors</span>
                   </li>
                   <li className="flex items-center gap-4 sm:gap-5">
                     <img
@@ -130,7 +130,7 @@ const Industries = () => {
                       className="h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 object-contain"
                       alt="Financial"
                     />
-                    <span className="text-base sm:text-lg md:text-xl">Financial Sector</span>
+                    <span className="text-base sm:text-lg md:text-xl">Financial Services Sector</span>
                   </li>
                   <li className="flex items-center gap-4 sm:gap-5">
                     <img
@@ -139,7 +139,7 @@ const Industries = () => {
                       alt="Education"
                     />
                     <span className="text-base sm:text-lg md:text-xl">
-                      Education & Non-Profits
+                      Education & Non-Profits Org.
                     </span>
                   </li>
                 </ul>
