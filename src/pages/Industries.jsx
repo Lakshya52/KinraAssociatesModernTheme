@@ -40,7 +40,7 @@ const Industries = () => {
 
             <div className="flex flex-col md:flex-row w-full md:w-[90%] justify-between gap-6 md:gap-12">
               {/* Left Column */}
-              <div className="w-full md:w-1/2 flex  items-start justify-center gap-6">
+              <div className="w-full md:w-1/2 flex  items-start justify-start lg:justify-center gap-6">
                 <ul className="flex flex-col gap-4 sm:gap-5 w-fit items-start">
                   <li className="flex items-center gap-4 sm:gap-5">
                     <img
@@ -92,7 +92,7 @@ const Industries = () => {
               </div>
 
               {/* Right Column */}
-              <div className="w-full md:w-1/2 flex  items-start justify-center gap-6">
+              <div className="w-full md:w-1/2 flex  items-start justify-start lg:justify-center gap-6">
                 <ul className="flex flex-col gap-4 sm:gap-5 w-fit items-start">
                   <li className="flex items-center gap-4 sm:gap-5">
                     <img

@@ -5,9 +5,9 @@ import Button from "./ui/Button";
 
 const flyoutLinks = [
   { to: "/accounting", label: "Accounting & Financial Reporting" },
-  { to: "/business_advisory", label: "Business Advisory" },
   { to: "/audit_and_assurance", label: "Audit and Assurance" },
   { to: "/direct_indirect_tax", label: "Direct & Indirect Tax Advisory" },
+  { to: "/business_advisory", label: "Business Advisory" },
   { to: "/compliance_support", label: "Regulatory & Compliance Support" },
   { to: "/specialized_services", label: "Specialized Advisory Services" },
 ];
@@ -16,6 +16,7 @@ const Navbar = () => {
   const [showServices, setShowServices] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIs] = useState(false);
 
   const timeoutRef = useRef(null);
   const location = useLocation();
@@ -52,12 +53,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${isHome ? "fixed" : "sticky"}  top-0 z-50 w-full transition-all duration-300 text-white 
-      ${isScrolled ? "bg-[#2b3780] shadow-xl" : ""} ${isOpen ? "bg-[#2b3780]" : ""}`}
+      className={`${isHome ? "fixed" : "sticky"
+        } top-0 z-50 w-full transition-all duration-300 text-white 
+    ${isScrolled ? "shadow-xl" : ""}
+    ${isOpen ? "bg-[#2b3780]" : isScrolled ? "bg-[#2b3780]" : "bg-white/20"}`}
     >
+
       <div
-        className={`flex justify-between items-center mx-4 sm:mx-6 md:mx-15 py-5 ${isScrolled ? "" : "border-b border-gray-300"
-          }`}
+        className={`flex justify-between items-center mx-4 sm:mx-6 md:mx-15 py-4 `}
       >
         {/* Logo */}
         <div>
@@ -80,29 +83,20 @@ const Navbar = () => {
           <Link onClick={handleScrollTop} className="li-custom" to="/about">
             About Us
           </Link>
-          <Link onClick={handleScrollTop} className="li-custom" to="/industries">
-            Industries
-          </Link>
-          <Link
-            onClick={handleScrollTop}
-            className="li-custom"
-            to="/leaderships"
-          >
-            Our Leadership
-          </Link>
           <Link
             to="/services"
-            className="li-custom"
+            className="li-custom flex gap-1"
             onClick={handleScrollTop}
             onMouseEnter={handleFlyoutEnter}
             onMouseLeave={handleFlyoutLeave}
           >
             Services
+            <img src="/DropDown.svg" alt="" />
           </Link>
 
           {showServices && (
             <ul
-              className="fixed top-[80px] left-4/5 -translate-x-1/2 min-w-[350px] z-[3000] p-2 shadow-xl 
+              className="fixed top-[80px] left-4/7 -translate-x-1/2 min-w-[350px] z-[3000] p-2 shadow-xl 
               rounded-md bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
               onMouseEnter={handleFlyoutEnter}
               onMouseLeave={handleFlyoutLeave}
@@ -111,7 +105,7 @@ const Navbar = () => {
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="text-slate-800 hover:text-white rounded hover:bg-[#2a8890] flex items-center text-lg p-2 px-4 w-full"
+                    className="text-slate-800 hover:text-white rounded hover:bg-[#ff6b6b] flex items-center text-lg p-2 px-4 w-full"
                     onClick={() => {
                       setShowServices(false);
                       handleScrollTop();
@@ -123,6 +117,17 @@ const Navbar = () => {
               ))}
             </ul>
           )}
+          <Link onClick={handleScrollTop} className="li-custom" to="/industries">
+            Industries
+          </Link>
+          <Link
+            onClick={handleScrollTop}
+            className="li-custom"
+            to="/leaderships"
+          >
+            Our Leadership
+          </Link>
+
 
           <Button
             label="Contact Us"
@@ -133,7 +138,7 @@ const Navbar = () => {
 
         {/* Tablet Nav */}
         <div className="hidden sm:flex lg:hidden items-center gap-4">
-          <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+          <button onClick={() => setIsOpen(!isOpen)} className="">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
           <Button
@@ -148,7 +153,9 @@ const Navbar = () => {
 
         {/* Mobile Nav */}
         <div className="flex sm:hidden items-center">
-          <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="main-navigation">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
@@ -193,9 +200,11 @@ const Navbar = () => {
               setIsOpen(false);
               handleScrollTop();
             }}
-            className="hover:underline"
+            className="hover:underline flex gap-1"
           >
             Services
+            <img src="/DropDown.svg" alt="" />
+
           </Link>
 
           {/* Mobile-only Contact */}

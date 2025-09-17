@@ -14,10 +14,10 @@ const CoreValues = () => {
         <div className="w-full flex items-center justify-center px-6 md:px-10 lg:px-20 mt-10" >
             <div className="text-center w-full font-gwen-semibold py-10 mt-0 md:my-10">
                 {/* Heading */}
-                <h1 className="text-3xl md:text-5xl font-light w-full leading-tight" data-aos="fade-up">
-                    <span className="italic font-extralight">Our</span> Core Values
+                <h1 className="text-3xl md:text-5xl font-light w-full leading-tight" >
+                    Our Core Values
                 </h1>
-                <p className="mt-2 font-light text-gray-700 w-full text-sm md:text-base" data-aos="fade-up" data-aos-delay="100">
+                <p className="mt-2 font-light text-gray-700 w-full text-sm md:text-base"  data-aos-delay="100">
                     Our approach to every project is guided by the following principles
                 </p>
 
@@ -26,7 +26,7 @@ const CoreValues = () => {
                     {values.map((val, i) => (
                         <div
                             key={i}
-                            className="flex flex-col items-center justify-center gap-2 hover:text-black transition-colors p-4" data-aos="fade-up" data-aos-delay={val.delay}
+                            className="flex flex-col items-center justify-center gap-2 hover:text-black transition-colors p-4" 
                         >
                             <img src={val.icon} alt={val.label} className="w-16 md:w-20" />
                             <p className="text-center">{val.label}</p>

@@ -39,8 +39,8 @@ const About = () => {
           <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border-[1px] border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15  text-base sm:text-lg">
             {/* Objective */}
             <div className="w-full pb-5 mb-3">
-              <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Objective</h1>
-              <p className="text-justify">
+              <h1 className="text-lg sm:text-2xl mb-5 ">Our Objective</h1>
+              <p className="text-justify font-light">
                 We are committed towards creating and sustaining long-term relationships drawn on our
                 experience and expertise to help clients achieve real success. Having presence across
                 more than 10+ states. We
@@ -52,8 +52,8 @@ const About = () => {
             {/* Mission & Vision */}
             <div className="w-full flex flex-col md:flex-row gap-10 mb-6">
               <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-right" data-aos-delay="100">
-                <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Mission</h1>
-                <p className="text-justify">
+                <h1 className="text-lg sm:text-2xl mb-5 ">Our Mission</h1>
+                <p className="text-justify font-light">
                   To provide quality professional services in accounting, assurance, taxation, and
                   consultancy with integrity, independence, and excellence; to create value for our
                   clients through ethical and innovative solutions; and to foster a supportive
@@ -63,8 +63,8 @@ const About = () => {
               </div>
 
               <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-left" data-aos-delay="100">
-                <h1 className="text-lg sm:text-2xl mb-5 font-semibold">Our Vision</h1>
-                <p className="text-justify">
+                <h1 className="text-lg sm:text-2xl mb-5 ">Our Vision</h1>
+                <p className="text-justify font-light">
                   To be recognized as a trusted professional services firm, consistently exceeding
                   client expectations through integrity, teamwork, innovation, and specialization,
                   while upholding the highest standards of ethics and professionalism.
