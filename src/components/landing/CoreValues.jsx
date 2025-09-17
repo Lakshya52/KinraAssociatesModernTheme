@@ -6,7 +6,7 @@ const CoreValues = () => {
         { icon: assets.IntegrityIcon, label: "Integrity", delay: 100 },
         { icon: assets.ResponsibilityIcon, label: "Responsibility", delay: 150  },
         { icon: assets.ConfidentialityIcon, label: "Confidentiality", delay: 200  },
-        { icon: assets.TechnicalExcellenceIcon, label: "Technical Excellence", delay: 250 },
+        { icon: assets.TechnicalExcellenceIcon, label: "Professionalism", delay: 250 },
         { icon: assets.IndependenceIcon, label: "Independence", delay: 300 },
         // { icon: assets.StatewardshipIcon, label: "Stewardship", delay: 400 },
     ];

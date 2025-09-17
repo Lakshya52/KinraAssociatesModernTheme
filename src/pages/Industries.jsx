@@ -139,7 +139,7 @@ const Industries = () => {
                       alt="Education"
                     />
                     <span className="text-base sm:text-lg md:text-xl">
-                      Education & Non-Profits Org.
+                      Education & Non-Profit Entities
                     </span>
                   </li>
                 </ul>
