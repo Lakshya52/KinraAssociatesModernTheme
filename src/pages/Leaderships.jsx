@@ -12,7 +12,7 @@ const partners = [
 
   {
     name: "Gagan Kinra",
-    image: "https://via.placeholder.com/150", // Replace with actual image
+    image: "/partnersDp/GaganKinra.png", // Replace with actual image
     phone: "+91 12345 67891",
     description:
       "Gagan Kinra is a member of the Institute of Chartered Accountants of India (ICAI) since 2014. Gagan has vast knowledge and a thorough understanding of Indian laws and regulations, as well as the complex corporate taxation system. He has helped many organisations to set up business in India and operating it smoothly. He and his team have assisted many entities in completing paperwork, getting necessary approvals, paying taxes, necessary filings and much more."
@@ -99,7 +99,7 @@ const Leaderships = () => {
               {partners.map((partner, idx) => (
                 <div
                   key={partner.name}
-                  className={`accordion py-4 sm:py-6 w-full px-2 sm:px-6 md:px-10 cursor-pointer border-b border-gray-300 transition-all duration-500 ${openIndex === idx ? "bg-[#2a8890]/90 text-white rounded-lg" : ""
+                  className={`accordion py-4 sm:py-6 w-full px-2 sm:px-6 md:px-10 cursor-pointer border-b border-gray-300 transition-all duration-500 ${openIndex === idx ? "bg-[#2b3780]/90 text-white rounded-lg" : ""
                     }`}
                   id={`partner-heading-${idx}`}
                 >
@@ -146,7 +146,7 @@ const Leaderships = () => {
                       <img
                         src={partner.image}
                         alt={`${partner.name} profile`}
-                        className="w-28 h-32 sm:w-36 sm:h-40 md:w-44 md:h-48 rounded-xl object-cover border-2 border-white shadow-md"
+                        className="w-28 h-32 sm:w-36 sm:h-40 md:w-44 md:h-48 rounded-xl object-cover border-1 border-white shadow-md"
                       />
                       {/* Partner Description */}
                       <p className="text-sm sm:text-base md:text-lg leading-6 text-justify">

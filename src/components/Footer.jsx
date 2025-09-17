@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center text-sm bg-[#142172]/90 text-white">
 
-          {/* About */}
+      {/* About
           <div className="flex flex-col items-center  text-center md:text-left w-full justify-center mt-10 ">
             <Link to="/" onClick={handleScrollTop} className="mb-5 block w-full text-center">
               <p className="font-light font-playfair-display text-2xl sm:text-3xl">Kinra & Associates</p>
@@ -21,57 +21,45 @@ const Footer = () => {
               We understand the critical role that expert financial guidance plays in achieving success in today’s dynamic economic landscape.
               Our CA firm is dedicated to delivering financial and advisory services that empower businesses, startups, and individuals to thrive.
             </p>
-          </div>
+          </div> */}
       {/* Footer Main */}
       <footer className="w-full flex items-center justify-center">
         {/* content wrapper */}
-        <div className="w-full  px-4 sm:px-6 md:px-15 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="w-full px-4 sm:px-6 md:px-15 py-10 grid grid-cols-1 lg:grid-cols-4 gap-10">
 
-
-          {/* Useful Links */}
-          <div className="flex items-start md:justify-start   justify-center lg:justify-center ">
-
-            <div className="flex flex-col items-center md:items-start">
-              <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Useful Links</p>
-              <div className="flex flex-col sm:flex-row sm:gap-6 gap-2">
-                <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start font-light">
-                  <Link onClick={handleScrollTop} to="/">Home</Link>
-                  <Link onClick={handleScrollTop} to="/about">About Us</Link>
-                  <Link onClick={handleScrollTop} to="/industries">Industries</Link>
-                </ul>
-                <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start font-light">
-                  <Link onClick={handleScrollTop} to="/leaderships">Our Leadership</Link>
-                  <Link onClick={handleScrollTop} to="/services">Services</Link>
-                  <Link onClick={handleScrollTop} to="/contact">Contact Us</Link>
-                </ul>
-              </div>
-            </div>
+          {/* About */}
+          <div className="lg:col-span-2 flex flex-col items-center text-center md:items-start md:text-left justify-start">
+            <Link to="/" onClick={handleScrollTop} className="mb-5 block text-center md:text-left">
+              <p className="font-light font-playfair-display text-2xl sm:text-3xl">Kinra & Associates</p>
+              <p className="font-light font-playfair-display text-base sm:text-lg">Chartered Accountants</p>
+            </Link>
+            <p className="text-xs sm:text-base md:text-md font-light text-center md:text-left max-w-[90%]">
+              We understand the critical role that expert financial guidance plays in achieving success in today’s dynamic economic landscape.
+              Our CA firm is dedicated to delivering financial and advisory services that empower businesses, startups, and individuals to thrive.
+            </p>
           </div>
 
           {/* Important Links */}
-
-          <div className="flex items-start md:justify-start   justify-center lg:justify-center ">
-            <div className="flex flex-col items-center md:items-start">
-              <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Important Links</p>
-              <div className="flex flex-col sm:flex-row sm:gap-6 gap-2">
-                <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start font-light">
-                  <Link to="https://www.icai.org/">ICAI</Link>
-                  <Link to="https://www.gst.gov.in/">GST</Link>
-                  <Link to="https://www.mca.gov.in/">MCA</Link>
-                </ul>
-                <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start font-light">
-                  <Link to="https://www.sebi.gov.in/">SEBI</Link>
-                  <Link to="https://www.rbi.org.in/">RBI</Link>
-                  <Link to="https://www.incometax.gov.in/iec/foportal/">Income Tax</Link>
-                </ul>
-              </div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Important Links</p>
+            <div className="flex flex-col sm:flex-row sm:gap-6 gap-2">
+              <ul className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
+                <Link to="https://www.icai.org/">ICAI</Link>
+                <Link to="https://www.gst.gov.in/">GST</Link>
+                <Link to="https://www.mca.gov.in/">MCA</Link>
+              </ul>
+              <ul className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
+                <Link to="https://www.sebi.gov.in/">SEBI</Link>
+                <Link to="https://www.rbi.org.in/">RBI</Link>
+                <Link to="https://www.incometax.gov.in/iec/foportal/">Income Tax</Link>
+              </ul>
             </div>
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Contact Information</p>
-            <ul className="flex flex-col gap-2 text-sm sm:text-base items-center md:items-start font-light">
+            <ul className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
               <li><a href="mailto:info@kinraandassociates.com">Email : info@kinraandassociates.com</a></li>
               <li><a href="tel:+919897295511">Phone : +91 98972 95511</a></li>
             </ul>

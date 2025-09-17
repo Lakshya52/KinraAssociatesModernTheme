@@ -24,7 +24,7 @@ import CorporateCompliance from './servicesPageIcons/CorporateCompliance.png'
 
 
 // values icons 
-import IntegrityIcon from "./icons/values/IntegrityIcon.png"
+import IntegrityIcon from "./icons/values/IntegrityIcon.svg"
 import ResponsibilityIcon from "./icons/values/ResponsibilityIcon.png"
 import TechnicalExcellenceIcon from "./icons/values/TechnicalExcellenceIcon.png"
 import IndependenceIcon from "./icons/values/IndependenceIcon.png"
