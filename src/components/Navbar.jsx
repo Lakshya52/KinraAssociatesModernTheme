@@ -16,11 +16,12 @@ const Navbar = () => {
   const [showServices, setShowServices] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  // const [isScrolled, setIs] = useState(false);
 
   const timeoutRef = useRef(null);
   const location = useLocation();
   const isHome = location.pathname === "/";
+
+  const servicesRef = useRef(null);
 
   // Flyout menu handlers
   const handleFlyoutEnter = useCallback(() => {
@@ -53,21 +54,20 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${isHome ? "fixed" : "sticky"
-        } top-0 z-50 w-full transition-all duration-300 text-white 
-    ${isScrolled ? "shadow-xl" : ""}
-    ${isOpen ? "bg-[#2b3780]" : isScrolled ? "bg-[#2b3780]" : "bg-white/20"}`}
+      className={`${isHome ? "fixed" : "sticky"} top-0 z-50 w-full transition-all duration-300 text-white 
+        ${isScrolled ? "shadow-xl" : ""}
+        ${isOpen ? "bg-[#2b3780]" : isScrolled ? "bg-[#2b3780]" : "bg-white/20"}`}
     >
-
-      <div
-        className={`flex justify-between items-center mx-4 sm:mx-6 md:mx-15 py-4 `}
-      >
+      <div className="flex justify-between items-center mx-4 sm:mx-6 md:mx-15 py-4">
         {/* Logo */}
         <div>
           <Link
             to="/"
-            onClick={() => { handleScrollTop(); setIsHome(true); setIsScrolled(false); }}
-            className="outline-none focus:outline-none mt-20"
+            onClick={() => {
+              handleScrollTop();
+              setIsScrolled(false);
+            }}
+            className="outline-none focus:outline-none"
           >
             <p className="text-2xl md:text-2xl font-playfair-display font-extrabold">
               Kinra & Associates
@@ -79,66 +79,75 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex gap-10 text-lg items-center">
+        <ul className="hidden lg:flex gap-10 text-md items-center relative">
+          <Link onClick={() => {
+              handleScrollTop();
+              setIsScrolled(false);
+            }} className="li-custom" to="/">
+            Home
+          </Link>
           <Link onClick={handleScrollTop} className="li-custom" to="/about">
             About Us
           </Link>
-          <Link
-            to="/services"
-            className="li-custom flex gap-1"
-            onClick={handleScrollTop}
-            onMouseEnter={handleFlyoutEnter}
-            onMouseLeave={handleFlyoutLeave}
-          >
-            Services
-            <img src="/DropDown.svg" alt="" />
-          </Link>
 
-          {showServices && (
-            <ul
-              className="fixed top-[80px] left-4/7 -translate-x-1/2 min-w-[350px] z-[3000] p-2 shadow-xl 
-              rounded-md bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
+          <div className="relative">
+            <Link
+              ref={servicesRef}
+              to="/services"
+              className="li-custom flex items-center gap-1"
+              onClick={handleScrollTop}
               onMouseEnter={handleFlyoutEnter}
               onMouseLeave={handleFlyoutLeave}
             >
-              {flyoutLinks.map((link) => (
-                <li key={link.to}>
-                  <Link
-                    to={link.to}
-                    className="text-slate-800 hover:text-white rounded hover:bg-[#ff6b6b] flex items-center text-lg p-2 px-4 w-full"
-                    onClick={() => {
-                      setShowServices(false);
-                      handleScrollTop();
-                    }}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
+              Services
+              <img src="/DropDown.svg" alt="" />
+            </Link>
+
+            {showServices && servicesRef.current && (
+              <ul
+                className="absolute min-w-[350px] z-[3000] p-2 shadow-xl rounded-md bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
+                style={{
+                  top: servicesRef.current.offsetHeight + 8 + "px",
+                  left:
+                    servicesRef.current.offsetLeft +
+                    servicesRef.current.offsetWidth / 2 -
+                    175 +
+                    "px", // 175 = half of min-width 350px
+                }}
+                onMouseEnter={handleFlyoutEnter}
+                onMouseLeave={handleFlyoutLeave}
+              >
+                {flyoutLinks.map((link) => (
+                  <li key={link.to}>
+                    <Link
+                      to={link.to}
+                      className="text-slate-800 hover:text-white rounded hover:bg-[#ff6b6b] flex items-center text-lg p-2 px-4 w-full"
+                      onClick={() => {
+                        setShowServices(false);
+                        handleScrollTop();
+                      }}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
           <Link onClick={handleScrollTop} className="li-custom" to="/industries">
             Industries
           </Link>
-          <Link
-            onClick={handleScrollTop}
-            className="li-custom"
-            to="/leaderships"
-          >
+          <Link onClick={handleScrollTop} className="li-custom" to="/leaderships">
             Our Leadership
           </Link>
 
-
-          <Button
-            label="Contact Us"
-            href="/contact"
-            onClick={handleScrollTop}
-          />
+          <Button label="Contact Us" href="/contact" onClick={handleScrollTop} />
         </ul>
 
         {/* Tablet Nav */}
         <div className="hidden sm:flex lg:hidden items-center gap-4">
-          <button onClick={() => setIsOpen(!isOpen)} className="">
+          <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
           <Button
@@ -153,9 +162,12 @@ const Navbar = () => {
 
         {/* Mobile Nav */}
         <div className="flex sm:hidden items-center">
-          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle navigation menu"
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation menu"
             aria-expanded="false"
-            aria-controls="main-navigation">
+            aria-controls="main-navigation"
+          >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
@@ -163,7 +175,17 @@ const Navbar = () => {
 
       {/* Mobile/Tablet Menu */}
       {isOpen && (
-        <div className={`lg:hidden bg-[#142172]/90 px-4 sm:px-6 md:px-15 py-4 space-y-4 text-lg flex flex-col`}>
+        <div className="lg:hidden bg-[#142172]/90 px-4 sm:px-6 md:px-15 py-4 space-y-4 text-lg flex flex-col">
+          <Link
+            to="/"
+            onClick={() => {
+              setIsOpen(false);
+              handleScrollTop();
+            }}
+            className="hover:underline"
+          >
+            Home
+          </Link>
           <Link
             to="/about"
             onClick={() => {
@@ -204,7 +226,6 @@ const Navbar = () => {
           >
             Services
             <img src="/DropDown.svg" alt="" />
-
           </Link>
 
           {/* Mobile-only Contact */}

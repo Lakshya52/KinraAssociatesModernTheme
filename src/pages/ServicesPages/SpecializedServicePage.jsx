@@ -1,83 +1,83 @@
-import React from 'react'
-import Breadcrumb from '../../components/Breadcrumb';
-import { CheckCheck } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import React from "react";
+import Breadcrumb from "../../components/Breadcrumb";
+import { CheckCheck, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const breadcrumbItems = [
-  { label: 'Home', to: '/' },
-  { label: 'Services', to: '/services' },
-  { label: 'Specialized Advisory Services' },
-]
+  { label: "Home", to: "/" },
+  { label: "Services", to: "/services" },
+  { label: "Specialized Advisory Services" },
+];
+
 const SpecializedServicePage = () => {
   return (
-    <>
-      <div className="w-full p-4 sm:p-[5vw] pb-0 h-fit flex flex-col md:flex-row gap-8 mb-10">
-        {/* left image */}
-        <div className="w-full md:w-[28.57%] h-[400px]  bg-gray-500 rounded overflow-hidden mb-6 md:mb-0">
-          <img
-            src="/servicesPagesImages/SpecializedServices.webp"
-            alt="Accounting Service"
-            className="w-full h-full object-cover"
-            loading='lazy'
-          />
+    <div className="w-full px-4 sm:px-[5vw] py-10">
+      {/* Breadcrumb */}
+      {/* <Breadcrumb items={breadcrumbItems} /> */}
+
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        {/* Left Image */}
+        <div className="md:col-span-4">
+          <div className="rounded-2xl overflow-hidden shadow-lg h-[320px] md:h-[450px]">
+            <img
+              src="/servicesPagesImages/SpecializedServices.webp"
+              alt="Specialized Advisory Services"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
         </div>
 
-
-
-        {/* right text */}
-        <div className='w-full md:w-3/7 md:pl-[2.5vw]'>
-          <Breadcrumb items={breadcrumbItems} />
-          <h1 className='text-2xl sm:text-3xl md:text-4xl font-gwen-semibold'>Specialized Advisory Services</h1>
-          <ul className='mt-5'>
-            <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
-              <span>Project Reporting & CMA Data Preparation</span>
-            </li>
-            <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
-              <span>Government Subsidy & Incentive Advisory</span>
-            </li>
-            <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
-              <span>NGO/Society/Trust Registration/ HUF creation and Compliance</span>
-            </li>
-            <li className="flex gap-3 sm:gap-5">
-              <CheckCheck className='min-h-5 min-w-5 max-h-5 max-w-5 ' />
-              <span>Certification Services </span>
-            </li>
+        {/* Middle Content */}
+        <div className="md:col-span-5 flex flex-col">
+          <h1 className="text-3xl md:text-4xl font-gwen-semibold text-gray-800 leading-snug">
+            Specialized Advisory Services
+          </h1>
+          <ul className="mt-6 space-y-4 text-gray-700">
+            {[
+              "Project Reporting & CMA Data Preparation",
+              "Government Subsidy & Incentive Advisory",
+              "NGO / Society / Trust Registration, HUF Creation & Compliance",
+              "Certification Services",
+            ].map((item, idx) => (
+              <li key={idx} className="flex gap-3 items-start">
+                <CheckCheck className="h-5 w-5 text-violet-700 shrink-0 mt-1" />
+                <span>{item}</span>
+              </li>
+            ))}
           </ul>
         </div>
-        <div className='w-full md:w-2/7 flex items-start justify-center my-8 md:my-0'>
-          <div className='w-full md:w-[90%] h-fit'>
-            <h1 className='text-xl sm:text-2xl font-gwen-semibold'>Our Other Services</h1>
-            <ul className='mt-5 w-full flex flex-col text-left'>
-              <Link  to='/accounting' className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <span>Accounting & Financial Reporting</span>
-                <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
-              </Link>
-              <Link  to='/business_advisory' className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <span>Business Advisory</span>
-                <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
-              </Link>
-              <Link  to='/audit_and_assurance' className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <span>Audit and Assurance</span>
-                <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
-              </Link>
-              <Link  to='/direct_indirect_tax' className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t p-3 sm:p-5 w-full'>
-                <span>Direct & Indirect Tax Advisory</span>
-                <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
-              </Link>
-              <Link  to='/compliance_support' className='flex justify-between items-center group hover:bg-violet-50 cursor-pointer border-t border-b p-3 sm:p-5 w-full'>
-                <span>Regulatory & Compliance Support</span>
-                <span><ArrowRight className='transition-transform opacity-0 group-hover:opacity-100 duration-300' /></span>
-              </Link>
+
+        {/* Right Sidebar */}
+        <div className="md:col-span-3 h-full">
+          <div className="bg-violet-50 rounded-2xl shadow-md p-5 h-full">
+            <h2 className="text-xl font-gwen-semibold text-gray-800 mb-4">
+              Our Other Services
+            </h2>
+            <ul className="flex flex-col divide-y divide-gray-300">
+              {[
+                { label: "Accounting & Financial Reporting", to: "/accounting" },
+                { label: "Business Advisory", to: "/business_advisory" },
+                { label: "Audit and Assurance", to: "/audit_and_assurance" },
+                { label: "Direct & Indirect Tax Advisory", to: "/direct_indirect_tax" },
+                { label: "Regulatory & Compliance Support", to: "/compliance_support" },
+              ].map((service, idx) => (
+                <li key={idx}>
+                  <Link
+                    to={service.to}
+                    className="flex justify-between items-center py-3 text-gray-700 hover:text-violet-800 transition group"
+                  >
+                    <span>{service.label}</span>
+                    <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-transform duration-300 translate-x-0 group-hover:translate-x-1" />
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default SpecializedServicePage
+export default SpecializedServicePage;

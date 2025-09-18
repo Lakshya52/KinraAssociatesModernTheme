@@ -16,7 +16,7 @@ const partners = [
     image: "/webp/GaganKinra.webp", // Replace with actual image
     phone: "+91 12345 67891",
     description:
-      "Being founding partner of Kinra & Associates he is a Trusted Chartered Accountant and brings over 11 years of rich professional experience in the fields of Income Tax, Goods & Service Tax, Project Financing, Audit, and Business Consultancy. As a DISA-qualified professional, he has specialized expertise in the field of Audit and also obtained various certifications related to the same by ICAI. He possesses in-depth knowledge of the laws, regulations, and the complex taxation system. He has guided numerous organizations in navigating complex taxation systems, setting up businesses, and streamlining operations. His audit exposure spans a wide spectrum including Statutory Audits, Concurrent Audits, Revenue Audits, Stock Audits, Due Diligence, and Internal Audits for multiple banks, government and private entities."
+      "He is the founding partner of Kinra & Associates and a Chartered Accountant with over 11 years of professional experience in the fields of Income Tax, Goods and Services Tax, Project Financing, Audit, and Business Consultancy. As a DISA-qualified professional, he has specialized expertise in the area of Audit and has obtained certifications in this field from ICAI. His professional experience includes advisory and compliance services in taxation, business setup, and operational processes. He has handled Statutory Audits, Concurrent Audits, Revenue Audits, Stock Audits, Due Diligence, and Internal Audits for banks, government bodies, and private organizations."
   },
   {
     // done
@@ -24,7 +24,7 @@ const partners = [
     image: "",
     phone: "+91 12345 67891",
     description:
-      "With over 13 years of experience, he is a seasoned professional specializing in Income Tax, Project Finance, and Debt Restructuring. He is a registered Insolvency Professional with the Insolvency and Bankruptcy Board of India (IBBI) and the National Company Law Tribunal (NCLT). Being an Insolvency Professional, he possesses extensive experience in various insolvency processes, including Corporate Insolvency Resolution Process (CIRP), Liquidation, and the Insolvency of Individuals. His expertise also extends to a wide range of audits, including Concurrent Audit, Stock Audit, Due Diligence, and Statutory Audits for multiple banks."
+      "With over 13 years of professional experience, he specializes in Income Tax, Project Finance, and Debt Restructuring. He is a registered Insolvency Professional with the Insolvency and Bankruptcy Board of India (IBBI) and is enrolled with the National Company Law Tribunal (NCLT). His professional work covers various insolvency processes, including Corporate Insolvency Resolution Process (CIRP), Liquidation, and individual insolvency matters. In addition, he has handled audits such as Concurrent Audits, Stock Audits, Due Diligence, and Statutory Audits for banks and other organizations."
   },
   {
     name: "Abhinav Kumar",
@@ -39,7 +39,7 @@ const partners = [
     image: "",
     phone: "+91 12345 67891",
     description:
-      "With extensive experience in statutory and internal audits and expertise in both direct and indirect taxation, he has successfully managed diverse financial and compliance assignments. His portfolio includes specialized forensic audits and investigative engagements with SEBI and SFIO, reflecting competence in handling high-stakes matters. He is also proficient in banking audits—covering statutory, concurrent, stock, and revenue audits—where his analytical skills ensure regulatory compliance. Beyond audit and assurance, he is well-versed in finance management and ROC compliances. This diverse exposure provides a strong blend of regulatory insight, technical expertise, and practical execution to deliver value-driven solutions"
+      "He has professional experience in statutory and internal audits and in the areas of direct and indirect taxation. His work includes financial and compliance assignments, as well as forensic audits and investigative engagements for regulatory bodies such as SEBI and SFIO. He has handled banking-related audits including statutory, concurrent, stock, and revenue audits. In addition to audit and assurance, his work also covers finance management and ROC compliances. His professional exposure combines regulatory understanding with technical application across different areas of practice."
   },
   {
     // done
@@ -47,7 +47,7 @@ const partners = [
     image: "",
     phone: "+91 12345 67891",
     description:
-      "Being qualified in 2023, he works closely with clients across diverse professional areas, including taxation, statutory audits, internal audits, GST compliance and audits, bank audits, IFC audits, project reports, and financial planning. He is actively involved in understanding the unique requirements of each client and ensures accurate, timely, and effective execution of assignments. His approach emphasizes delivering practical solutions that align with regulatory frameworks while supporting clients in achieving their business objectives. By combining technical expertise with a client-centric focus, he offers dependable support, enabling businesses to address challenges effectively and build a strong foundation for sustainable growth."
+      "Qualified in 2023, he has professional experience in taxation, statutory audits, internal audits, GST compliance and audits, bank audits, IFC audits, project reports, and financial planning. His work involves assisting organizations in meeting regulatory requirements and managing financial and compliance matters. He has contributed to assignments across diverse sectors, focusing on accurate execution within applicable legal and professional frameworks. His professional exposure combines technical knowledge with practical application to support organizations in addressing financial and regulatory responsibilities."
   },
   {
     name: "Chetan Khurana",
@@ -143,12 +143,12 @@ const Leaderships = () => {
                       }`}
                     aria-labelledby={`partner-heading-${idx}`}
                   >
-                    <div className="flex flex-col sm:flex-row gap-6 items-center border-t pt-5">
+                    <div className="flex flex-col sm:flex-row gap-6 items-start border-t pt-5">
                       {/* Partner Image */}
                       <img
                         src={partner.image}
                         alt={`${partner.name} profile`}
-                        className="w-28 h-32 sm:w-36 sm:h-40 md:w-44 md:h-48 rounded-xl object-cover border-1 border-white shadow-md"
+                        className="w-48 h-48 rounded-xl object-cover border-1 border-white shadow-md"
                       />
                       {/* Partner Description */}
                       <p className="text-sm sm:text-base md:text-lg leading-6 text-justify">

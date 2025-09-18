@@ -26,11 +26,11 @@ const About = () => {
         {/* Your Content/Components */}
         {/* Hero Section */}
         <div className="text-center w-full   pt-10 font-bold px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold"  data-aos="fade-up">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold" data-aos="fade-up">
             About Kinra <span className='font-gwynerCondensedFont' >&</span> Associates
           </h1>
 
-          <div className="flex items-center justify-center w-full font-light mt-3"  data-aos="fade-up" >
+          <div className="flex items-center justify-center w-full font-light mt-3" data-aos="fade-up" >
             <Breadcrumb items={breadcrumbItems} />
           </div>
         </div>
@@ -41,11 +41,7 @@ const About = () => {
             <div className="w-full pb-5 mb-3">
               <h1 className="text-lg sm:text-2xl mb-5 ">Our Objective</h1>
               <p className="text-justify font-light">
-                We are committed towards creating and sustaining long-term relationships drawn on our
-                experience and expertise to help clients achieve real success. Having presence across
-                more than 10+ states. We
-                provide a variety of services encompassing Finance, Accounting & Compliance Solutions
-                and are committed to add value and optimize the benefits accruing to business.
+                We aim to provide professional services in finance, accounting, and compliance with a focus on accuracy, reliability, and adherence to applicable laws and standards. Our objective is to assist organizations in meeting their statutory and regulatory responsibilities in an efficient and professional manner.
               </p>
             </div>
 
@@ -54,20 +50,14 @@ const About = () => {
               <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-right" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 ">Our Mission</h1>
                 <p className="text-justify font-light">
-                  To provide quality professional services in accounting, assurance, taxation, and
-                  consultancy with integrity, independence, and excellence; to create value for our
-                  clients through ethical and innovative solutions; and to foster a supportive
-                  environment that ensures professional growth, work–life balance, and well-being of
-                  our associates.
+                  To deliver services in accounting, assurance, taxation, and consultancy with integrity, independence, and professional excellence; to maintain ethical practices in every engagement; and to provide an environment that encourages professional growth, continuous learning, and balance for our associates in practice.
                 </p>
               </div>
 
               <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-left" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 ">Our Vision</h1>
                 <p className="text-justify font-light">
-                  To be recognized as a trusted professional services firm, consistently exceeding
-                  client expectations through integrity, teamwork, innovation, and specialization,
-                  while upholding the highest standards of ethics and professionalism.
+                  To uphold the values of ethics, integrity, and professionalism in the practice of chartered accountancy; to promote sound financial and compliance practices across sectors; and to contribute meaningfully to the professional community, business environment, and society at large.
                 </p>
               </div>
             </div>
