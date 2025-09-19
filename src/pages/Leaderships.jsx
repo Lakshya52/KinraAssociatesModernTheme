@@ -13,7 +13,7 @@ const partners = [
   {
     // done
     name: "Gagan Kinra",
-    image: "/webp/PicGagan.webp", // Replace with actual image
+    image: "/webp/GaganKinra.webp", // Replace with actual image
     phone: "+91 12345 67891",
     description:
       "He is the founding partner of Kinra & Associates and a Chartered Accountant with over 11 years of professional experience in the fields of Income Tax, Goods and Services Tax, Project Financing, Audit, and Business Consultancy. As a DISA-qualified professional, he has specialized expertise in the area of Audit and has obtained certifications in this field from ICAI. His professional experience includes advisory and compliance services in taxation, business setup, and operational processes. He has handled Statutory Audits, Concurrent Audits, Revenue Audits, Stock Audits, Due Diligence, and Internal Audits for banks, government bodies, and private organizations."
