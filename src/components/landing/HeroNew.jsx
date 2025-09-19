@@ -25,9 +25,13 @@ const HeroNew = () => {
       {/* Centered Content */}
       <div className="relative z-10 px-4">
         <h1 className="text-3xl md:text-5xl font-light leading-tight font-gwen-semibold">
+          Comprehensive Accounting and <br /> Tax Services
+          {/* Business Solution */}
+        </h1>
+        {/* <h1 className="text-3xl md:text-5xl font-light leading-tight font-gwen-semibold">
           Your Partner in Finance, Tax and <br />
           Business Solution
-        </h1>
+        </h1> */}
         <p className="my-4 mb-6 text-gray-200 text-sm md:text-base">
           Integrated Professional Services For Businesses and Individuals
         </p>

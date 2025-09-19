@@ -34,8 +34,7 @@ const Footer = () => {
               <p className="font-light font-playfair-display text-base sm:text-lg">Chartered Accountants</p>
             </Link>
             <p className="text-xs sm:text-base md:text-md text-justify font-light text-center md:text-left max-w-[90%]">
-              We understand the critical role that expert financial guidance plays in achieving success in today’s dynamic economic landscape.
-              Our CA firm is dedicated to delivering financial and advisory services that empower businesses, startups, and individuals to thrive.
+              Our CA firm provides professional financial and advisory services to businesses, startups, and individuals, with the objective of supporting informed decision-making and compliance in today’s dynamic economic environment.
             </p>
           </div>
 
@@ -44,14 +43,14 @@ const Footer = () => {
             <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Important Links</p>
             <div className="flex flex-col sm:flex-row sm:gap-6 gap-2">
               <span className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
-                <Link to="https://www.icai.org/">ICAI</Link>
-                <Link to="https://www.gst.gov.in/">GST</Link>
-                <Link to="https://www.mca.gov.in/">MCA</Link>
+                <Link target='_blank' to="https://www.icai.org/">ICAI</Link>
+                <Link target='_blank' to="https://www.gst.gov.in/">GST</Link>
+                <Link target='_blank' to="https://www.mca.gov.in/">MCA</Link>
               </span>
               <span className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
-                <Link to="https://www.sebi.gov.in/">SEBI</Link>
-                <Link to="https://www.rbi.org.in/">RBI</Link>
-                <Link to="https://www.incometax.gov.in/iec/foportal/">Income Tax</Link>
+                <Link target='_blank' to="https://www.sebi.gov.in/">SEBI</Link>
+                <Link target='_blank' to="https://www.rbi.org.in/">RBI</Link>
+                <Link target='_blank' to="https://www.incometax.gov.in/iec/foportal/">Income Tax</Link>
               </span>
             </div>
           </div>
