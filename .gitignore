@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+Kinra&AssociatesWebsite20Sep2025
 dist-ssr
 *.local
 

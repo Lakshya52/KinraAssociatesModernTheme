@@ -1,8 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* fonts */
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+/* fonts: Google Fonts loaded via index.html for performance */
 @import "tailwindcss";
 
 
@@ -67,6 +65,7 @@ body::-webkit-scrollbar {
   /* Adjust as needed */
   font-style: normal;
   /* Adjust as needed */
+  font-display: swap;
 }
 
 .font-gwynerCondensedFont {
@@ -82,6 +81,7 @@ body::-webkit-scrollbar {
   /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .font-gwen-regular {
@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
   /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
   font-weight: normal;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 .font-gwen-semibold {

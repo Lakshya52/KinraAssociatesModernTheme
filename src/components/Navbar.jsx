@@ -147,7 +147,7 @@ const Navbar = () => {
 
         {/* Tablet Nav */}
         <div className="hidden sm:flex lg:hidden items-center gap-4">
-          <button onClick={() => setIsOpen(!isOpen)}>
+          <button aria-label="menu open close button" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
           <Button
