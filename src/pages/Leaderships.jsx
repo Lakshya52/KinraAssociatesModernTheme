@@ -10,22 +10,27 @@ const breadcrumbItems = [
 const partners = [
 
 
+  // done
+  // gagan kinra
   {
-    // done
     name: "Gagan Kinra",
     image: "/webp/GaganKinra.webp", // Replace with actual image
     phone: "+91 12345 67891",
     description:
       "He is the founding partner of Kinra & Associates and a Chartered Accountant with over 11 years of professional experience in the fields of Income Tax, Goods and Services Tax, Project Financing, Audit, and Business Consultancy. As a DISA-qualified professional, he has specialized expertise in the area of Audit and has obtained certifications in this field from ICAI. His professional experience includes advisory and compliance services in taxation, business setup, and operational processes. He has handled Statutory Audits, Concurrent Audits, Revenue Audits, Stock Audits, Due Diligence, and Internal Audits for banks, government bodies, and private organizations."
   },
+  // done
+  // bhavik haribhai rupapara
   {
-    // done
     name: "Bhavik Haribhai Rupapara",
     image: "/webp/PicBhavik.webp",
     phone: "+91 12345 67891",
     description:
       "With over 13 years of professional experience, he specializes in Income Tax, Project Finance, and Debt Restructuring. He is a registered Insolvency Professional with the Insolvency and Bankruptcy Board of India (IBBI) and is enrolled with the National Company Law Tribunal (NCLT). His professional work covers various insolvency processes, including Corporate Insolvency Resolution Process (CIRP), Liquidation, and individual insolvency matters. In addition, he has handled audits such as Concurrent Audits, Stock Audits, Due Diligence, and Statutory Audits for banks and other organizations."
   },
+
+
+
   {
     name: "Abhinav Kumar",
     image: "/webp/PicAbhinav.webp",
@@ -33,22 +38,30 @@ const partners = [
     description:
       "Abhinav Kumar brings a wealth of expertise in corporate law, mergers, and acquisitions, helping businesses grow strategically and navigate complex legal frameworks. He has advised clients on a wide range of corporate transactions, including joint ventures, restructuring, and due diligence. Abhinav’s analytical skills and thorough understanding of legal intricacies enable him to provide practical solutions tailored to each client’s unique needs. His dedication to excellence and ethical practice has earned him the trust of clients across various sectors."
   },
+
+
+  
+  // done
+  // Ayush saxena
   {
-    // done
     name: "Ayush Saxena",
     image: "/webp/PicAyush.webp",
     phone: "+91 12345 67891",
     description:
       "He has professional experience in statutory and internal audits and in the areas of direct and indirect taxation. His work includes financial and compliance assignments, as well as forensic audits and investigative engagements for regulatory bodies such as SEBI and SFIO. He has handled banking-related audits including statutory, concurrent, stock, and revenue audits. In addition to audit and assurance, his work also covers finance management and ROC compliances. His professional exposure combines regulatory understanding with technical application across different areas of practice."
   },
+  // done
+  // aditya a k
   {
-    // done
     name: "Aditya A K",
     image: "/webp/PicAditya.webp",
     phone: "+91 12345 67891",
     description:
       "Qualified in 2023, he has professional experience in taxation, statutory audits, internal audits, GST compliance and audits, bank audits, IFC audits, project reports, and financial planning. His work involves assisting organizations in meeting regulatory requirements and managing financial and compliance matters. He has contributed to assignments across diverse sectors, focusing on accurate execution within applicable legal and professional frameworks. His professional exposure combines technical knowledge with practical application to support organizations in addressing financial and regulatory responsibilities."
   },
+
+
+
   {
     name: "Chetan Khurana",
     image: "/webp/PicChetan.webp",

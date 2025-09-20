@@ -4,8 +4,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // AOS import
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-// import Lenis from 'lenis'
+// testing files
+import LeadershipsNew from './pages/LeadershipsNew.jsx'
+import LeadershipsWithPhoto from './pages/LeadershipsWithPhoto.jsx';
 
 // common components
 import Navbar from './components/Navbar.jsx'
@@ -27,12 +28,13 @@ import ComplianceSupport from './pages/ServicesPages/ComplianceSupportPage.jsx'
 import DirectIndirectTax from './pages/ServicesPages/DirectIndirectTaxAdvisoryPage.jsx'
 import SpecializedServices from './pages/ServicesPages/SpecializedServicePage.jsx'
 
+
 const App = () => {
 
   // lenis implementation
   // const lenis = useRef(null);
   // useEffect(() => {
-    // Initialize Lenis
+  // Initialize Lenis
   //   lenis.current = new Lenis({
   //     duration: 0.6, // Control the duration of the scroll
   //     easing: (t) => 1 - Math.pow(1 - t, 3), // Cubic easing for smooth stop
@@ -70,7 +72,7 @@ const App = () => {
           <Route path='/' element={<Landing />} /> {/* landing */}
           <Route path="/about" element={<About />} />{/* about */}
           <Route path="/industries" element={<Industries />} />{/* industries */}
-          <Route path="/leaderships" element={<Leaderships />} />{/* leaderships */}
+          <Route path="/leaderships" element={<LeadershipsWithPhoto />} />{/* leaderships */}
           <Route path="/services" element={<Services />} />{/* services */}
           <Route path="/contact" element={<Contact />} />{/* contact */}
 
@@ -81,6 +83,13 @@ const App = () => {
           <Route path='/compliance_support' element={<ComplianceSupport />} /> {/* compliance support */}
           <Route path='/direct_indirect_tax' element={<DirectIndirectTax />} /> {/* direct and indirect tax adivsory */}
           <Route path='/specialized_services' element={<SpecializedServices />} /> {/* speciallized services */}
+
+
+
+
+          {/* testing routes */}
+          {/* <Route path="/leadershipsNew" element={<LeadershipsNew />} /> */}
+          {/* <Route path="/leadershipsWithPhoto" element={<LeadershipsWithPhoto />} /> */}
 
         </Routes>
         <Footer />

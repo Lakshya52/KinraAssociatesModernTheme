@@ -20,12 +20,12 @@ const Intro = () => {
 
 
       {/* wrapper */}
-        <div className="w-full flex flex-col lg:flex-row items-center justify-center px-6 md:px-10 lg:px-15  mt-20 font-gwen-semibold h-auto lg:h-[500px] gap-10" >
+        <div className="w-full flex flex-col lg:flex-row items-center justify-center px-6 md:px-10 lg:px-15  mt-20  h-auto lg:h-[500px] gap-10" >
 
           {/* left */}
           <div className="w-full lg:w-1/2 h-auto lg:h-full pr-0 lg:pr-10 flex items-center lg:items-start justify-center flex-col text-center lg:text-left"  data-aos="fade-right" >
             {/* <p className="text-sm md:text-base text-gray-600">--- About Us</p> */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light w-full mt-3 md:mt-5 leading-snug">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light w-full mt-3 md:mt-5 leading-snug font-gwen-semibold">
               Supporting Businesses and Individuals with Professional Services
             </h1>
             {/* <h1 className="text-3xl md:text-4xl lg:text-5xl font-light w-full mt-3 md:mt-5 leading-snug">

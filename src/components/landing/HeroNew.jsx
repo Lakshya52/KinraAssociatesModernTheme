@@ -32,11 +32,11 @@ const HeroNew = () => {
           Your Partner in Finance, Tax and <br />
           Business Solution
         </h1> */}
-        <p className="my-4 mb-6 text-gray-200 text-sm md:text-base">
+        <p className="my-4 mb-6 text-gray-200 text-md md:text-xl">
           Integrated Professional Services For Businesses and Individuals
         </p>
-        <Link onClick={handleScrollTop} className='font-light  py-2 px-5 bg-[#2b3780]  hover:bg-black rounded-full'  to="/services">
-        Explore Our Services
+        <Link onClick={handleScrollTop} className='font-normal text-sm sm:text-lg py-2 px-5 bg-[#2b3780]  hover:bg-black rounded-full'  to="/services">
+          Explore Our Services
         </Link>
       </div> 
     </section>
