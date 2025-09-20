@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Breadcrumb from '../components/Breadcrumb'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const breadcrumbItems = [
@@ -7,10 +8,32 @@ const Contact = () => {
     { label: 'Contact Us' },
   ]
 
+
+  const handleTempSubmit = (e) => { 
+    e.preventDefault();
+    alert("Error Submitting the form please contact via phone numbers present on the contact page");
+   }
+
   const handleContactSubmit = (e) => {
-    e.preventDefault()
-    alert("Form submitted successfully!")
-  }
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ivdzs0m", // Replace with your EmailJS service ID
+        "template_axor5sk", // Replace with your EmailJS template ID
+        e.target,
+        "mWN22rx8VMaAnrB5f" // Replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.error("EmailJS Error:", error.text);
+          alert("Failed to send message. Try again later.");
+        }
+      );
+  };
 
   // Branch office data
   const branchOffices = [
@@ -30,60 +53,55 @@ const Contact = () => {
         referrerPolicy="no-referrer-when-downgrade"
         title="Registered Office"
       ></iframe>,
-
     }, {
       name: "Delhi",
-      contacePerson: "CA CHETAN KHURANA",
+      contacePerson: "CHETAN KHURANA",
       email: "email@gmail.com",
       phone: "+91 78273 01577",
       address: "843, Gautam, Gali Jwala Nagar, Shahdara, Delhi-110032",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6347927110155!2d77.29724577457438!3d28.670651882350278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb70cf59db6d%3A0x1fe19019ab89202f!2s843%2C%20Gautam%20Gali%2C%20Jawala%20Nagar%2C%20Shahdara%2C%20Delhi%2C%20110032!5e0!3m2!1sen!2sin!4v1754998898331!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Delhi Office"></iframe>
     },
-
     {
       name: "Karnataka",
-      contacePerson: "CA ADITYA A K",
+      contacePerson: "ADITYA A K",
       email: "email@gmail.com",
       phone: "+91 82173 93670",
       address: "76, 2nd Floor, Hanumanthanagara, 50 ft Road, Bengaluru, Karnataka-560019",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62216.81902117869!2d77.51484087877355!3d12.936542272877045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f4b7246165%3A0x262e856aea3cb36d!2sSilicon%20Honda%20Hanumanthnagar!5e0!3m2!1sen!2sin!4v1754998967850!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mumbai Office"></iframe>
     },
-
     {
       name: "Maharashtra",
-      contacePerson: "CA DEVANSH JI VAISHYA",
+      contacePerson: "DEVANSH JI VAISHYA",
       email: "email@gmail.com",
       phone: "+91 89758 16000",
       address: "101-102/B7 Gangadham Phase 1, Marketyard Jagdish Niwas, Pune, Maharashtra-411037",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1648580777523!2d73.87197977423627!3d18.476190270530314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea9afbd3def9%3A0x1c8ce8f1fece189f!2sGangaDham%20Phase%201!5e0!3m2!1sen!2sin!4v1754999034638!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bangalore Office"></iframe>
     },
-
     {
       name: "Madhya Pradesh",
-      contacePerson: "CA AYUSH SAXENA",
+      contacePerson: "AYUSH SAXENA",
       email: "email@gmail.com",
       phone: "+91 99588 34607",
       address: "H. No. 40, Shiv Shakti Nagar, Ahmadpur, Hoshangabad Road, Bhopal, Madhya Pradesh-462026",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4048515703466!2d77.455826!3d23.191912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzMwLjkiTiA3N8KwMjcnMjEuMCJF!5e0!3m2!1sen!2sin!4v1756895289549!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
-
     {
       name: "Gujarat",
-      contacePerson: "CA BHAVIK HIRABHAI RUPAPARA",
+      contacePerson: "BHAVIK HIRABHAI RUPAPARA",
       email: "email@gmail.com",
       phone: "+91 98791 53657",
       address: "310, Star Chamber, Rajkot, Gujarat-360001",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.4531732158825!2d70.79621797434463!3d22.298694742955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb00269c00e3%3A0x7f86ba477321e7ce!2sStarChember!5e0!3m2!1sen!2sin!4v1754999102400!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
-
     {
       name: "Bihar",
-      contacePerson: "CA ABHINAV KUMAR",
+      contacePerson: "ABHINAV KUMAR",
       email: "email@gmail.com",
       phone: "+91 79034 10638",
       address: "435, Adison Arcade, Fraser Road, Patna, Bihar-800001",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.749208696946!2d85.13840612445657!3d25.61324861472521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b92f5e263%3A0x264c261d6914a9b9!2sAdision%20Arcade!5e0!3m2!1sen!2sin!4v1754999150678!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
-    }];
+    },
+  ];
 
 
   const [selectedBranch, setSelectedBranch] = useState(branchOffices[0])
@@ -121,46 +139,50 @@ const Contact = () => {
 
             {/* Contact Form Section */}
             <div className="w-full md:w-1/2 ">
-              <form onSubmit={handleContactSubmit} className="w-full space-y-4">
-                <div className="flex flex-col gap-3" >
-                  <span htmlFor="name" className='font-semibold'>Name :</span>
+              <form
+                // onSubmit={handleContactSubmit} 
+                onSubmit={handleTempSubmit}
+                className="w-full space-y-4">
+                <div className="flex flex-col gap-3">
+                  <span htmlFor="name" className="font-semibold">Name :</span>
                   <input
                     type="text"
                     id="name"
-
+                    name="name"
                     className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
+                    required
                   />
                 </div>
-
-                <div className="flex flex-col gap-3" >
-                  <span htmlFor="email" className='font-semibold'>Email :</span>
+                <div className="flex flex-col gap-3">
+                  <span htmlFor="email" className="font-semibold">Email :</span>
                   <input
                     type="email"
                     id="email"
-
+                    name="email"
                     className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
+                    required
                   />
                 </div>
-
-                <div className="flex flex-col gap-3" >
-                  <span htmlFor="subject" className='font-semibold'>Subject :</span>
+                <div className="flex flex-col gap-3">
+                  <span htmlFor="subject" className="font-semibold">Subject :</span>
                   <input
                     type="text"
                     id="subject"
-
+                    name="subject"
                     className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 outline-none"
+                    required
                   />
                 </div>
-
-                <div className="flex flex-col gap-3" >
-                  <span htmlFor="message" className='font-semibold'>Message :</span>
+                <div className="flex flex-col gap-3">
+                  <span htmlFor="message" className="font-semibold">Message :</span>
                   <textarea
                     id="message"
-
+                    name="message"
                     className="w-full mt-1 border border-[#2c2c2c]/50 rounded p-2 h-40 resize-none outline-none"
+                    required
                   />
                 </div>
-
+                {/* Captcha removed as per request */}
                 <button
                   type="submit"
                   className="cursor-pointer w-full p-2 rounded bg-[#ff6b6b] text-white hover:bg-[#2b3780] transition-all duration-300 hover:rounded-full "
