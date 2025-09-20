@@ -6,77 +6,57 @@ const breadcrumbItems = [
     { label: 'Home', to: '/' },
     { label: 'Our Leadership' },
 ]
-
 const partners = [
-
-
-    // done
-    // gagan kinra
     {
         name: "Gagan Kinra",
-        image: "/webp/GaganKinra.webp", // Replace with actual image
+        image: "/webp/GaganKinra.webp",
         phone: "+91 12345 67891",
         description:
-            "He is the founding partner of Kinra & Associates and a Chartered Accountant with over 11 years of professional experience in the fields of Income Tax, Goods and Services Tax, Project Financing, Audit, and Business Consultancy. As a DISA-qualified professional, he has specialized expertise in the area of Audit and has obtained certifications in this field from ICAI. His professional experience includes advisory and compliance services in taxation, business setup, and operational processes. He has handled Statutory Audits, Concurrent Audits, Revenue Audits, Stock Audits, Due Diligence, and Internal Audits for banks, government bodies, and private organizations."
+            "He is the founding partner of Kinra & Associates and a Chartered Accountant with over 11 years of experience in Income Tax, Goods and Services Tax, Project Financing, Audit, and Business Consultancy. As a DISA-qualified professional, he has specialized expertise in Audit and holds certifications from ICAI. His work includes advisory and compliance services in taxation, business setup, and operational processes. He has handled Statutory, Concurrent, Revenue, Stock, Due Diligence, and Internal Audits for banks, government bodies, and private organizations, ensuring accurate financial reporting."
     },
-    // done
-    // bhavik haribhai rupapara
     {
         name: "Bhavik Haribhai Rupapara",
         image: "/webp/PicBhavik.webp",
         phone: "+91 12345 67891",
         description:
-            "With over 13 years of professional experience, he specializes in Income Tax, Project Finance, and Debt Restructuring. He is a registered Insolvency Professional with the Insolvency and Bankruptcy Board of India (IBBI) and is enrolled with the National Company Law Tribunal (NCLT). His professional work covers various insolvency processes, including Corporate Insolvency Resolution Process (CIRP), Liquidation, and individual insolvency matters. In addition, he has handled audits such as Concurrent Audits, Stock Audits, Due Diligence, and Statutory Audits for banks and other organizations."
+            "With over 13 years of professional experience, he specializes in Income Tax, Project Finance, and Debt Restructuring. He is a registered Insolvency Professional with the IBBI and enrolled with NCLT. His work covers Corporate Insolvency Resolution Process (CIRP), Liquidation, and individual insolvency matters. In addition, he has handled Concurrent Audits, Stock Audits, Due Diligence, and Statutory Audits for banks and other organizations. His expertise ensures regulatory compliance and accurate financial and operational assessments across various sectors."
     },
-
-
-
     {
         name: "Abhinav Kumar",
         image: "/webp/PicAbhinav.webp",
         phone: "+91 12345 67891",
         description:
-            "Abhinav Kumar brings a wealth of expertise in corporate law, mergers, and acquisitions, helping businesses grow strategically and navigate complex legal frameworks. He has advised clients on a wide range of corporate transactions, including joint ventures, restructuring, and due diligence. Abhinav’s analytical skills and thorough understanding of legal intricacies enable him to provide practical solutions tailored to each client’s unique needs. His dedication to excellence and ethical practice has earned him the trust of clients across various sectors."
+            "He has professional experience in corporate law, mergers, and acquisitions. His work includes advising on joint ventures, restructuring, and due diligence for corporate transactions. He assists organizations in complying with legal and regulatory requirements and supports preparation of necessary documentation for corporate matters. His professional services ensure businesses meet statutory obligations while addressing transactional and compliance needs. He focuses on accurate and practical application of corporate law in day-to-day operations, helping organizations manage legal responsibilities in mergers, acquisitions, and restructuring matters."
     },
-
-
-
-    // done
-    // Ayush saxena
     {
         name: "Ayush Saxena",
         image: "/webp/PicAyush.webp",
         phone: "+91 12345 67891",
         description:
-            "He has professional experience in statutory and internal audits and in the areas of direct and indirect taxation. His work includes financial and compliance assignments, as well as forensic audits and investigative engagements for regulatory bodies such as SEBI and SFIO. He has handled banking-related audits including statutory, concurrent, stock, and revenue audits. In addition to audit and assurance, his work also covers finance management and ROC compliances. His professional exposure combines regulatory understanding with technical application across different areas of practice."
+            "He has professional experience in statutory and internal audits, and in direct and indirect taxation. His work includes financial and compliance assignments, forensic audits, and investigative engagements for regulatory bodies such as SEBI and SFIO. He has handled banking-related audits including statutory, concurrent, stock, and revenue audits. In addition, his work covers finance management and ROC compliances. His exposure combines regulatory understanding with technical application across practice areas, ensuring organizations meet compliance requirements and maintain accurate financial reporting."
     },
-    // done
-    // aditya a k
     {
         name: "Aditya A K",
         image: "/webp/PicAditya.webp",
         phone: "+91 12345 67891",
         description:
-            "Qualified in 2023, he has professional experience in taxation, statutory audits, internal audits, GST compliance and audits, bank audits, IFC audits, project reports, and financial planning. His work involves assisting organizations in meeting regulatory requirements and managing financial and compliance matters. He has contributed to assignments across diverse sectors, focusing on accurate execution within applicable legal and professional frameworks. His professional exposure combines technical knowledge with practical application to support organizations in addressing financial and regulatory responsibilities."
+            "Qualified in 2023, he has professional experience in taxation, statutory audits, internal audits, GST compliance, bank audits, IFC audits, project reports, and financial planning. His work involves assisting organizations in meeting regulatory requirements and managing financial and compliance matters. He has contributed to assignments across diverse sectors, focusing on accurate execution within applicable legal and professional frameworks. His professional exposure combines technical knowledge with practical application, supporting organizations in addressing financial, compliance, and reporting responsibilities effectively and accurately."
     },
-
-
-
     {
         name: "Chetan Khurana",
         image: "/webp/PicChetan.webp",
         phone: "+91 12345 67891",
         description:
-            "Chetan Khurana is renowned for his proficiency in GST, direct taxes, and representing clients before tax authorities. He has successfully handled numerous tax assessments, appeals, and litigation matters, providing clients with comprehensive tax solutions. Chetan’s in-depth knowledge of tax laws and his ability to interpret complex regulations enable him to deliver effective tax planning strategies. He is dedicated to helping clients minimize tax liabilities while ensuring full compliance with statutory requirements."
+            "He has professional experience in Goods and Services Tax (GST) and direct taxes. His work includes preparing tax returns, handling tax assessments, appeals, and assisting in compliance with statutory tax requirements. He provides guidance on tax planning and ensures adherence to applicable laws and regulations. His services focus on supporting organizations and individuals in meeting taxation obligations accurately and on time. He helps maintain proper financial documentation and ensures compliance with statutory provisions, enabling clients to manage tax-related matters efficiently and within the legal framework."
     },
     {
         name: "Devansh Ji Vaishya",
         image: "/webp/PicDevansh.webp",
         phone: "+91 12345 67891",
         description:
-            "Devansh Ji Vaishya leads the assurance practice at the firm, delivering quality audits and financial reporting solutions to clients across industries. He has extensive experience in statutory audits, internal audits, and special purpose audits. Devansh is committed to upholding the highest standards of audit quality and integrity, ensuring that clients’ financial statements are accurate and reliable. His analytical mindset and attention to detail make him a trusted advisor for clients seeking assurance on their financial reporting."
+            "He has professional experience in statutory audits, internal audits, and special purpose audits. His work includes examining financial statements, verifying compliance with accounting standards and regulations, and assisting organizations in maintaining accurate and reliable financial records. He supports proper audit procedures to ensure correctness and regulatory compliance. His services help organizations maintain transparency in reporting, improve internal controls, and achieve reliable financial documentation. His approach emphasizes detailed examination of financial data and adherence to professional standards across various audit and reporting assignments."
     }
-]
+];
 
 const LeadershipsWithPhoto = () => {
     const [openIndex, setOpenIndex] = useState(0)
