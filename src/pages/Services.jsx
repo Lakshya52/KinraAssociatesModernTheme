@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { ArrowRight } from 'lucide-react'
 import Breadcrumb from '../components/Breadcrumb'
+import { ExternalLink, Plus } from 'lucide-react'
 
 const breadcrumbItems = [
   { label: 'Home', to: '/' },
@@ -19,37 +20,37 @@ const Services = () => {
       link: "/accounting",
       img: assets.AccountingManagement,
       title: "Accounting & Financial Reporting",
-      bg: "bg-[#9B7EBD80]",
+      bg: "[#9B7EBD80]",
     },
     {
       link: "/business_advisory",
       img: assets.FinanceOptimization,
       title: "Business Advisory",
-      bg: "bg-gray-100",
+      bg: "gray-100",
     },
     {
       link: "/audit_and_assurance",
       img: assets.AuditAndAssurance,
       title: "Audit and Assurance",
-      bg: "bg-[#74887380]",
+      bg: "[#74887380]",
     },
     {
       link: "/direct_indirect_tax",
       img: assets.TaxPlanningConsultancy,
       title: "Direct & Indirect Tax Advisory",
-      bg: "bg-[#A3DC9A80]",
+      bg: "[#A3DC9A80]",
     },
     {
       link: "/compliance_support",
       img: assets.CorporateCompliance,
       title: "Regulatory & Compliance Support",
-      bg: "bg-[#98A1BC80]",
+      bg: "[#98A1BC80]",
     },
     {
       link: "/specialized_services",
       img: assets.EducationIcon,
       title: "Specialized Advisory Services",
-      bg: "bg-[#D1A98080]",
+      bg: "[#D1A98080]",
     },
   ]
 
@@ -84,18 +85,21 @@ const Services = () => {
                 to={service.link}
                 key={idx}
                 onClick={handleScrollTop}
-                className={`${service.bg} rounded-2xl shadow-md hover:shadow-lg hover:border-black border border-gray-100 transition-all p-6 flex flex-col items-center justify-center group`}
+                className={`bg-${service.bg} rounded-2xl shadow-md hover:shadow-lg hover:border-black border border-[#e1e1e1] backdrop-filter backdrop-blur-sm transition-all p-6 flex flex-col items-center justify-center group`}
               >
+                
                 <img
                   src={service.img}
                   alt={service.title}
-                  className="h-15 w-15 mt-7"
+                  className="h-15 w-15 "
                 />
-                <h2 className="text-lg text-center w sm:text-xl mt-5">
+                <h2 className="text-lg text-center w sm:text-xl py-4 font-medium">
                   {service.title}
                 </h2>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity flex items-center mt-2">
-                  {/* View More <ArrowRight className="" />   */}
+                <div className='flex items-center justify-center w-full sm:hidden ' >
+                  <span className='flex items-center jusitfy-center gap-2 bg-[#2b3780]/80 rounded p-2 px-4 text-white text-sm' >
+                    Open <ExternalLink className="w-5 h-5 " /> 
+                  </span>
                 </div>
               </Link>
             ))}

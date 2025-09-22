@@ -104,7 +104,7 @@ const Navbar = () => {
             </Link>
 
             {showServices && servicesRef.current && (
-              <span
+              <ul
                 className="absolute min-w-[350px] z-[3000] p-2 shadow-xl rounded-md bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
                 style={{
                   top: servicesRef.current.offsetHeight + 8 + "px",
@@ -131,7 +131,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
-              </span>
+              </ul>
             )}
           </div>
 

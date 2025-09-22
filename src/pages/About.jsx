@@ -47,14 +47,14 @@ const About = () => {
 
             {/* Mission & Vision */}
             <div className="w-full flex flex-col md:flex-row gap-10 mb-6">
-              <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-right" data-aos-delay="100">
+              <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-up" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 ">Our Mission</h1>
                 <p className="text-justify font-light">
                   To deliver services in accounting, assurance, taxation, and consultancy with integrity, independence, and professional excellence; to maintain ethical practices in every engagement; and to provide an environment that encourages professional growth, continuous learning, and balance for our associates in practice.
                 </p>
               </div>
 
-              <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-left" data-aos-delay="100">
+              <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-up" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 ">Our Vision</h1>
                 <p className="text-justify font-light">
                   To uphold the values of ethics, integrity, and professionalism in the practice of chartered accountancy; to promote sound financial and compliance practices across sectors; and to contribute meaningfully to the professional community, business environment, and society at large.

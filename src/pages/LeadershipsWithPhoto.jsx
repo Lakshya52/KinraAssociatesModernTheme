@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { assets } from '../assets/assets'
 import Breadcrumb from '../components/Breadcrumb'
+import { Plus } from 'lucide-react'
+
 
 const breadcrumbItems = [
     { label: 'Home', to: '/' },
@@ -59,7 +61,7 @@ const partners = [
 ];
 
 const LeadershipsWithPhoto = () => {
-    const [openIndex, setOpenIndex] = useState(0)
+    const [openIndex, setOpenIndex] = useState(null)
 
     const handleToggle = (idx) => {
         setOpenIndex(openIndex === idx ? null : idx) // allow toggle open/close
@@ -94,7 +96,7 @@ const LeadershipsWithPhoto = () => {
                             {partners.map((partner, idx) => (
                                 <div
                                     key={partner.name}
-                                    className={` ${openIndex === idx ? " px-4 py-4" : "sm:hover:bg-blue-900/50 cursor-pointer"}  rounded accordion py-2 sm:py-4 w-full  sm:px-6 md:px-10  border-b border-gray-300  transition-all duration-300 ${openIndex === idx ? "bg-[#2b3780]/90 text-white rounded-lg" : ""
+                                    className={` ${openIndex === idx ? " px-4 py-6" : "sm:hover:bg-blue-900/50 cursor-pointer"}  rounded accordion py-4 sm:py-6 w-full  sm:px-6 md:px-10  border-b border-gray-300 group transition-all duration-300 ${openIndex === idx ? "bg-[#2b3780]/90 text-white rounded-lg" : ""
                                         }`}
                                     id={`partner-heading-${idx}`}
                                     onClick={() => handleToggle(idx)}
@@ -106,19 +108,24 @@ const LeadershipsWithPhoto = () => {
                                         aria-expanded={openIndex === idx}
                                         onClick={() => handleToggle(idx)}
                                     >
-                                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 md:gap-10 cursor-pointer w-full sm:w-auto py-2 sm:py-0 transition-colors duration-200 rounded-md">
-                                            <img 
-                                                src={partner.image} 
-                                                className={`h-auto w-20 sm:w-16 md:w-20 border-[#2c2c2c]/50 border  rounded-lg shadow-sm ${openIndex === idx ? "hidden" : "block"} transition-all duration-200`} 
-                                                style={{boxShadow: '0 2px 8px 0 rgba(44,55,128,0.08)'}}
+                                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 md:gap-10 cursor-pointer w-full sm:w-auto py-2 sm:py-0 transition-colors duration-200 rounded-md ">
+                                            <img
+                                                src={partner.image}
+                                                className={`h-auto w-20 sm:w-16 md:w-20 border-[#2c2c2c]/50 border  rounded-lg shadow-sm ${openIndex === idx ? "hidden" : "block"} transition-all duration-200`}
+                                                style={{ boxShadow: '0 2px 8px 0 rgba(44,55,128,0.08)' }}
                                             />
                                             {/* Divider for mobile */}
                                             {/* <div className="block sm:hidden w-full h-0.5 bg-blue-900/20  rounded-full" /> */}
-                                            <h5 className="text-lg sm:text-xl md:text-2xl font-medium font-gwen-semibold text-center sm:text-left w-full sm:w-auto tracking-wide">
-                                                {partner.name}
+                                            <h5 className="text-lg sm:text-xl md:text-2xl font-medium  text-center sm:text-left w-full sm:w-auto tracking-wide">
+                                                <span className='font-gwen-semibold'>
+                                                    {partner.name}
+                                                </span>
+                                                <h5 className={`${openIndex === idx ? "hidden" : "block"} pt-2 text-sm sm:text-md md:text-lg  text-center sm:text-left w-full sm:w-auto tracking-wide text-gray-500 group-hover:text-gray-900 font-normal`}>
+                                                    {partner.description.slice(0, 45)}.... <span className=' font-medium hover:cursor-pointer hover:underline text-[#2b3780]'>Read More</span>
+                                                </h5>
                                             </h5>
                                         </div>
-                                        <svg
+                                        {/* <svg
                                             className={`${openIndex === idx ? "block" : "hidden"} sm:block transition-transform duration-500 ${openIndex === idx ? "rotate-180" : ""
                                                 }`}
                                             width={22}
@@ -134,7 +141,13 @@ const LeadershipsWithPhoto = () => {
                                                 strokeLinecap="round"
                                                 strokeLinejoin="round"
                                             />
-                                        </svg>
+                                        </svg> */}
+
+                                        <Plus className={`${openIndex === idx ? "block" : "hidden"} sm:block transition-transform duration-500 ${openIndex === idx ? "rotate-225" : ""
+                                            }`}
+                                            width={22}
+                                            height={22}
+                                            viewBox="0 0 22 22" />
                                     </button>
 
                                     {/* Accordion Content */}
@@ -144,7 +157,7 @@ const LeadershipsWithPhoto = () => {
                                             : "opacity-0 invisible h-0 p-0 m-0"
                                             }`}
                                         aria-labelledby={`partner-heading-${idx}`}
-                                        style={openIndex === idx ? {maxHeight: 'none', overflow: 'visible'} : {maxHeight: 0, overflow: 'hidden'}}
+                                        style={openIndex === idx ? { maxHeight: 'none', overflow: 'visible' } : { maxHeight: 0, overflow: 'hidden' }}
                                     >
                                         <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start border-t pt-5">
                                             {/* Partner Image */}

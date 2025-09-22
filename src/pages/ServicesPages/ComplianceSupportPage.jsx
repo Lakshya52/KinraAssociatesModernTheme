@@ -40,7 +40,7 @@ const ComplianceSupportPage = () => {
               "Support for obtaining and renewing licenses: FSSAI, MSME, BIS, ISO, and other sector-specific registrations.",
             ].map((item, idx) => (
               <li key={idx} className="flex gap-3 items-start">
-                <CheckCheck className="h-5 w-5 text-violet-700 shrink-0 mt-1" />
+                <CheckCheck className="h-5 w-5 text-[#2b3780] shrink-0 mt-1" />
                 <span>{item}</span>
               </li>
             ))}
@@ -64,7 +64,7 @@ const ComplianceSupportPage = () => {
                 <li key={idx}>
                   <Link
                     to={service.to}
-                    className="flex justify-between items-center py-3 text-gray-700 hover:text-violet-800 transition group"
+                    className="flex justify-between items-center py-3 text-gray-700 hover:text-[#2b3780] transition group"
                   >
                     <span>{service.label}</span>
                     <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-transform duration-300 translate-x-0 group-hover:translate-x-1" />
