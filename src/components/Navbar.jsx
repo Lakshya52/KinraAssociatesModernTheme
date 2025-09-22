@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex gap-10 text-md items-center relative">
+        <span className="hidden lg:flex gap-10 text-md items-center relative">
           <Link onClick={() => {
               handleScrollTop();
               setIsScrolled(false);
@@ -104,7 +104,7 @@ const Navbar = () => {
             </Link>
 
             {showServices && servicesRef.current && (
-              <ul
+              <span
                 className="absolute min-w-[350px] z-[3000] p-2 shadow-xl rounded-md bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100"
                 style={{
                   top: servicesRef.current.offsetHeight + 8 + "px",
@@ -131,7 +131,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </span>
             )}
           </div>
 
@@ -143,7 +143,7 @@ const Navbar = () => {
           </Link>
 
           <Button label="Contact Us" href="/contact" onClick={handleScrollTop} />
-        </ul>
+        </span>
 
         {/* Tablet Nav */}
         <div className="hidden sm:flex lg:hidden items-center gap-4">
