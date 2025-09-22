@@ -20,37 +20,37 @@ const Services = () => {
       link: "/accounting",
       img: assets.AccountingManagement,
       title: "Accounting & Financial Reporting",
-      bg: "[#9B7EBD80]",
+      bg: "bg-[#9B7EBD80]",
     },
     {
       link: "/business_advisory",
       img: assets.FinanceOptimization,
       title: "Business Advisory",
-      bg: "gray-100",
+      bg: "bg-gray-100",
     },
     {
       link: "/audit_and_assurance",
       img: assets.AuditAndAssurance,
       title: "Audit and Assurance",
-      bg: "[#74887380]",
+      bg: "bg-[#74887380]",
     },
     {
       link: "/direct_indirect_tax",
       img: assets.TaxPlanningConsultancy,
       title: "Direct & Indirect Tax Advisory",
-      bg: "[#A3DC9A80]",
+      bg: "bg-[#A3DC9A80]",
     },
     {
       link: "/compliance_support",
       img: assets.CorporateCompliance,
       title: "Regulatory & Compliance Support",
-      bg: "[#98A1BC80]",
+      bg: "bg-[#98A1BC80]",
     },
     {
       link: "/specialized_services",
       img: assets.EducationIcon,
       title: "Specialized Advisory Services",
-      bg: "[#D1A98080]",
+      bg: "bg-[#D1A98080]",
     },
   ]
 
@@ -85,7 +85,7 @@ const Services = () => {
                 to={service.link}
                 key={idx}
                 onClick={handleScrollTop}
-                className={`bg-${service.bg} rounded-2xl shadow-md hover:shadow-lg hover:border-black border border-[#e1e1e1] backdrop-filter backdrop-blur-sm transition-all p-6 flex flex-col items-center justify-center group`}
+                className={`${service.bg} rounded-2xl shadow-md hover:shadow-lg hover:border-black border border-[#e1e1e1] backdrop-filter backdrop-blur-sm transition-all p-6 flex flex-col items-center justify-center group`}
               >
                 
                 <img
