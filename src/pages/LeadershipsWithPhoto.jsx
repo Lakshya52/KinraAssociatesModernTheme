@@ -120,8 +120,11 @@ const LeadershipsWithPhoto = () => {
                                                 <span className='font-gwen-semibold'>
                                                     {partner.name}
                                                 </span>
-                                                <h5 className={`${openIndex === idx ? "hidden" : "block"} pt-2 text-sm sm:text-md md:text-lg  text-center sm:text-left w-full sm:w-auto tracking-wide text-gray-500 group-hover:text-gray-900 font-normal pr-20`}> 
-                                                        {partner.description.slice(0, 130)}.... <span className=' font-medium hover:cursor-pointer hover:underline text-[#2b3780]'>Read More</span>
+                                                <h5 className={`${openIndex === idx ? "hidden" : "block"} pt-2 text-sm sm:text-md md:text-lg  text-center sm:text-left w-full sm:w-auto tracking-wide text-gray-500 group-hover:text-gray-900 font-normal pr-20`}>
+                                                    {partner.description.slice(0, 130)}....
+
+                                                    <span className='  hover:cursor-pointer hover:underline text-black'>Read More</span>
+                                                    {/* Read More [#2b3780] */}
                                                 </h5>
                                             </h5>
                                         </div>
