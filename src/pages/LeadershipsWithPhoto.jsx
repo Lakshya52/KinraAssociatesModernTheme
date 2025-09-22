@@ -97,10 +97,11 @@ const LeadershipsWithPhoto = () => {
                                     className={` ${openIndex === idx ? " px-4 py-4" : "sm:hover:bg-blue-900/50 cursor-pointer"}  rounded accordion py-2 sm:py-4 w-full  sm:px-6 md:px-10  border-b border-gray-300  transition-all duration-300 ${openIndex === idx ? "bg-[#2b3780]/90 text-white rounded-lg" : ""
                                         }`}
                                     id={`partner-heading-${idx}`}
+                                    onClick={() => handleToggle(idx)}
                                 >
                                     {/* Accordion Toggle */}
                                     <button
-                                        className="accordion-toggle flex items-center justify-between w-full text-left"
+                                        className="accordion-toggle cursor-pointer flex items-center justify-between w-full text-left"
                                         aria-controls={`partner-collapse-${idx}`}
                                         aria-expanded={openIndex === idx}
                                         onClick={() => handleToggle(idx)}
