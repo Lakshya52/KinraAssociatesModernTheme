@@ -71,8 +71,9 @@ const Footer = () => {
       <div className="w-full border-t border-gray-200 py-4 px-4 sm:px-6 md:px-15 flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm font-light">
 
         <span className='flex gap-5 mb-2 sm:mb-0' >
-          <Link className='hover:underline' >Privacy Policy</Link>
-          <Link className='hover:underline' >Terms & Conditions</Link>
+          <Link className='hover:underline' to="/privacy_policy" onClick={handleScrollTop}>Privacy Policy</Link>
+          <Link className='hover:underline' to="/terms_and_conditions"onClick={handleScrollTop} >Terms & Conditions</Link>
+          <Link className='hover:underline' to="/legal_disclamer" onClick={handleScrollTop}>Legal Disclamer</Link>
         </span>
 
         <p className="mb-2 sm:mb-0">© 2025 Kinra & Associates. All rights reserved.</p>

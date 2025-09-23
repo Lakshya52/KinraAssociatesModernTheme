@@ -29,6 +29,12 @@ import DirectIndirectTax from './pages/ServicesPages/DirectIndirectTaxAdvisoryPa
 import SpecializedServices from './pages/ServicesPages/SpecializedServicePage.jsx'
 
 
+// least common links
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import Terms from './pages/Terms.jsx';
+import Disclamer from './pages/Disclamer.jsx';
+
+
 const App = () => {
 
   // lenis implementation
@@ -90,6 +96,12 @@ const App = () => {
           {/* testing routes */}
           {/* <Route path="/leadershipsNew" element={<LeadershipsNew />} /> */}
           {/* <Route path="/leadershipsWithPhoto" element={<LeadershipsWithPhoto />} /> */}
+
+
+{/* least common links */}
+<Route path='/privacy_policy' element={<PrivacyPolicy />} /> 
+<Route path='/terms_and_conditions' element={<Terms />} /> 
+<Route path='/legal_disclamer' element={<Disclamer />} /> 
 
         </Routes>
         <Footer />
