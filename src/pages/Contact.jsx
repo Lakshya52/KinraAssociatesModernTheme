@@ -9,10 +9,10 @@ const Contact = () => {
   ]
 
 
-  const handleTempSubmit = (e) => { 
+  const handleTempSubmit = (e) => {
     e.preventDefault();
     alert("Error Submitting the form please contact via phone numbers present on the contact page");
-   }
+  }
 
   const handleContactSubmit = (e) => {
     e.preventDefault();
@@ -34,6 +34,40 @@ const Contact = () => {
         }
       );
   };
+
+
+
+  const [loading, setLoading] = useState(false);
+  const handleContactSubmitWeb3Froms = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const formData = new FormData(e.target);
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // Replace with Web3Forms access key
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Message sent successfully!");
+        e.target.reset();
+      } else {
+        alert("Failed to send message. Please try again later.");
+        console.error(result);
+      }
+    } catch (error) {
+      console.error("Web3Forms Error:", error);
+      alert("Error submitting form. Please contact us directly.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
 
   // Branch office data
   const branchOffices = [
@@ -141,8 +175,15 @@ const Contact = () => {
             <div className="w-full md:w-1/2 ">
               <form
                 // onSubmit={handleContactSubmit} 
-                onSubmit={handleTempSubmit}
+                // onSubmit={handleTempSubmit}
+                onSubmit={handleContactSubmitWeb3Froms}
                 className="w-full space-y-4">
+
+
+                  {/* Hidden Access Key */}
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
+
                 <div className="flex flex-col gap-3">
                   <span htmlFor="name" className="font-semibold">Name :</span>
                   <input
@@ -184,11 +225,12 @@ const Contact = () => {
                 </div>
                 {/* Captcha removed as per request */}
                 <button
-                  type="submit"
-                  className="cursor-pointer w-full p-2 rounded bg-[#ff6b6b] text-white hover:bg-[#2b3780] transition-all duration-300 hover:rounded-full "
-                >
-                  Submit
-                </button>
+                type="submit"
+                disabled={loading}
+                className="cursor-pointer w-full p-2 rounded bg-[#ff6b6b] text-white hover:bg-[#2b3780] transition-all duration-300 hover:rounded-full disabled:opacity-50"
+              >
+                {loading ? "Sending..." : "Submit"}
+              </button>
               </form>
             </div>
 

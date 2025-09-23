@@ -54,7 +54,7 @@ const DirectIndirectTaxAdvisoryPage = () => {
 
         {/* Right Sidebar */}
         <div className="md:col-span-3 h-full flex flex-col justify-between gap-5 ">
-          <div className="bg-violet-50 rounded-2xl shadow-md p-5 h-[80%] min-h-fit">
+          <div className="bg-violet-50 rounded-2xl shadow-md p-5 h-full min-h-fit">
             <h2 className="text-xl font-gwen-semibold text-gray-800 mb-4">
               Our Other Services
             </h2>
@@ -79,7 +79,7 @@ const DirectIndirectTaxAdvisoryPage = () => {
               ))}
             </ul>
           </div>
-          <Button label="Go back to home" href="/" className="py-3 w-full bg-red-200 h-[10%] p-5 rounded-full" ></Button>
+           
         </div>
       </div>
     </div>

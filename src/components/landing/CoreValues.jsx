@@ -6,7 +6,7 @@ const CoreValues = () => {
         { icon: assets.IntegrityIcon, label: "Integrity", delay: 100 },
         { icon: assets.ResponsibilityIcon, label: "Responsibility", delay: 150  },
         { icon: assets.ConfidentialityIcon, label: "Confidentiality", delay: 200  },
-        { icon: assets.TechnicalExcellenceIcon, label: "Professionalism", delay: 250 },
+        { icon: assets.TechnicalExcellenceIcon, label: "Professional Competancy", delay: 250 },
         { icon: assets.IndependenceIcon, label: "Independence", delay: 300 },
         // { icon: assets.StatewardshipIcon, label: "Stewardship", delay: 400 },
     ];
@@ -23,7 +23,7 @@ const CoreValues = () => {
                 </p>
 
                 {/* Responsive Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-10 mt-12 font-light text-gray-700 text-sm md:text-base" >
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8 mt-12 font-light text-gray-700 text-sm md:text-base" >
                     {values.map((val, i) => (
                         <div
                             key={i}
