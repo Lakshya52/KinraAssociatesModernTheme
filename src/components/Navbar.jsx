@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Button from "./ui/Button";
 
 const flyoutLinks = [
@@ -100,7 +100,8 @@ const Navbar = () => {
               onMouseLeave={handleFlyoutLeave}
             >
               Services
-              <img src="/DropDown.svg" alt="" />
+              {/* <img src="/DropDown.svg" className="mr-0 pr-0 box-border" /> */}
+              <ChevronDown className="h-5 w-5 mt-0.5"/>
             </Link>
 
             {showServices && servicesRef.current && (
@@ -225,7 +226,7 @@ const Navbar = () => {
             className="hover:underline flex gap-1"
           >
             Services
-            <img src="/DropDown.svg" alt="" />
+            {/* <img src="/DropDown.svg" alt="" /> */}
           </Link>
 
           {/* Mobile-only Contact */}

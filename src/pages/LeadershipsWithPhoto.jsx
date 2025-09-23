@@ -120,9 +120,9 @@ const LeadershipsWithPhoto = () => {
                                                 <span className='font-gwen-semibold'>
                                                     {partner.name}
                                                 </span>
-                                                <h5 className={`${openIndex === idx ? "hidden" : "block"} pt-2 text-sm sm:text-md md:text-lg  text-center sm:text-left w-full sm:w-auto tracking-wide text-gray-500 group-hover:text-gray-900 font-normal pr-20`}>
-                                                    {partner.description.slice(0, 130)}....
-
+                                                <h5 className={`${openIndex === idx ? "hidden" : "block"} pt-2 text-sm sm:text-md md:text-lg  text-center sm:text-left w-full sm:w-auto tracking-wide text-gray-500 group-hover:text-gray-900  font-normal sm:pr-20`}>
+                                                    {partner.description.slice(0, 120)}....
+                                                    &nbsp;
                                                     <span className='  hover:cursor-pointer hover:underline text-black'>Read More</span>
                                                     {/* Read More [#2b3780] */}
                                                 </h5>
@@ -146,11 +146,8 @@ const LeadershipsWithPhoto = () => {
                                             />
                                         </svg> */}
 
-                                        <Plus className={`${openIndex === idx ? "block" : "hidden"} sm:block transition-transform duration-500 ${openIndex === idx ? "rotate-225" : ""
-                                            }`}
-                                            width={22}
-                                            height={22}
-                                            viewBox="0 0 22 22" />
+                                        <Plus className={`${openIndex === idx ? "block" : "hidden"} max-w-[24px] min-w-[24px] sm:block transition-transform duration-500 ${openIndex === idx ? "rotate-225" : ""
+                                            }`} />
                                     </button>
 
                                     {/* Accordion Content */}
@@ -167,7 +164,7 @@ const LeadershipsWithPhoto = () => {
                                             <img
                                                 src={partner.image}
                                                 alt={`${partner.name} profile`}
-                                                className="sm:w-48 w-[60%] sm:h-48 h-[60%] rounded-xl object-cover border-1 border-white shadow-md"
+                                                className="sm:w-48 w-[60%] max-h-[200px] max-w-[150px] sm:h-48 h-[60%] rounded-xl object-cover border-1 border-white shadow-md"
                                             />
                                             {/* Partner Description */}
                                             <p className="text-sm sm:text-base md:text-lg leading-6 text-justify break-words whitespace-pre-line">

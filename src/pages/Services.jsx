@@ -85,7 +85,7 @@ const Services = () => {
                 to={service.link}
                 key={idx}
                 onClick={handleScrollTop}
-                className={`${service.bg} rounded-2xl shadow-md hover:shadow-lg hover:border-black border border-[#e1e1e1] backdrop-filter backdrop-blur-sm transition-all p-6 flex flex-col items-center justify-center group`}
+                className={`${service.bg} rounded-2xl shadow-md hover:shadow-lg hover:border-[#2b3780] hover:scale-101 border border-[#e1e1e1] backdrop-filter backdrop-blur-sm transition-all p-6 flex flex-col items-center justify-center group`}
               >
                 
                 <img
