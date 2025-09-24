@@ -12,6 +12,7 @@ dist
 KinraAndAssociates22Sep2025
 dist-ssr
 *.local
+stats.html
 
 # Editor directories and files
 .vscode/*
