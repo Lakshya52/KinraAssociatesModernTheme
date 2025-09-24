@@ -29,7 +29,7 @@ const CoreValues = () => {
                             key={i}
                             className="flex flex-col items-center justify-center gap-2 hover:text-black transition-colors p-4"  data-aos="fade-up" data-aos-delay={val.delay}
                         >
-                            <img src={val.icon} alt={val.label} className="w-16 md:w-20" />
+                            <img src={val.icon} alt={val.label} className="w-16 h-auto md:w-20" />
                             <p className="text-center font-semibold">{val.label}</p>
                         </div>
                     ))}

@@ -1,35 +1,35 @@
 
 // industries we serve icons
-import ManufacturingIcon from './icons/ManufacturingIcon.png'
-import TradingIcon from './icons/TradingIcon.png'
-import RealestateIcon from './icons/RealestateIcon.png'
-import ItIcon from './icons/ItIcon.png'
-import ConsultancyIcon from './icons/consultancyIcon.png'
+import ManufacturingIcon from './icons/ManufacturingIcon.webp'
+import TradingIcon from './icons/TradingIcon.webp'
+import RealestateIcon from './icons/RealestateIcon.webp'
+import ItIcon from './icons/ItIcon.webp'
+import ConsultancyIcon from './icons/consultancyIcon.webp'
 
-import HealthcareIcon from './icons/HealthcareIcon.png'
-import LogisticsIcon from './icons/LogisticIcon.png'
-import AgricultureIcon from './icons/AgricultureIcon.png'
-import FinancialIcon from './icons/FinancialIcon.png'
-import EducationIcon from './icons/EducationIcon.png'
+import HealthcareIcon from './icons/HealthcareIcon.webp'
+import LogisticsIcon from './icons/LogisticIcon.webp'
+import AgricultureIcon from './icons/AgricultureIcon.webp'
+import FinancialIcon from './icons/FinancialIcon.webp'
+import EducationIcon from './icons/EducationIcon.webp'
 
 
 // services pages icons
-import AccountingManagement from './servicesPageIcons/AccountingManagement.png'
-import FinanceOptimization from './servicesPageIcons/FinanceOptimization.png'
-import AuditAndAssurance from './servicesPageIcons/AuditAndAssurance.png'
-import TaxPlanningConsultancy from './servicesPageIcons/TaxPlanningConsultancy.png'
-import CorporateCompliance from './servicesPageIcons/CorporateCompliance.png'
-// import EducationIcon from './servicesPageIcons/EducationIcon.png'
+import AccountingManagement from './servicesPageIcons/AccountingManagement.webp'
+import FinanceOptimization from './servicesPageIcons/FinanceOptimization.webp'
+import AuditAndAssurance from './servicesPageIcons/AuditAndAssurance.webp'
+import TaxPlanningConsultancy from './servicesPageIcons/TaxPlanningConsultancy.webp'
+import CorporateCompliance from './servicesPageIcons/CorporateCompliance.webp'
+// import EducationIcon from './servicesPageIcons/EducationIcon.webp'
 
 
 
 // values icons 
 import IntegrityIcon from "./icons/values/IntegrityIcon.svg"
-import ResponsibilityIcon from "./icons/values/ResponsibilityIcon.png"
-import ConfidentialityIcon from "./icons/values/Confidentiality.png"
-import TechnicalExcellenceIcon from "./icons/values/TechnicalExcellenceIcon.png"
-import IndependenceIcon from "./icons/values/IndependenceIcon.png"
-import StatewardshipIcon from "./icons/values/StewardshipIcon.png"
+import ResponsibilityIcon from "./icons/values/ResponsibilityIcon.webp"
+import ConfidentialityIcon from "./icons/values/Confidentiality.webp"
+import TechnicalExcellenceIcon from "./icons/values/TechnicalExcellenceIcon.webp"
+import IndependenceIcon from "./icons/values/IndependenceIcon.webp"
+import StatewardshipIcon from "./icons/values/StewardshipIcon.webp"
 
 
 
