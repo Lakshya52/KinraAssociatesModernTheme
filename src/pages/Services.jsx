@@ -87,7 +87,13 @@ const Services = () => {
                 onClick={handleScrollTop}
                 className={`${service.bg} rounded-2xl shadow-md hover:shadow-lg hover:border-[#2b3780] hover:scale-101 border border-[#e1e1e1] backdrop-filter backdrop-blur-sm transition-all p-6 flex flex-col items-center justify-center group`}
               >
-                
+
+                <div className='flex items-center justify-end w-full sm:hidden ' >
+
+                  <ExternalLink className="w-5 h-5 " />
+
+                </div>
+
                 <img
                   src={service.img}
                   alt={service.title}
@@ -96,11 +102,15 @@ const Services = () => {
                 <h2 className="text-lg text-center w sm:text-xl py-4 font-medium">
                   {service.title}
                 </h2>
-                <div className='flex items-center justify-center w-full sm:hidden ' >
+
+
+
+                {/* <div className='flex items-center justify-center w-full sm:hidden ' >
                   <span className='flex items-center jusitfy-center gap-2 bg-[#2b3780]/80 rounded p-2 px-4 text-white text-sm' >
                     Open <ExternalLink className="w-5 h-5 " /> 
                   </span>
-                </div>
+                </div> */}
+
               </Link>
             ))}
           </div>
