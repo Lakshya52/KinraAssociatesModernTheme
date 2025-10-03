@@ -98,10 +98,10 @@ const App = () => {
           {/* <Route path="/leadershipsWithPhoto" element={<LeadershipsWithPhoto />} /> */}
 
 
-{/* least common links */}
-<Route path='/privacy_policy' element={<PrivacyPolicy />} /> 
-<Route path='/terms_and_conditions' element={<Terms />} /> 
-<Route path='/legal_disclamer' element={<Disclamer />} /> 
+          {/* least common links */}
+          <Route path='/privacy_policy' element={<PrivacyPolicy />} />
+          <Route path='/terms_and_conditions' element={<Terms />} />
+          <Route path='/legal_disclamer' element={<Disclamer />} />
 
         </Routes>
         <Footer />

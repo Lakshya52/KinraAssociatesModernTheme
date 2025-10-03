@@ -32,7 +32,7 @@ const Intro = () => {
               Empowering Business And Individuals
             </h1> */}
             <p className="mt-5 md:mt-7 mb-5 md:mb-7 text-sm md:text-base text-gray-700">
-              We provide accounting, taxation, and compliance services with accuracy and integrity, supporting organizations and individuals in meeting statutory responsibilities.
+              We offer taxation, audit, financial, and accounting services, along with compliance support, assisting organizations and individuals in meeting statutory and regulatory obligations.
             </p>
             <Button label="About Us" href="/about" b_radius="10px" />
           </div>

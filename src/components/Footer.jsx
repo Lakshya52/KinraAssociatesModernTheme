@@ -34,7 +34,7 @@ const Footer = () => {
               <p className="font-light font-playfair-display text-base sm:text-lg">Chartered Accountants</p>
             </Link>
             <p className="text-xs sm:text-base md:text-md text-justify font-light sm:text-center md:text-left max-w-[90%]">
-              Our CA firm provides professional financial and advisory services to businesses, startups, and individuals, with the objective of supporting informed decision-making and compliance in today’s dynamic economic environment.
+              Our firm offers financial, taxation, audit, and advisory services to businesses, startups, and individuals, assisting them in meeting statutory and regulatory requirements and facilitating informed financial and operational decision-making.
             </p>
           </div>
 

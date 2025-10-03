@@ -38,7 +38,7 @@ const Industries = () => {
           <div className="w-full sm:w-[90%] flex items-center justicen flex-col h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15 text-base sm:text-lg">
 
 
-            <div className="flex flex-col md:flex-row w-full md:w-[90%] justify-between gap-6 md:gap-12">
+            <div className="flex flex-col md:flex-row w-full md:w-[90%] justify-between gap-5 md:gap-12">
               {/* Left Column */}
               <div className="w-full md:w-1/2 flex  items-start justify-start lg:justify-center gap-6">
                 <ul className="flex flex-col gap-4 sm:gap-5 w-fit items-start">
