@@ -12,9 +12,6 @@ const About = () => {
   return (
     <>
 
-
-
-
       <div className="min-h-fit w-full  relative">
         {/* Diagonal Stripes Background */}
         <div
@@ -36,11 +33,11 @@ const About = () => {
         </div>
         {/* Content Section */}
         <div className="w-full flex justify-center items-center  px-4" data-aos="fade-up" data-aos-delay="500">
-          <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border-[1px] border-[#2c2c2c]/50 px-4 sm:px-10 md:px-20 py-8 sm:py-12 my-6 mb-15  text-base sm:text-lg">
+          <div className="w-full sm:w-[90%] flex flex-col justify-between items-center h-fit sm:bg-gray-100 rounded-xl sm:shadow-xl shadow-[#5a6bdd]/10 border-[1px] border-[#2c2c2c]/50 px-4 sm:px-7 md:px-17 py-8 sm:py-12 my-6 mb-15  text-base sm:text-lg">
             {/* Objective */}
             <div className="w-full pb-5 mb-3">
               <h1 className="text-lg sm:text-2xl mb-5 ">Our Objective</h1>
-              <p className="text-justify font-light">
+              <p className="text-justify font-light ">
                 We aim to provide professional services in finance, accounting, and compliance with a focus on accuracy, reliability, and adherence to applicable laws and standards. Our objective is to assist organizations in meeting their statutory and regulatory responsibilities in an efficient and professional manner.
               </p>
             </div>
@@ -51,13 +48,13 @@ const About = () => {
               <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-up" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 ">Our Vision</h1>
                 <p className="text-justify font-light">
-                  To uphold the values of ethics, integrity, and professionalism in the practice of chartered accountancy; to promote sound financial and compliance practices across sectors; and to contribute meaningfully to the professional community, business environment, and society at large.
+                  To uphold the values of ethics, integrity, and professionalism in the practice of chartered accountancy, to promote sound financial and compliance practices across sectors, and to contribute meaningfully to the professional community, business environment, and society at large.
                 </p>
               </div>
               <div className="w-full p-7 rounded-xl bg-[#2b3780] text-white" data-aos="fade-up" data-aos-delay="100">
                 <h1 className="text-lg sm:text-2xl mb-5 ">Our Mission</h1>
                 <p className="text-justify font-light">
-                  To deliver services in accounting, assurance, taxation, and consultancy with integrity, independence, and professional excellence; to maintain ethical practices in every engagement; and to provide an environment that encourages professional growth, continuous learning, and balance for our associates in practice.
+                 To provide services in assurance, taxation, accounting and consultancy with integrity and independence, to ensure ethical practices in all engagements, and to foster an environment supporting professional growth and learning for associates in practice.
                 </p>
               </div>
 
