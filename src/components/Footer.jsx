@@ -33,15 +33,15 @@ const Footer = () => {
               <p className="font-light font-playfair-display text-2xl sm:text-3xl">Kinra & Associates</p>
               <p className="font-light font-playfair-display text-base sm:text-lg">Chartered Accountants</p>
             </Link>
-            <p className="text-xs sm:text-base md:text-md text-justify font-light sm:text-center md:text-left max-w-[90%]">
+            <p className="text-xs sm:text-base md:text-md text-justify font-light sm:text-center  md:text-justify max-w-[90%]">
               Our firm offers financial, taxation, audit, and advisory services to businesses, startups, and individuals, assisting them in meeting statutory and regulatory requirements and facilitating informed financial and operational decision-making.
             </p>
           </div>
 
           {/* Important Links */}
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left md:mt-7">
             <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Important Links</p>
-            <div className="flex flex-col sm:flex-row sm:gap-6 gap-2">
+            <div className="flex flex-row sm:gap-6 gap-10">
               <span className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
                 <Link target='_blank' to="https://www.icai.org/">ICAI</Link>
                 <Link target='_blank' to="https://www.gst.gov.in/">GST</Link>
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left md:mt-7">
             <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Contact Information</p>
             <ul className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
               <li><a href="mailto:info@kinraandassociates.com">Email : info@kinraandassociates.com</a></li>
@@ -76,7 +76,7 @@ const Footer = () => {
           <Link className='hover:underline' to="/legal_disclamer" onClick={handleScrollTop}>Legal Disclamer</Link>
         </span>
 
-        <p className="mb-2 sm:mb-0">© 2025 Kinra & Associates. All rights reserved.</p>
+  <p className="mb-2 sm:mb-0">© {new Date().getFullYear()} Kinra & Associates. All rights reserved.</p>
 
         {/* Socials */}
         {/* <div className="flex items-center gap-4">

@@ -1,11 +1,16 @@
 // Button.jsx
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Button = ({ label = "", href = "#", b_radius = "full" }) => {
+// import { bool } from "prop-types";
+
+const Button = ({ label = "", href = "#", b_radius = "rounded-full", bg_color = "#ff6b6b", border = true }) => {
+
+  const borderClass = border ? "border border-white" : "";
+
   const handleScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
@@ -16,6 +21,8 @@ const Button = ({ label = "", href = "#", b_radius = "full" }) => {
   useEffect(() => {
     const button = buttonRef.current;
     const flair = flairRef.current;
+
+
 
     if (!button || !flair) return;
 
@@ -119,7 +126,7 @@ const Button = ({ label = "", href = "#", b_radius = "full" }) => {
       onClick={handleScrollTop}
       to={href}
       ref={buttonRef}
-      className={`relative group inline-flex items-center justify-center gap-2 px-4 py-2 text-white rounded-full border overflow-hidden transition-colors duration-150 hover:text-black bg-[#ff6b6b]`}
+      className={`relative group inline-flex items-center justify-center gap-2 px-4 py-2 text-white ${b_radius} ${borderClass} overflow-hidden transition-colors duration-150 hover:text-black bg-[${bg_color}]`}
     >
       <span
         ref={flairRef}

@@ -35,8 +35,6 @@ const Contact = () => {
       );
   };
 
-
-
   const [loading, setLoading] = useState(false);
   const handleContactSubmitWeb3Froms = async (e) => {
     e.preventDefault();
@@ -77,16 +75,26 @@ const Contact = () => {
       email: "email@gmil.com",
       phone: "+91 98972 95511",
       address: "H. No 32, Phase-III-B, Pant Vihar, ITC Road, Saharanpur, U.P.- 247001",
-      mapEmbed: <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.119964024052!2d77.5452343151156!3d29.96411098191116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb3e0e0e0e0e0%3A0x0!2sH.%20No%2032%2C%20Phase-III-B%2C%20Pant%20Vihar%2C%20ITC%20Road%2C%20Saharanpur%2C%20U.P.-%20247001!5e0!3m2!1sen!2sin!4v1710000000004!5m2!1sen!2sin"
-        width="100%"
+      // mapEmbed: <iframe
+      //   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.119964024052!2d77.5452343151156!3d29.96411098191116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb3e0e0e0e0e0%3A0x0!2sH.%20No%2032%2C%20Phase-III-B%2C%20Pant%20Vihar%2C%20ITC%20Road%2C%20Saharanpur%2C%20U.P.-%20247001!5e0!3m2!1sen!2sin!4v1710000000004!5m2!1sen!2sin"
+      //   width="100%"
+      //   height="100%"
+      //   style={{ border: 0 }}
+      //   allowFullScreen=""
+      //   loading="lazy"
+      //   referrerPolicy="no-referrer-when-downgrade"
+      //   title="Registered Office"
+      // ></iframe>
+
+
+      
+      mapEmbed:<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.569379038977!2d77.53277785025406!3d29.942723976340492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eebca38815c15%3A0x5b7ee36557760617!2sKinra%20%26%20Associates!5e0!3m2!1sen!2sin!4v1759843353310!5m2!1sen!2sin" width="100%"
         height="100%"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Registered Office"
-      ></iframe>,
+        title="Registered Office"></iframe>
     }, {
       name: "Delhi",
       contacePerson: "CHETAN KHURANA",

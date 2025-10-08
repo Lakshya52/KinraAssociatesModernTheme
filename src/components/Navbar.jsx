@@ -100,8 +100,8 @@ const Navbar = () => {
               onMouseLeave={handleFlyoutLeave}
             >
               Services
-              {/* <img src="/DropDown.svg" className="mr-0 pr-0 box-border" /> */}
-              <ChevronDown className="h-5 w-5 mt-0.5"/>
+              <img src="/DropDown.svg" className="h-3 w-3 mt-0.5" />
+              {/* <ChevronDown className="h-5 w-5 mt-0.5"/> */}
             </Link>
 
             {showServices && servicesRef.current && (
