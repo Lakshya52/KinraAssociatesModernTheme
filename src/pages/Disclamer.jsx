@@ -13,7 +13,9 @@ const Disclamer = () => {
 
           <div className="text-center sm:text-start w-full font-bold  ">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-light w-full leading-snug font-gwen-semibold" >
-              Legal Disclamer - Kinra <span className="font-gwynerCondensedFont">&</span> Associates
+              Legal Disclamer 
+              
+              {/* - Kinra <span className="font-gwynerCondensedFont">&</span> Associates */}
             </h1>
 
 

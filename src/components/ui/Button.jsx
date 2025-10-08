@@ -5,9 +5,9 @@ import { SplitText } from "gsap/SplitText";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// import { bool } from "prop-types";
+// Default ui settings of the buttons are already passed by default as props
 
-const Button = ({ label = "", href = "#", b_radius = "rounded-full", bg_color = "#ff6b6b", border = true }) => {
+const Button = ({ label = "", href = "#", b_radius = "rounded-full", bg_color = "#ff6b6b", border = true, hov_bg="white", hov_text="black" }) => {
 
   const borderClass = border ? "border border-white" : "";
 
@@ -126,13 +126,13 @@ const Button = ({ label = "", href = "#", b_radius = "rounded-full", bg_color = 
       onClick={handleScrollTop}
       to={href}
       ref={buttonRef}
-      className={`relative group inline-flex items-center justify-center gap-2 px-4 py-2 text-white ${b_radius} ${borderClass} overflow-hidden transition-colors duration-150 hover:text-black bg-[${bg_color}]`}
+      className={`relative group inline-flex items-center justify-center gap-2 px-4 py-2 text-white ${b_radius} ${borderClass} overflow-hidden transition-colors duration-150 hover:text-${hov_text} bg-[${bg_color}]`}
     >
       <span
         ref={flairRef}
         className="absolute inset-0 pointer-events-none scale-0 origin-top-left will-change-transform"
       >
-        <span className="absolute block bg-white rounded-full w-[170%] aspect-square -translate-x-1/2 -translate-y-1/2" />
+        <span className={`absolute block bg-${hov_bg} rounded-full w-[170%] aspect-square -translate-x-1/2 -translate-y-1/2`} />
       </span>
 
       {/* ✅ CHANGE 3: Wrap only the label text in a dedicated span */}

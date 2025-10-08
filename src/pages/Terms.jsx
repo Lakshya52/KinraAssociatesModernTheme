@@ -11,7 +11,10 @@ const Terms = () => {
 
                     <div className="text-center sm:text-start w-full font-bold  ">
                         <h1 className="text-xl sm:text-2xl md:text-3xl font-light w-full leading-snug font-gwen-semibold" >
-                            Terms <span className='font-gwynerCondensedFont' >&</span> Conditions - Kinra<span className="font-gwynerCondensedFont"> &</span> Associates
+                            Terms <span className='font-gwynerCondensedFont' >&</span> Conditions 
+                            
+                            
+                            {/* - Kinra<span className="font-gwynerCondensedFont"> &</span> Associates */}
 
 
                             {/* Terms & Conditions – Kinra & Associates */}

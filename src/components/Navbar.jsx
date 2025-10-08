@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   const handleFlyoutLeave = useCallback(() => {
-    timeoutRef.current = setTimeout(() => setShowServices(false), 200);
+    timeoutRef.current = setTimeout(() => setShowServices(false), 200); // change the value to adjust delay of color changing effect on navbar.
   }, []);
 
   // Scroll handler for homepage
@@ -41,7 +41,7 @@ const Navbar = () => {
     }
 
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      setIsScrolled(window.scrollY > 200);
     };
 
     window.addEventListener("scroll", handleScroll);

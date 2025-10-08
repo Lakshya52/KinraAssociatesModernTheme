@@ -34,7 +34,7 @@ const Intro = () => {
             <p className="mt-5 md:mt-7 mb-5 md:mb-7 text-sm md:text-base text-gray-700">
               We offer taxation, audit, financial, and accounting services, along with compliance support, assisting organizations and individuals in meeting statutory and regulatory obligations.
             </p>
-            <Button label="About Us" href="/about" b_radius="rounded-full" border={false} />
+            <Button label="About Us" href="/about" b_radius="rounded-full" border={false} hov_bg="[#2b3780]" hov_text="white" />
           </div>
 
           {/* right images */}

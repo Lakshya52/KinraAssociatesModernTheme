@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Breadcrumb from '../components/Breadcrumb'
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const breadcrumbItems = [
@@ -9,31 +9,33 @@ const Contact = () => {
   ]
 
 
-  const handleTempSubmit = (e) => {
-    e.preventDefault();
-    alert("Error Submitting the form please contact via phone numbers present on the contact page");
-  }
+  // previous emailjs method used to send form data is commented out below 
 
-  const handleContactSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_ivdzs0m", // Replace with your EmailJS service ID
-        "template_axor5sk", // Replace with your EmailJS template ID
-        e.target,
-        "mWN22rx8VMaAnrB5f" // Replace with your EmailJS public key
-      )
-      .then(
-        (result) => {
-          alert("Message sent successfully!");
-          e.target.reset();
-        },
-        (error) => {
-          console.error("EmailJS Error:", error.text);
-          alert("Failed to send message. Try again later.");
-        }
-      );
-  };
+  // const handleTempSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert("Error Submitting the form please contact via phone numbers present on the contact page");
+  // }
+
+  // const handleContactSubmit = (e) => {
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       "service_ivdzs0m", // Replace with your EmailJS service ID
+  //       "template_axor5sk", // Replace with your EmailJS template ID
+  //       e.target,
+  //       "mWN22rx8VMaAnrB5f" // Replace with your EmailJS public key
+  //     )
+  //     .then(
+  //       (result) => {
+  //         alert("Message sent successfully!");
+  //         e.target.reset();
+  //       },
+  //       (error) => {
+  //         console.error("EmailJS Error:", error.text);
+  //         alert("Failed to send message. Try again later.");
+  //       }
+  //     );
+  // };
 
   const [loading, setLoading] = useState(false);
   const handleContactSubmitWeb3Froms = async (e) => {
@@ -41,7 +43,7 @@ const Contact = () => {
     setLoading(true);
 
     const formData = new FormData(e.target);
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // Replace with Web3Forms access key
+    formData.append("access_key", "41a6e523-bda2-4c4b-a612-f600767d8fd9"); // Replace with Web3Forms access key if using any other email excepts info@kinraandassociates.com
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -67,8 +69,9 @@ const Contact = () => {
   };
 
 
-  // Branch office data
-  const branchOffices = [
+  // Branch and head office data
+  const office_locations = [
+    // head office uttar pradesh
     {
       name: "Uttar Pradesh",
       contacePerson: "GAGAN KINRA",
@@ -87,15 +90,19 @@ const Contact = () => {
       // ></iframe>
 
 
-      
-      mapEmbed:<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.569379038977!2d77.53277785025406!3d29.942723976340492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eebca38815c15%3A0x5b7ee36557760617!2sKinra%20%26%20Associates!5e0!3m2!1sen!2sin!4v1759843353310!5m2!1sen!2sin" width="100%"
+
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.569379038977!2d77.53277785025406!3d29.942723976340492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eebca38815c15%3A0x5b7ee36557760617!2sKinra%20%26%20Associates!5e0!3m2!1sen!2sin!4v1759843353310!5m2!1sen!2sin" width="100%"
         height="100%"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         title="Registered Office"></iframe>
-    }, {
+    },
+
+    // branch offices
+    // delhi
+    {
       name: "Delhi",
       contacePerson: "CHETAN KHURANA",
       email: "email@gmail.com",
@@ -103,6 +110,7 @@ const Contact = () => {
       address: "843, Gautam, Gali Jwala Nagar, Shahdara, Delhi-110032",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6347927110155!2d77.29724577457438!3d28.670651882350278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb70cf59db6d%3A0x1fe19019ab89202f!2s843%2C%20Gautam%20Gali%2C%20Jawala%20Nagar%2C%20Shahdara%2C%20Delhi%2C%20110032!5e0!3m2!1sen!2sin!4v1754998898331!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Delhi Office"></iframe>
     },
+    // karnataka
     {
       name: "Karnataka",
       contacePerson: "ADITYA A K",
@@ -111,6 +119,7 @@ const Contact = () => {
       address: "76, 2nd Floor, Hanumanthanagara, 50 ft Road, Bengaluru, Karnataka-560019",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62216.81902117869!2d77.51484087877355!3d12.936542272877045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f4b7246165%3A0x262e856aea3cb36d!2sSilicon%20Honda%20Hanumanthnagar!5e0!3m2!1sen!2sin!4v1754998967850!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mumbai Office"></iframe>
     },
+    // maharashtra
     {
       name: "Maharashtra",
       contacePerson: "DEVANSH JI VAISHYA",
@@ -119,6 +128,7 @@ const Contact = () => {
       address: "101-102/B7 Gangadham Phase 1, Marketyard Jagdish Niwas, Pune, Maharashtra-411037",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1648580777523!2d73.87197977423627!3d18.476190270530314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea9afbd3def9%3A0x1c8ce8f1fece189f!2sGangaDham%20Phase%201!5e0!3m2!1sen!2sin!4v1754999034638!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bangalore Office"></iframe>
     },
+    // madhya pradesh
     {
       name: "Madhya Pradesh",
       contacePerson: "AYUSH SAXENA",
@@ -127,6 +137,7 @@ const Contact = () => {
       address: "H. No. 40, Shiv Shakti Nagar, Ahmadpur, Hoshangabad Road, Bhopal, Madhya Pradesh-462026",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4048515703466!2d77.455826!3d23.191912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzMwLjkiTiA3N8KwMjcnMjEuMCJF!5e0!3m2!1sen!2sin!4v1756895289549!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
+    // gujarat
     {
       name: "Gujarat",
       contacePerson: "BHAVIK HIRABHAI RUPAPARA",
@@ -135,6 +146,7 @@ const Contact = () => {
       address: "310, Star Chamber, Rajkot, Gujarat-360001",
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.4531732158825!2d70.79621797434463!3d22.298694742955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb00269c00e3%3A0x7f86ba477321e7ce!2sStarChember!5e0!3m2!1sen!2sin!4v1754999102400!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
+    // Bihar
     {
       name: "Bihar",
       contacePerson: "ABHINAV KUMAR",
@@ -146,15 +158,10 @@ const Contact = () => {
   ];
 
 
-  const [selectedBranch, setSelectedBranch] = useState(branchOffices[0])
+  const [selectedBranch, setSelectedBranch] = useState(office_locations[0])
 
   return (
     <>
-
-
-
-
-
       <div className="min-h-screen w-full relative">
         {/* Diagonal Stripes Background */}
         <div
@@ -188,8 +195,8 @@ const Contact = () => {
                 className="w-full space-y-4">
 
 
-                  {/* Hidden Access Key */}
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                {/* Hidden Access Key */}
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
 
 
                 <div className="flex flex-col gap-3">
@@ -233,12 +240,12 @@ const Contact = () => {
                 </div>
                 {/* Captcha removed as per request */}
                 <button
-                type="submit"
-                disabled={loading}
-                className="cursor-pointer w-full p-2 rounded bg-[#ff6b6b] text-white hover:bg-[#2b3780] transition-all duration-300 hover:rounded-full disabled:opacity-50"
-              >
-                {loading ? "Sending..." : "Submit"}
-              </button>
+                  type="submit"
+                  disabled={loading}
+                  className="cursor-pointer w-full p-2 rounded bg-[#ff6b6b] text-white hover:bg-[#2b3780] transition-all duration-300 rounded-full disabled:opacity-50"
+                >
+                  {loading ? "Sending..." : "Submit"}
+                </button>
               </form>
             </div>
 
@@ -246,7 +253,7 @@ const Contact = () => {
             <div className="w-full md:w-1/2 flex flex-col gap-4">
               <label className="font-semibold">Our Offices :</label>
               <div className="flex flex-wrap gap-2 sm:gap-3 mb-4">
-                {branchOffices.map((branch) => (
+                {office_locations.map((branch) => (
                   <button
                     key={branch.name}
                     className={`px-3 sm:px-4 py-2 rounded border text-xs sm:text-sm md:text-base cursor-pointer ${selectedBranch.name === branch.name
@@ -282,8 +289,6 @@ const Contact = () => {
         </div>
 
       </div>
-
-
     </>
   )
 }

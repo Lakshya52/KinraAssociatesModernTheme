@@ -21,7 +21,7 @@ const ServiceSidebar = ({ className = "" }) => {
     return (
         <div className={`md:col-span-3 h-full flex flex-col justify-between gap-5 ${className}`}>
             <div className="bg-violet-50 rounded-2xl shadow-md p-5 h-full min-h-fit">
-                <h2 className="text-xl font-gwen-semibold text-gray-800 mb-4">Our Other Services</h2>
+                <h2 className="text-xl font-gwen-semibold text-gray-800 mb-4">Other Services</h2>
                 <ul className="flex flex-col divide-y divide-gray-300">
                     {services.map((service, idx) => {
                         const isActive = location.pathname === service.to;
@@ -30,7 +30,7 @@ const ServiceSidebar = ({ className = "" }) => {
                                 <Link
                                     to={service.to}
                                     onClick={handleScrollTop}
-                                    className={`flex justify-between items-center py-3 text-gray-700 hover:text-[#2b3780]  transition group ${isActive ? " " : ""
+                                    className={`flex justify-between items-center py-3 text-gray-700 hover:text-[#2b3780]  transition group ${isActive ? "" : ""
                                         }`}
                                 >
                                     <span className={isActive ? "font-semibold text-[#2b3780] w-full bg-[#ff6b6b]/70 px-3 py-2 rounded-xl" : ""}>{service.label}</span>

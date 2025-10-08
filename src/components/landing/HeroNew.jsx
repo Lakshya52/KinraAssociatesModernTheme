@@ -37,7 +37,7 @@ const HeroNew = () => {
         <p className="my-4 mb-6 text-gray-200 text-md md:text-xl">
           Integrated Accounting, Taxation, and Advisory Services for Businesses and Individuals
         </p>
-        <Button label='Explore Our Services' bg_color='#2b3780' border={false} onClick={handleScrollTop} className='font-normal text-sm sm:text-lg py-2 px-5 bg-[#2b3780]  hover:bg-black rounded-full'  to="/services">
+        <Button label='Explore Our Services' href='/services'  bg_color='#2b3780' border={false} onClick={handleScrollTop} className='font-normal text-sm sm:text-lg py-2 px-5 bg-[#2b3780]  hover:bg-black rounded-full'  to="/services">
           
         </Button>
       </div> 

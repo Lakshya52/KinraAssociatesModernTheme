@@ -9,7 +9,9 @@ const PrivacyPolicy = () => {
 
                     <div className="text-center sm:text-start w-full font-bold  ">
                         <h1 className="text-xl sm:text-2xl md:text-3xl font-light w-full leading-snug font-gwen-semibold" >
-                            Privacy Policy <span className='font-gwynerCondensedFont' >&</span> Kinra <span className="font-gwynerCondensedFont">&</span> Associates
+                            Privacy Policy 
+                            
+                            {/* <span className='font-gwynerCondensedFont' >-</span> Kinra <span className="font-gwynerCondensedFont">&</span> Associates */}
                         </h1>
                     </div>
 
