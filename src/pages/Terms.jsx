@@ -37,7 +37,7 @@ const Terms = () => {
                     <div className="flex flex-col w-full gap-7">
                         <p className="w-full text-justify">
 
-                            This website is owned and maintained by Kinra & Associates, Chartered Accountants. By accessing or using this site, you agree to these Terms and Conditions and acknowledge that the content is for general informational purposes only, not constituting professional advice or solicitation of work.
+                            This website is owned and maintained by Kinra & Associates, Chartered Accountants. By accessing or using this site, you agree to these Terms and Conditions and acknowledge that the content is for general informational purposes only, not constituting solicitation of work.
 
                         </p>
                         <p className="w-full text-justify">

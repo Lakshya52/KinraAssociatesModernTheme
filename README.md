@@ -40,7 +40,7 @@ In the project directory, you can run the following commands:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/kinraandassociatesmoderntheme.git
+    git clone https://github.com/Lakshya52/kinraandassociatesmoderntheme.git
     ```
 2.  **Navigate to the project directory:**
     ```bash

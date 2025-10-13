@@ -59,7 +59,7 @@ const ComplianceSupportPage = () => {
             ].map((item, idx) => (
               <li key={idx} className="flex gap-3 items-start">
                 <CheckCheck className="h-5 w-5 text-[#2b3780] shrink-0 mt-1" />
-                <span>{item}</span>
+                <span className="text-justify">{item}</span>
               </li>
             ))}
           </ul>

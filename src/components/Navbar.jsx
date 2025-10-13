@@ -107,7 +107,7 @@ backdrop-contrast-100 top-0 z-50 w-full transition-all duration-300 text-white
               onMouseLeave={handleFlyoutLeave}
             >
               Services
-              <img src="/DropDown.svg" className="h-3 w-3 mt-0.5" />
+              <img src="/DropDown.svg" className="h-3 w-3 mt-0.5" alt="kinra and associates Services Dropdown icon" />
               {/* <ChevronDown className="h-5 w-5 mt-0.5"/> */}
             </Link>
 

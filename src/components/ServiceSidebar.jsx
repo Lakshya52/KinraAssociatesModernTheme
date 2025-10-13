@@ -33,7 +33,7 @@ const ServiceSidebar = ({ className = "" }) => {
                                     className={`flex justify-between items-center py-3 text-gray-700 hover:text-[#2b3780]  transition group ${isActive ? "" : ""
                                         }`}
                                 >
-                                    <span className={isActive ? " text-[#2b3780] w-full bg-[#ff6b6b]/70 px-3 py-2 rounded-xl" : ""}>{service.label}</span>
+                                    <span className={isActive ? " text-white w-full bg-[#ff6b6b] px-3 py-2 rounded-xl" : ""}>{service.label}</span>
                                     <ArrowRight className={`${isActive? "opacity-0 hidden": ""} h-4 w-4 opacity-0 group-hover:opacity-100 transition-transform duration-300 translate-x-0 group-hover:translate-x-1`} />
                                 </Link>
                             </li>

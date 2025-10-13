@@ -13,7 +13,7 @@ const Disclamer = () => {
 
           <div className="text-center sm:text-start w-full font-bold  ">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-light w-full leading-snug font-gwen-semibold" >
-              Legal Disclamer 
+              Legal Disclaimer 
               
               {/* - Kinra <span className="font-gwynerCondensedFont">&</span> Associates */}
             </h1>
@@ -34,7 +34,7 @@ const Disclamer = () => {
 
             <p className="w-full text-justify">This website has been prepared and maintained in compliance with the Guidelines for creating websites issued by the Institute of Chartered Accountants of India (ICAI)</p>
 
-            <p className="w-full text-justify">No material or information on this website should be construed as professional advice or as a substitute for such advice. Users are advised not to act upon any information contained herein without obtaining specific professional guidance appropriate to their individual circumstances.</p>
+            <p className="w-full text-justify">No material or information on this website should be construed as a source of advertising, solicitation, or any form of inducement. Users are advised not to act upon any information contained herein without obtaining specific professional guidance appropriate to their individual circumstances.</p>
 
             <p className="w-full text-justify">While every effort has been made to ensure that the information provided is accurate and up to date, Kinra & Associates makes no representations or warranties, express or implied, about the completeness, reliability, or accuracy of the information. The firm disclaims any liability for any loss or damage, whether direct or indirect, arising from the use of this website or reliance on its contents.</p>
 

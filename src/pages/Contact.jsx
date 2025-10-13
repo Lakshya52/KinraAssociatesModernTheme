@@ -242,7 +242,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="cursor-pointer w-full p-2 rounded bg-[#ff6b6b] text-white hover:bg-[#2b3780] transition-all duration-300 rounded-full disabled:opacity-50"
+                  className="cursor-pointer w-full p-2 bg-[#ff6b6b] text-white hover:bg-[#2b3780] transition-all duration-300 rounded-full disabled:opacity-50"
                 >
                   {loading ? "Sending..." : "Submit"}
                 </button>

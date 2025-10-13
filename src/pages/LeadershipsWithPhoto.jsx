@@ -125,6 +125,7 @@ const LeadershipsWithPhoto = () => {
                                         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 md:gap-10 cursor-pointer w-full sm:w-auto py-2 sm:py-0 transition-colors duration-200 rounded-md ">
                                             <img
                                                 src={partner.image}
+                                                alt='kinra and associates partner image'
                                                 className={`h-auto w-20 sm:w-16 md:w-20 border-[#2c2c2c]/50 border  rounded-lg shadow-sm ${openIndex === idx ? "hidden" : "block"} transition-all duration-200`}
                                                 style={{ boxShadow: '0 2px 8px 0 rgba(44,55,128,0.08)' }}
                                             />

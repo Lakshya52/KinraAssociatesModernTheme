@@ -73,7 +73,7 @@ const Footer = () => {
         <span className='flex gap-5 mb-2 sm:mb-0' >
           <Link className='hover:underline' to="/privacy_policy" onClick={handleScrollTop}>Privacy Policy</Link>
           <Link className='hover:underline' to="/terms_and_conditions"onClick={handleScrollTop} >Terms & Conditions</Link>
-          <Link className='hover:underline' to="/legal_disclamer" onClick={handleScrollTop}>Legal Disclamer</Link>
+          <Link className='hover:underline' to="/legal_disclamer" onClick={handleScrollTop}>Legal Disclaimer</Link>
         </span>
 
   <p className="mb-2 sm:mb-0">© {new Date().getFullYear()} Kinra & Associates. All rights reserved.</p>
