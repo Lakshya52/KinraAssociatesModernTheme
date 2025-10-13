@@ -72,9 +72,9 @@ const Services = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-light w-full leading-snug font-gwen-semibold">
             Our Services
           </h1>
-          <p className="flex items-center justify-center w-full font-light mt-3">
+          <span className="flex items-center justify-center w-full font-light mt-3">
             <Breadcrumb items={breadcrumbItems} />
-          </p>
+          </span>
         </div>
 
         {/* Services Grid */}

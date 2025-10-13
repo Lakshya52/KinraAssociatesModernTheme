@@ -22,7 +22,7 @@ const SpecializedServicePage = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-13 gap-8 ">
         {/* Left Image */}
-        <div className="md:col-span-4">
+        <div className="md:col-span-4" data-aos="fade-up">
           <div className="rounded-2xl overflow-hidden shadow-lg h-[320px] md:h-[450px]">
             <img
               src="/servicesPagesImages/SpecializedServices.webp"
@@ -34,7 +34,7 @@ const SpecializedServicePage = () => {
         </div>
 
         {/* Middle Content */}
-        <div className="md:col-span-5 flex flex-col">
+        <div className="md:col-span-5 flex flex-col" data-aos="fade-up">
           <h1 className="text-3xl md:text-4xl font-gwen-semibold text-gray-800 leading-snug">
             Specialized Advisory Services
           </h1>

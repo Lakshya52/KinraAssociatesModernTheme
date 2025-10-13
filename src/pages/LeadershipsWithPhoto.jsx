@@ -130,17 +130,17 @@ const LeadershipsWithPhoto = () => {
                                             />
                                             {/* Divider for mobile */}
                                             {/* <div className="block sm:hidden w-full h-0.5 bg-blue-900/20  rounded-full" /> */}
-                                            <h5 className="text-lg sm:text-xl md:text-2xl font-medium  text-center sm:text-left w-full sm:w-auto tracking-wide">
+                                            <div className="text-lg sm:text-xl md:text-2xl font-medium  text-center sm:text-left w-full sm:w-auto tracking-wide">
                                                 <span className='font-gwen-semibold'>
                                                     {partner.name}
                                                 </span>
                                                 <h5 className={`${openIndex === idx ? "hidden" : "block"} pt-2 text-sm sm:text-md md:text-lg  text-center sm:text-left w-full sm:w-auto tracking-wide text-gray-500 group-hover:text-gray-900  font-normal sm:pr-20`}>
                                                     {partner.description.slice(0, 120)}....
                                                     &nbsp;
-                                                    <span className='  hover:cursor-pointer hover:underline text-black'>Read More</span>
+                                                    <span className='hover:cursor-pointer hover:underline text-black'>Read More</span>
                                                     {/* Read More [#2b3780] */}
                                                 </h5>
-                                            </h5>
+                                            </div>
                                         </div>
                                         {/* <svg
                                             className={`${openIndex === idx ? "block" : "hidden"} sm:block transition-transform duration-500 ${openIndex === idx ? "rotate-180" : ""

@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import Lenis from 'lenis'
 
 // AOS import
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 // testing files
-import LeadershipsNew from './pages/LeadershipsNew.jsx'
+// import LeadershipsNew from './pages/LeadershipsNew.jsx'
 import LeadershipsWithPhoto from './pages/LeadershipsWithPhoto.jsx';
 
 // common components
@@ -16,7 +18,7 @@ import Footer from './components/Footer.jsx'
 import Landing from './pages/Landing.jsx'
 import About from './pages/About.jsx'
 import Industries from './pages/Industries.jsx'
-import Leaderships from './pages/Leaderships.jsx'
+// import Leaderships from './pages/Leaderships.jsx'
 import Services from './pages/Services.jsx'
 import Contact from './pages/Contact.jsx'
 

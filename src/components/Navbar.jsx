@@ -1,7 +1,9 @@
 import React, { useState, useRef, useCallback, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+// import { Menu, X, ChevronDown } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import Button from "./ui/Button";
+import Menu from "./ui/Menu";
 
 const flyoutLinks = [
   { to: "/accounting", label: "Accounting & Financial Reporting" },
@@ -54,7 +56,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${isHome ? "fixed" : "sticky"} top-0 z-50 w-full transition-all duration-300 text-white 
+      className={`${isHome ? "fixed" : "sticky"} bg-clip-padding
+backdrop-filter
+backdrop-blur
+bg-opacity-10
+backdrop-saturate-100
+backdrop-contrast-100 top-0 z-50 w-full transition-all duration-300 text-white 
         ${isScrolled ? "shadow-xl" : ""}
         ${isOpen ? "bg-[#2b3780]" : isScrolled ? "bg-[#2b3780]" : "bg-white/20"}`}
     >
@@ -81,9 +88,9 @@ const Navbar = () => {
         {/* Desktop Nav */}
         <span className="hidden lg:flex gap-10 text-md items-center relative">
           <Link onClick={() => {
-              handleScrollTop();
-              setIsScrolled(false);
-            }} className="li-custom" to="/">
+            handleScrollTop();
+            setIsScrolled(false);
+          }} className="li-custom" to="/">
             Home
           </Link>
           <Link onClick={handleScrollTop} className="li-custom" to="/about">
@@ -149,7 +156,7 @@ const Navbar = () => {
         {/* Tablet Nav */}
         <div className="hidden sm:flex lg:hidden items-center gap-4">
           <button aria-label="menu open close button" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X className="cursor-pointer" size={28} /> : <Menu className="cursor-pointer" size={28} />}
           </button>
           <Button
             label="Contact Us"
@@ -167,9 +174,10 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle navigation menu"
             aria-expanded="false"
+
             aria-controls="main-navigation"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X className="cursor-pointer" size={28} /> : <Menu className="cursor-pointer" size={28} />}
           </button>
         </div>
       </div>

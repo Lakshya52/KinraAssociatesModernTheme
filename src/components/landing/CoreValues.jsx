@@ -49,7 +49,7 @@ const CoreValues = () => {
                 <h1 className="text-3xl md:text-5xl font-light w-full leading-tight font-gwen-semibold " >
                     Our Core Values
                 </h1>
-                <p className="mt-2 font-light text-gray-700 w-full text-sm md:text-base font-gwen-semibold "  data-aos-delay="100">
+                <p className="mb-5 md:mb-7 text-sm md:text-base text-gray-700"  data-aos-delay="100">
                     Our approach to every project is guided by the following principles
                 </p>
 

@@ -19,7 +19,7 @@ const ServiceSidebar = ({ className = "" }) => {
     };
 
     return (
-        <div className={`md:col-span-3 h-full flex flex-col justify-between gap-5 ${className}`}>
+        <div className={`md:col-span-3 h-full flex flex-col justify-between gap-5 ${className}`}  data-aos="fade-up">
             <div className="bg-violet-50 rounded-2xl shadow-md p-5 h-full min-h-fit">
                 <h2 className="text-xl font-gwen-semibold text-gray-800 mb-4">Other Services</h2>
                 <ul className="flex flex-col divide-y divide-gray-300">
