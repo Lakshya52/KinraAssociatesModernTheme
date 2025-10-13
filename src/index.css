@@ -106,7 +106,7 @@ body::-webkit-scrollbar {
 /* gwen semibold font */
 @font-face {
   font-family: 'gwenFontSemibold';
-  src: local('gwenFontSemibold'), url('./fonts/Gwen-Trial-SemiBold.ttf') format('truetype');
+  src: local('gwenFontSemibold'), url('./fonts/Gwen-Trial-SemiBold.woff2') format('woff2');
   /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
   font-weight: normal;
   font-style: normal;
