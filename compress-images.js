@@ -34,6 +34,6 @@ const processImages = async (pattern) => {
 };
 
 (async () => {
-  await processImages("src/assets/**/*.{jpg,png}");
+  await processImages("public/**/*.{jpg,png,webp}");
   console.log("✅ Images in src/assets converted to WebP in-place!");
 })();
