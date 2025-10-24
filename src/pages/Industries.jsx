@@ -58,7 +58,7 @@ const Industries = () => {
                       className="h-10 w-10 sm:h-12 sm:w-12 md:h-16 md:w-16 object-contain"
                       alt="Trading"
                     />
-                    <span className="text-base sm:text-lg md:text-xl">Retail & Trading Sectors</span>
+                    <span className="text-base sm:text-lg md:text-xl">Retail & Trading Sector</span>
                   </li>
                   <li className="flex items-center gap-4 sm:gap-5">
                     <img
