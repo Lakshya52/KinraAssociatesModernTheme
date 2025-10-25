@@ -9,7 +9,9 @@ lerna-debug.log*
 
 node_modules
 dist
-KinraAndAssociates22Sep2025
+# KinraAndAssociates22Sep2025
+# KinraAndAssociates24Oct2025
+# KinraAndAssociates24Oct2025.zip
 dist-ssr
 *.local
 stats.html

@@ -43,7 +43,7 @@ const Contact = () => {
     setLoading(true);
 
     const formData = new FormData(e.target);
-    formData.append("access_key", "41a6e523-bda2-4c4b-a612-f600767d8fd9"); // Replace with Web3Forms access key if using any other email excepts info@kinraandassociates.com
+    formData.append("access_key", "4201d802-39f4-472e-807f-5da71cf40965"); // Replace with Web3Forms access key if using any other email excepts info@kinraandassociates.com
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
