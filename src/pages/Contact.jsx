@@ -37,13 +37,20 @@ const Contact = () => {
   //     );
   // };
 
+
+
+
+
+
+  // the method which is used to send contact form data to email is web3 forms
   const [loading, setLoading] = useState(false);
+  const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "";
   const handleContactSubmitWeb3Froms = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     const formData = new FormData(e.target);
-    formData.append("access_key", "4201d802-39f4-472e-807f-5da71cf40965"); // Replace with Web3Forms access key if using any other email excepts info@kinraandassociates.com
+    formData.append("access_key", ACCESS_KEY); // uses Vite env variable VITE_WEB3FORMS_ACCESS_KEY
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -204,7 +211,7 @@ const Contact = () => {
 
 
                 {/* Hidden Access Key */}
-                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+                <input type="hidden" name="access_key" value={ACCESS_KEY} />
 
 
                 <div className="flex flex-col gap-3">
