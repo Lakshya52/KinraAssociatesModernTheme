@@ -13,11 +13,17 @@ const HeroNew = () => {
       className="relative h-screen w-full flex items-center justify-center text-center text-white"
     >
       {/* Background Image */}
-      <img
-        src="/HeroNewImage.webp"
-        alt="hero section background"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      <picture>
+        <source media="(max-width: 768px)" srcSet="/HeroNewImage.webp" />
+        <img
+          src="/HeroNewImage.webp"
+          alt="hero section background"
+          className="absolute inset-0 w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
+        />
+      </picture>
 
       {/* Overlay (optional dark filter for text readability) */}
       <div className="absolute inset-0 bg-black/45" />

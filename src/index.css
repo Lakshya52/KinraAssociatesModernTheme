@@ -82,6 +82,7 @@ body::-webkit-scrollbar {
   font-display: swap;
 }
 
+
 .font-gwynerCondensedFont {
   font-family: 'gwynerFont', sans-serif;
   /* Fallback font is recommended */
@@ -112,6 +113,7 @@ body::-webkit-scrollbar {
   font-style: normal;
   font-display: swap;
 }
+
 
 .font-gwen-semibold {
   font-family: 'gwenFontSemibold', sans-serif;

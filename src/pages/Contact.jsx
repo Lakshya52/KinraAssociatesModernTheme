@@ -100,7 +100,7 @@ const Contact = () => {
 
       mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.569379038977!2d77.53277785025406!3d29.942723976340492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eebca38815c15%3A0x5b7ee36557760617!2sKinra%20%26%20Associates!5e0!3m2!1sen!2sin!4v1759843353310!5m2!1sen!2sin" width="100%"
         height="100%"
-        style={{ border: 0 }}
+        style={{ border: 0, display: 'block' }}
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
@@ -123,7 +123,7 @@ const Contact = () => {
       email: "email@gmail.com",
       phone: "+91 80926 06327",
       address: "2767 LGF, C - Block , Sec -43, Sushant Lok Phase -1, Gurugram, Haryana, 122009",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.7854558138!2d77.0812354!3d28.4510332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19de01037e9b%3A0x53aa78128bc4be6a!2sKINRA%20%26%20ASSOCIATES!5e0!3m2!1sen!2sin!4v1773814569276!5m2!1sen!2sin"  width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Gurugram Office"></iframe>
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.7854558138!2d77.0812354!3d28.4510332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19de01037e9b%3A0x53aa78128bc4be6a!2sKINRA%20%26%20ASSOCIATES!5e0!3m2!1sen!2sin!4v1773814569276!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, display: 'block' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Gurugram Office"></iframe>
     },
     // karnataka
     {
@@ -132,7 +132,7 @@ const Contact = () => {
       email: "email@gmail.com",
       phone: "+91 82173 93670",
       address: "76, 2nd Floor, Hanumanthanagara, 50 ft Road, Bengaluru, Karnataka-560019",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62216.81902117869!2d77.51484087877355!3d12.936542272877045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f4b7246165%3A0x262e856aea3cb36d!2sSilicon%20Honda%20Hanumanthnagar!5e0!3m2!1sen!2sin!4v1754998967850!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mumbai Office"></iframe>
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62216.81902117869!2d77.51484087877355!3d12.936542272877045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f4b7246165%3A0x262e856aea3cb36d!2sSilicon%20Honda%20Hanumanthnagar!5e0!3m2!1sen!2sin!4v1754998967850!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, display: 'block' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mumbai Office"></iframe>
     },
     // maharashtra
     {
@@ -141,7 +141,7 @@ const Contact = () => {
       email: "email@gmail.com",
       phone: "+91 89758 16000",
       address: "101-102/B7 Gangadham Phase 1, Marketyard Jagdish Niwas, Pune, Maharashtra-411037",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1648580777523!2d73.87197977423627!3d18.476190270530314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea9afbd3def9%3A0x1c8ce8f1fece189f!2sGangaDham%20Phase%201!5e0!3m2!1sen!2sin!4v1754999034638!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bangalore Office"></iframe>
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1648580777523!2d73.87197977423627!3d18.476190270530314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea9afbd3def9%3A0x1c8ce8f1fece189f!2sGangaDham%20Phase%201!5e0!3m2!1sen!2sin!4v1754999034638!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, display: 'block' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bangalore Office"></iframe>
     },
     // madhya pradesh
     {
@@ -150,7 +150,7 @@ const Contact = () => {
       email: "email@gmail.com",
       phone: "+91 99588 34607",
       address: "H. No. 40, Shiv Shakti Nagar, Ahmadpur, Hoshangabad Road, Bhopal, Madhya Pradesh-462026",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4048515703466!2d77.455826!3d23.191912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzMwLjkiTiA3N8KwMjcnMjEuMCJF!5e0!3m2!1sen!2sin!4v1756895289549!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4048515703466!2d77.455826!3d23.191912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzMwLjkiTiA3N8KwMjcnMjEuMCJF!5e0!3m2!1sen!2sin!4v1756895289549!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, display: 'block' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
     // gujarat
     {
@@ -159,7 +159,7 @@ const Contact = () => {
       email: "email@gmail.com",
       phone: "+91 98791 53657",
       address: "310, Star Chamber, Rajkot, Gujarat-360001",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.4531732158825!2d70.79621797434463!3d22.298694742955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb00269c00e3%3A0x7f86ba477321e7ce!2sStarChember!5e0!3m2!1sen!2sin!4v1754999102400!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.4531732158825!2d70.79621797434463!3d22.298694742955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb00269c00e3%3A0x7f86ba477321e7ce!2sStarChember!5e0!3m2!1sen!2sin!4v1754999102400!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, display: 'block' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
     // Bihar
     {
@@ -168,7 +168,7 @@ const Contact = () => {
       email: "email@gmail.com",
       phone: "+91 79034 10638",
       address: "435, Adison Arcade, Fraser Road, Patna, Bihar-800001",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.749208696946!2d85.13840612445657!3d25.61324861472521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b92f5e263%3A0x264c261d6914a9b9!2sAdision%20Arcade!5e0!3m2!1sen!2sin!4v1754999150678!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.749208696946!2d85.13840612445657!3d25.61324861472521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b92f5e263%3A0x264c261d6914a9b9!2sAdision%20Arcade!5e0!3m2!1sen!2sin!4v1754999150678!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0, display: 'block' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
     },
   ];
 

@@ -14,6 +14,19 @@ const flyoutLinks = [
   { to: "/specialized_services", label: "Specialized Advisory Services" },
 ];
 
+// Debounce utility for performance optimization
+const debounce = (func, wait) => {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+};
+
 const Navbar = () => {
   const [showServices, setShowServices] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -35,19 +48,19 @@ const Navbar = () => {
     timeoutRef.current = setTimeout(() => setShowServices(false), 200); // change the value to adjust delay of color changing effect on navbar.
   }, []);
 
-  // Scroll handler for homepage
+  // Scroll handler for homepage with debouncing for performance
   useEffect(() => {
     if (!isHome) {
       setIsScrolled(true);
       return;
     }
 
-    const handleScroll = () => {
+    const debouncedScroll = debounce(() => {
       setIsScrolled(window.scrollY > 200);
-    };
+    }, 50);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", debouncedScroll, { passive: true });
+    return () => window.removeEventListener("scroll", debouncedScroll);
   }, [isHome]);
 
   const handleScrollTop = () => {

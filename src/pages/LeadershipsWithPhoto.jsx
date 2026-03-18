@@ -314,6 +314,10 @@ const LeadershipsWithPhoto = () => {
                         style={{
                           boxShadow: "0 2px 8px 0 rgba(44,55,128,0.08)",
                         }}
+                        loading="lazy"
+                        width={80}
+                        height={80}
+                        decoding="async"
                       />
                       {/* Divider for mobile */}
                       {/* <div className="block sm:hidden w-full h-0.5 bg-blue-900/20  rounded-full" /> */}
@@ -377,6 +381,10 @@ const LeadershipsWithPhoto = () => {
                         src={partner.image}
                         alt={`${partner.name} profile`}
                         className="sm:w-48 w-[60%] max-h-[200px] max-w-[150px] sm:h-48 h-[60%] rounded-xl object-cover border-1 border-white shadow-md"
+                        loading="lazy"
+                        width={192}
+                        height={192}
+                        decoding="async"
                       />
                       {/* Partner Description */}
                       <p className="text-sm sm:text-base md:text-lg leading-6 text-justify break-words whitespace-pre-line">
