@@ -102,13 +102,21 @@ const Contact = () => {
 
     // branch offices
     // delhi
+    // {
+    //   name: "Delhi",
+    //   contacePerson: "CHETAN KHURANA",
+    //   email: "email@gmail.com",
+    //   phone: "+91 78273 01577",
+    //   address: "843, Gautam, Gali Jwala Nagar, Shahdara, Delhi-110032",
+    //   mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6347927110155!2d77.29724577457438!3d28.670651882350278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb70cf59db6d%3A0x1fe19019ab89202f!2s843%2C%20Gautam%20Gali%2C%20Jawala%20Nagar%2C%20Shahdara%2C%20Delhi%2C%20110032!5e0!3m2!1sen!2sin!4v1754998898331!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Delhi Office"></iframe>
+    // },
     {
-      name: "Delhi",
-      contacePerson: "CHETAN KHURANA",
+      name: "Gurugram",
+      contacePerson: "SUMIT KUMAR",
       email: "email@gmail.com",
-      phone: "+91 78273 01577",
-      address: "843, Gautam, Gali Jwala Nagar, Shahdara, Delhi-110032",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6347927110155!2d77.29724577457438!3d28.670651882350278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb70cf59db6d%3A0x1fe19019ab89202f!2s843%2C%20Gautam%20Gali%2C%20Jawala%20Nagar%2C%20Shahdara%2C%20Delhi%2C%20110032!5e0!3m2!1sen!2sin!4v1754998898331!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Delhi Office"></iframe>
+      phone: "+91 80926 06327",
+      address: "2767 LGF, C - Block , Sec -43, Sushant Lok Phase -1, Gurugram, Haryana, 122009",
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.7854558138!2d77.0812354!3d28.4510332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19de01037e9b%3A0x53aa78128bc4be6a!2sKINRA%20%26%20ASSOCIATES!5e0!3m2!1sen!2sin!4v1773814569276!5m2!1sen!2sin"  width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Gurugram Office"></iframe>
     },
     // karnataka
     {

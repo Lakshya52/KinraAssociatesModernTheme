@@ -27,7 +27,7 @@ const HeroNew = () => {
         <h1 className="text-3xl md:text-5xl font-light leading-tight font-gwen-semibold">
           {/* Comprehensive Accounting and <br /> Tax Services */}
 
-          Comprehensive Financial, Audit, <br /> and Tax Services
+          Comprehensive Financial Audit <br /> and Tax Services
           {/* Business Solution */}
         </h1>
         {/* <h1 className="text-3xl md:text-5xl font-light leading-tight font-gwen-semibold">
